@@ -1,0 +1,2284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canyon &#x2014; Seraj Rugs</title>
+<meta name="description" content="Canyon handmade rug by Seraj Rugs. Hand knotted in New Zealand wool &amp; silk blend. Enquire for sizes and trade pricing.">
+<meta name="theme-color" content="#1f1e1c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Canyon &#x2014; Seraj Rugs">
+<meta property="og:description" content="Canyon handmade rug by Seraj Rugs. Hand knotted in New Zealand wool &amp; silk blend. Enquire for sizes and trade pricing.">
+<meta property="og:image" content="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/Untitled-1-56.webp">
+<link rel="icon" href="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bd5d96cf-8b71-4955-a49f-dbb6c4b9894a/seraj-rugs-logo.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/Untitled-1-56.webp" fetchpriority="high">
+<link rel="preconnect" href="https://api.storebox.ai">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+/* Seraj Rugs shared stylesheet. Pure CSS, no build step. */
+/* ========================================================================
+   SERAJ RUGS — one-page cinematic build
+   Palette, type and voice sampled from the brand's own identity:
+   charcoal ink, warm paper white, hairline rules, editorial serif + sans.
+   ======================================================================== */
+:root{
+  --ink:#1f1e1c;
+  --ink-soft:#2a2825;
+  --paper:#f6f3ee;
+  --paper-2:#efeae2;
+  --white:#ffffff;
+  --muted:#6b6459;
+  --muted-2:#6e675c;
+  --muted-lt:rgba(255,255,255,.62);
+  --rule:#d9d2c7;
+  --rule-dark:rgba(255,255,255,.18);
+  --bronze:#8a6f4d;
+  --gut:clamp(1.25rem,4vw,4.5rem);
+  --serif:"Cormorant Garamond","Roboto Slab",Georgia,serif;
+  --sans:"Inter","Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease-io:cubic-bezier(.65,.02,.24,1);
+  --head-h:76px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+html:focus-within{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body.locked{overflow:hidden}
+/* Hash routes share one document: only the active page is rendered. */
+.route[hidden]{display:none!important}
+#main{min-height:60vh}
+#main:focus{outline:none}
+img,svg{max-width:100%}
+img{height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;top:-100px;left:1rem;z-index:200;background:var(--ink);color:#fff;padding:.8rem 1.2rem;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:top .3s}
+.skip:focus{top:1rem}
+.wrap{width:100%;max-width:1560px;margin:0 auto;padding-inline:var(--gut)}
+
+/* ---------- type ---------- */
+.display{font-family:var(--serif);font-weight:300;line-height:.92;letter-spacing:-.015em;text-transform:uppercase}
+.eyebrow{font-size:.66rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.lede{font-size:clamp(.95rem,1.15vw,1.08rem);line-height:1.85;color:var(--muted);font-weight:300}
+
+/* ---------- reveal system ---------- */
+/* Text reveals rise without an opacity fade. Body copy caught mid-fade is
+   semi-transparent, which drops its contrast below 4.5:1 - axe and Lighthouse
+   both flag it when they sample during the animation. Images keep their own
+   fade through [data-rv="scale"], which carries no text. */
+[data-rv]{opacity:1;transform:translateY(28px);transition:transform 1.15s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+[data-rv="clip"]{opacity:1;transform:none;clip-path:inset(0 0 100% 0);transition:clip-path 1.25s var(--ease)}
+[data-rv="clip"].in{clip-path:inset(0 0 0 0)}
+[data-rv="mask"]{opacity:1;transform:none;clip-path:inset(0 0 0 100%);transition:clip-path 1.3s var(--ease-io)}
+[data-rv="mask"].in{clip-path:inset(0 0 0 0)}
+[data-rv="scale"]{opacity:0;transform:scale(1.08);transition:opacity 1.2s var(--ease),transform 1.6s var(--ease)}
+[data-rv="scale"].in{opacity:1;transform:none}
+.rv-d1{transition-delay:.09s}.rv-d2{transition-delay:.18s}.rv-d3{transition-delay:.27s}
+.rv-d4{transition-delay:.36s}.rv-d5{transition-delay:.45s}.rv-d6{transition-delay:.54s}
+
+/* ---------- buttons ---------- */
+.btn{
+  --bg:var(--ink);--fg:#fff;
+  position:relative;display:inline-flex;align-items:center;gap:.9rem;
+  padding:1.05rem 2.1rem;background:var(--bg);color:var(--fg);text-decoration:none;
+  font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;font-weight:500;
+  border:1px solid var(--bg);overflow:hidden;cursor:pointer;isolation:isolate;
+  transition:color .5s var(--ease),border-color .5s var(--ease);
+}
+.btn::before{content:"";position:absolute;inset:0;background:var(--fg);transform:translateY(101%);transition:transform .6s var(--ease);z-index:-1}
+.btn:hover::before{transform:translateY(0)}
+.btn:hover{color:var(--bg)}
+.btn svg{width:17px;transition:transform .55s var(--ease)}
+.btn:hover svg{transform:translateX(6px)}
+.btn.ghost{--bg:transparent;--fg:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{color:#fff}
+.btn.ghost::before{background:var(--ink)}
+.btn.on-dark{--bg:#fff;--fg:var(--ink)}
+.btn.ghost-dark{--bg:transparent;--fg:#fff;border-color:rgba(255,255,255,.55)}
+.btn.ghost-dark::before{background:#fff}
+.btn.ghost-dark:hover{color:var(--ink);border-color:#fff}
+.link-u{position:relative;text-decoration:none;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;padding-bottom:.45rem;display:inline-flex;align-items:center;gap:.7rem}
+.link-u::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform:scaleX(1);transform-origin:right;transition:transform .5s var(--ease)}
+.link-u:hover::after{transform:scaleX(0)}
+.link-u svg{width:16px;transition:transform .5s var(--ease)}
+.link-u:hover svg{transform:translateX(6px)}
+
+/* ========================================================================
+   LOADER — logo reveal
+   ======================================================================== */
+.loader{position:fixed;inset:0;z-index:300;background:var(--ink);display:grid;place-items:center;transition:opacity .8s var(--ease),visibility .8s}
+.loader.done{opacity:0;visibility:hidden}
+.loader__mark{width:min(230px,45vw);position:relative}
+.loader__mark svg{width:100%;height:auto;display:block}
+.loader__bar{margin-top:1.6rem;height:1px;background:rgba(255,255,255,.18);position:relative;overflow:hidden}
+.loader__bar i{position:absolute;inset:0;background:#fff;transform-origin:left;transform:scaleX(0);animation:load 1.5s var(--ease-io) forwards}
+@keyframes load{to{transform:scaleX(1)}}
+
+/* ========================================================================
+   HEADER
+   ======================================================================== */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:120;height:var(--head-h);display:flex;align-items:center;
+  transition:background .55s var(--ease),color .55s var(--ease),box-shadow .55s var(--ease),height .45s var(--ease);
+  color:#fff;mix-blend-mode:normal}
+.hdr.solid{background:rgba(246,243,238,.94);backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 rgba(0,0,0,.07);height:66px}
+/* Product detail pages have a light canvas from the first paint — keep nav readable before JS runs. */
+body.page-product .hdr{background:rgba(246,243,238,.94);backdrop-filter:blur(14px);color:var(--ink);box-shadow:0 1px 0 rgba(0,0,0,.07);height:66px}
+.hdr__in{width:100%;max-width:1560px;margin:0 auto;padding-inline:var(--gut);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem}
+.nav{display:flex;align-items:center;gap:clamp(1rem,2.2vw,2.2rem)}
+.nav--r{justify-content:flex-end}
+.nav a{position:relative;text-decoration:none;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;white-space:nowrap;padding:.4rem 0}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav a:hover::after,.nav a[aria-current="page"]::after{transform:scaleX(1);transform-origin:left}
+.brand{display:flex;justify-content:center;align-items:center;text-decoration:none;padding:.55rem 0}
+/* The logo is inlined as a data URI: a cross-origin SVG mask would need CORS headers
+   (the Storebox CDN only allows its own origins, so the mask would render empty),
+   and inlining keeps the mark working even if /assets is not deployed. */
+.brand-mark{--logo-mask:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4gPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM2OSA1MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzY5IDUzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+IDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+IC5zdDB7ZmlsbDojRkZGRkZGO30gPC9zdHlsZT4gPGc+IDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMC41LDQxLjRsLTAuMy05LjZsMC44LTAuMUMxMy44LDM5LDE5LjUsNDQuNiwyOCw0NC42YzQuNCwwLDguNS0yLjgsOC41LTguMWMwLTYuMy04LjMtOS4yLTEzLjQtMTEuMyBjLTYuNi0yLjgtMTIuMS00LjktMTIuMS0xMi40YzAtNy45LDYuNC0xMi45LDE2LjQtMTIuOWM0LjcsMCw5LDEsMTIuMywyLjdsMC4zLDguM2wtMC43LDAuM0MzNi43LDQuNywzMS4zLDEuMiwyNS4xLDEuMiBjLTUuMSwwLTkuMiwzLTkuMiw4LjFjMCw1LjcsNi41LDgsMTEuNiwxMGM2LjUsMi41LDE0LjMsNS40LDE0LjMsMTMuMWMwLDguOC04LjEsMTMuNi0xNS40LDEzLjZDMTkuOCw0NiwxMy44LDQzLjgsMTAuNSw0MS40eiI+PC9wYXRoPiA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDYuNCw0NS4zdi0wLjljMi4xLTAuNywyLjYtMi42LDIuNi03LjJWOC42YzAtNC42LTAuNC02LjUtMi42LTcuMlYwLjVoMzAuN2wwLjcsOUw3Nyw5LjcgYy0yLjYtNi4zLTYuNi04LjItMTMuOC04LjJoLTcuNXYxOS4yaDYuMWM3LjgsMCwxMC0xLjUsMTEuMS00LjloMC45djEwLjhINzNjLTEtMy4zLTMuMy00LjktMTEuMS00LjloLTYuMXYxOS4zIGMwLDIsMS4yLDMuMiwzLjIsMy4yaDYuMWM2LjUsMCwxMC45LTEuOSwxMy4zLTguNGwwLjgsMC4xbC0wLjQsOS4zSDQ2LjR6Ij48L3BhdGg+IDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDcuNCwzNC44Yy0zLjgtOS4zLTQuMi0xMi41LTkuOC0xMi41aC0zLjh2MTQuOWMwLDQuNiwwLjQsNi41LDIuNiw3LjJ2MC45SDg0LjV2LTAuOSBjMi4xLTAuNywyLjYtMi42LDIuNi03LjJWOC42YzAtNC42LTAuNC02LjUtMi42LTcuMlYwLjVIOThjMTQsMCwxNi44LDUuMSwxNi44LDEwLjJjMCw1LjktNCwxMC4zLTEyLjUsMTEuMyBjNy4yLDAuOCw4LjYsMy44LDEyLDEyLjRjMy40LDguNSw0LjEsMTAsNi41LDEwYzAuMywwLDAuNiwwLDEtMC4xdjAuOWMtMS41LDAuNC0zLjUsMC40LTQuNiwwLjRDMTExLjgsNDUuOCwxMTAuNSw0Mi4zLDEwNy40LDM0LjggeiBNMTA4LDEyLjNjMC01LjItMy4zLTEwLjgtMTEuMy0xMC44Yy0wLjksMC0xLjksMC4xLTIuOCwwLjJ2MTkuNkg5OEMxMDUuMywyMS4zLDEwOCwxNy4yLDEwOCwxMi4zeiI+PC9wYXRoPiA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTE5LjcsNDQuNGMxLjktMC43LDMuNi0yLjQsNS40LTYuN2wxMi0yOS43YzAuNS0xLjMsMC40LTIuMy0wLjEtMy41bC0wLjgtMS44bDYuMy0yLjhsMTUuOSwzNy44IGMxLjgsNC4yLDMuNSw1LjksNC45LDYuNnYwLjloLTExLjZ2LTAuOWMyLjEtMC43LDEuMi0yLjQtMC42LTYuNmwtMy44LTkuMkgxMzBsLTMuNyw5LjJjLTEuNyw0LjMtMS4zLDYuMSwwLjgsNi43djAuOWgtNy40VjQ0LjR6IE0xNDYuNywyNy42bC04LjMtMTkuOGwtOCwxOS44SDE0Ni43eiI+PC9wYXRoPiA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTU0LjEsNTEuM2MwLTEuNSwxLjUtMy41LDQtMy41YzEuNywwLDMuMSwwLjQsNy4yLDEuMmMxLjItMC44LDIuOC0yLjIsMi44LTguNHYtMzJjMC00LjYtMC40LTYuNS0yLjYtNy4yIFYwLjVoMTEuOHYwLjljLTIuMSwwLjctMi42LDIuNi0yLjYsNy4ydjIxLjFjMCwxMy40LTguNCwyMy4yLTE3LjcsMjMuMkMxNTUuMiw1MywxNTQuMSw1Mi44LDE1NC4xLDUxLjN6Ij48L3BhdGg+IDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMTkuMSwzNC44Yy0zLjgtOS4zLTQuMi0xMi41LTkuOC0xMi41aC0zLjh2MTQuOWMwLDQuNiwwLjQsNi41LDIuNiw3LjJ2MC45aC0xMS45di0wLjkgYzIuMS0wLjcsMi42LTIuNiwyLjYtNy4yVjguNmMwLTQuNi0wLjQtNi41LTIuNi03LjJWMC41aDEzLjRjMTQsMCwxNi44LDUuMSwxNi44LDEwLjJjMCw1LjktNCwxMC4zLTEyLjUsMTEuMyBjNy4yLDAuOCw4LjYsMy44LDEyLDEyLjRjMy40LDguNSw0LjEsMTAsNi41LDEwYzAuMywwLDAuNiwwLDEtMC4xdjAuOWMtMS41LDAuNC0zLjUsMC40LTQuNiwwLjRDMjIzLjUsNDUuOCwyMjIuMiw0Mi4zLDIxOS4xLDM0LjggeiBNMjE5LjcsMTIuM2MwLTUuMi0zLjMtMTAuOC0xMS4zLTEwLjhjLTAuOSwwLTEuOSwwLjEtMi44LDAuMnYxOS42aDQuMUMyMTYuOSwyMS4zLDIxOS43LDE3LjIsMjE5LjcsMTIuM3oiPjwvcGF0aD4gPHBhdGggY2xhc3M9InN0MCIgZD0iTTIzNy43LDI3LjlWOC42YzAtNC42LTAuNC02LjUtMi42LTcuMlYwLjVIMjQ3djAuOWMtMi4xLDAuNy0yLjYsMi42LTIuNiw3LjJ2MTkuOGMwLDExLjYsNS44LDE2LDE0LjUsMTYgYzUuNCwwLDEyLjQtNCwxMi40LTE2LjRWMTIuNWMwLTcuOC0xLjUtMTAtNC45LTExLjFWMC41aDguNnYwLjljLTIuMSwwLjctMi42LDIuNi0yLjYsNy4ydjE5LjNjMCwxMi45LTYuNywxOC4xLTE2LjEsMTguMSBDMjQ3LjIsNDYsMjM3LjcsNDEuNywyMzcuNywyNy45eiI+PC9wYXRoPiA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjgwLjIsMjIuN2MwLTEyLjMsOS43LTIyLjcsMjQuMS0yMi43YzQsMCwxMC42LDAuOSwxMy45LDMuMWwwLjMsOC40bC0wLjgsMC4yYy0yLjYtNi42LTkuMy0xMC42LTE1LjctMTAuNiBjLTguNCwwLTE0LjksNS42LTE1LDE3LjJjLTAuMSwxMi4xLDcuMiwyNS45LDE5LjUsMjUuOWM0LDAsNy43LTEuNyw5LjMtNC45di01LjhjMC01LTAuNi02LjgtMy4zLTcuNnYtMC45aDkuOXYxMS44IGMtNC44LDYuMy0xMi43LDguOS0xOCw4LjlDMjg5LjYsNDYsMjgwLjIsMzYuNywyODAuMiwyMi43eiI+PC9wYXRoPiA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzI3LjUsNDEuNGwtMC4zLTkuNmwwLjgtMC4xYzIuNyw3LjMsOC40LDEyLjksMTYuOSwxMi45YzQuNCwwLDguNS0yLjgsOC41LTguMWMwLTYuMy04LjMtOS4yLTEzLjQtMTEuMyBjLTYuNi0yLjgtMTIuMS00LjktMTIuMS0xMi40YzAtNy45LDYuNC0xMi45LDE2LjUtMTIuOWM0LjcsMCw5LDEsMTIuMywyLjdsMC4zLDguM2wtMC43LDAuM2MtMi42LTYuNi04LjEtMTAuMi0xNC4zLTEwLjIgYy01LjEsMC05LjIsMy05LjIsOC4xYzAsNS43LDYuNSw4LDExLjYsMTBjNi41LDIuNSwxNC4zLDUuNCwxNC4zLDEzLjFjMCw4LjgtOC4xLDEzLjYtMTUuNCwxMy42QzMzNi43LDQ2LDMzMC43LDQzLjgsMzI3LjUsNDEuNHoiPjwvcGF0aD4gPC9nPiA8L3N2Zz4g");
+  display:block;width:clamp(112px,11vw,150px);aspect-ratio:369/53;background-color:currentColor;
+  -webkit-mask:var(--logo-mask) no-repeat center/contain;
+  mask:var(--logo-mask) no-repeat center/contain;transition:width .45s var(--ease)}
+.hdr.solid .brand-mark{width:clamp(100px,9vw,124px)}
+.loader .brand-mark{width:100%;background-color:#fff;animation:markIn 1.2s var(--ease) both}
+@keyframes markIn{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}
+.utils{display:flex;align-items:center;gap:.15rem;margin-left:.4rem}
+.icon-btn{width:38px;height:38px;display:grid;place-items:center;background:none;border:0;cursor:pointer;border-radius:50%;transition:background .35s,transform .35s}
+.icon-btn:hover{background:rgba(125,118,108,.14);transform:translateY(-2px)}
+.icon-btn svg{width:17px;height:17px}
+.nav .trade{border:1px solid currentColor;padding:.62rem 1rem}
+.nav .trade::after{display:none}
+.nav .trade:hover{background:currentColor}
+.nav .trade:hover span{color:var(--paper);mix-blend-mode:difference}
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;z-index:141}
+.burger i{position:absolute;left:11px;height:1px;width:22px;background:currentColor;transition:transform .45s var(--ease),opacity .3s}
+.burger i:nth-child(1){top:19px}
+.burger i:nth-child(2){top:25px;width:15px}
+body.menu-open .burger i:nth-child(1){transform:translateY(3px) rotate(45deg)}
+body.menu-open .burger i:nth-child(2){transform:translateY(-3px) rotate(-45deg);width:22px}
+body.menu-open .burger,body.menu-open .hdr{color:#fff!important}
+body.menu-open .hdr{background:transparent;box-shadow:none}
+
+/* ========================================================================
+   FULL-SCREEN MENU
+   ======================================================================== */
+.menu{position:fixed;inset:0;z-index:130;background:var(--ink);color:#fff;
+  --muted-2:var(--muted-lt);--muted:var(--muted-lt);
+  clip-path:inset(0 0 100% 0);transition:clip-path .85s var(--ease);visibility:hidden;overflow-y:auto}
+.menu.open{clip-path:inset(0 0 0 0);visibility:visible}
+.menu__in{min-height:100%;display:grid;grid-template-columns:1.35fr .85fr;gap:clamp(2rem,5vw,5rem);
+  padding:calc(var(--head-h) + 3rem) var(--gut) 3.5rem;max-width:1560px;margin:0 auto;align-items:center}
+.menu__list{list-style:none;margin:0;padding:0}
+.menu__list li{overflow:hidden}
+.menu__list a{display:flex;align-items:baseline;gap:1.2rem;text-decoration:none;font-family:var(--serif);
+  font-size:clamp(2rem,5.2vw,4.4rem);line-height:1.16;font-weight:300;text-transform:uppercase;letter-spacing:.01em;
+  transform:translateY(110%);transition:transform .8s var(--ease),color .4s}
+.menu.open .menu__list a{transform:none}
+.menu__list a em{font-family:var(--sans);font-style:normal;font-size:.6rem;letter-spacing:.3em;color:var(--muted-2)}
+.menu__list a:hover{color:var(--bronze)}
+.menu__side{border-left:1px solid var(--rule-dark);padding-left:clamp(1.5rem,3vw,3rem)}
+.menu__side .mtitle{font-family:var(--sans);font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted-2);font-weight:500;margin:0 0 1.2rem}
+.menu__side ul{list-style:none;margin:0 0 2.4rem;padding:0;display:grid;gap:.75rem}
+.menu__side a{text-decoration:none;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85;transition:opacity .3s,transform .3s;display:inline-block}
+.menu__side a:hover{opacity:1;transform:translateX(5px)}
+.menu__addr{font-size:.8rem;line-height:1.9;color:var(--muted-2);letter-spacing:.04em}
+.menu__addr a{text-decoration:none;letter-spacing:.04em;text-transform:none;font-size:.8rem}
+/* The header burger lives at z-index 120, beneath this overlay (130), so it is
+   unreachable while the menu is open. The menu therefore carries its own close
+   control, pinned (fixed) so it stays put when the menu scrolls. */
+.menu__close{position:fixed;top:calc((var(--head-h) - 44px)/2);
+  right:calc((100% - min(100%,1560px))/2 + var(--gut));
+  width:44px;height:44px;color:#fff;opacity:0;
+  transition:opacity .55s var(--ease) .4s,background .35s,transform .35s}
+.menu.open .menu__close{opacity:1}
+
+/* ========================================================================
+   HERO
+   ======================================================================== */
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;background:var(--ink);color:#fff}
+.hero__slides{position:absolute;inset:0}
+.hero__slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity 1.1s var(--ease),visibility 1.1s}
+.hero__slide.active{opacity:1;visibility:visible}
+.hero__img{position:absolute;inset:-6%;background-size:cover;background-position:center;will-change:transform;
+  clip-path:inset(12% 8% 12% 8%);transition:clip-path 1.5s var(--ease),transform 1.6s var(--ease);transform:scale(1.1)}
+.hero__slide.active .hero__img{clip-path:inset(0 0 0 0);transform:scale(1)}
+.hero__img::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(18,17,16,.72) 0%,rgba(18,17,16,.34) 45%,rgba(18,17,16,.55) 100%)}
+.hero__grain{position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);background-size:3px 3px}
+/* Bottom-anchored editorial masthead: photography breathes above,
+   text forms a hard baseline grid below a full-width hairline. */
+.hero__in{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:flex-end;
+  max-width:1560px;margin:0 auto;padding-inline:var(--gut);padding-top:var(--head-h);
+  padding-bottom:clamp(7rem,15vh,11rem)}
+.hero__copy{width:100%;max-width:min(100%,74vw)}
+/* kicker row: label left, live slide counter right */
+.hero__top{display:flex;align-items:baseline;justify-content:space-between;gap:1.5rem;
+  opacity:0;transform:translateY(14px);transition:opacity .8s var(--ease) .1s,transform .8s var(--ease) .1s}
+.hero__slide.active .hero__top{opacity:1;transform:none}
+.hero__kicker{display:flex;align-items:center;gap:1rem;font-size:.64rem;letter-spacing:.4em;text-transform:uppercase;color:rgba(255,255,255,.8);margin:0}
+.hero__kicker::before{content:"";width:clamp(2rem,5vw,4.5rem);height:1px;background:rgba(255,255,255,.5)}
+.hero__count{font-size:.64rem;letter-spacing:.3em;color:rgba(255,255,255,.42);font-variant-numeric:tabular-nums;white-space:nowrap}
+.hero__count b{color:#fff;font-weight:400}
+/* full-measure hairline the headline hangs from */
+.hero__rule{display:block;width:100%;height:1px;background:rgba(255,255,255,.22);margin:1.1rem 0 clamp(1.4rem,3vw,2.1rem);
+  transform:scaleX(0);transform-origin:left;transition:transform 1.25s var(--ease) .22s}
+.hero__slide.active .hero__rule{transform:scaleX(1)}
+.hero h1{margin:0;font-family:var(--serif);font-weight:300;text-transform:uppercase;
+  font-size:clamp(2.4rem,6.6vw,6rem);line-height:.92;letter-spacing:-.022em}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:block;transform:translateY(105%);transition:transform 1.05s var(--ease)}
+.hero__slide.active h1 .ln>span{transform:none}
+.hero__slide.active h1 .ln:nth-child(2)>span{transition-delay:.1s}
+.hero__slide.active h1 .ln:nth-child(3)>span{transition-delay:.2s}
+/* foot row: sub-copy left, CTA pushed to the right of the measure */
+.hero__foot{display:flex;align-items:flex-end;justify-content:space-between;gap:clamp(1.5rem,4vw,4rem);
+  margin-top:clamp(1.6rem,3.5vw,2.6rem);flex-wrap:wrap}
+.hero__sub{max-width:42ch;margin:0;font-size:clamp(.85rem,1vw,.98rem);line-height:1.85;color:rgba(255,255,255,.76);font-weight:300;
+  opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease) .38s,transform .9s var(--ease) .38s}
+.hero__slide.active .hero__sub{opacity:1;transform:none}
+.hero__cta{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;transform:translateY(20px);
+  transition:opacity .9s var(--ease) .52s,transform .9s var(--ease) .52s}
+.hero__slide.active .hero__cta{opacity:1;transform:none}
+.hero__cta .btn{--bg:#fff;--fg:var(--ink)}
+/* rotated editorial label pinned to the left edge */
+.hero__vert{position:absolute;left:calc(var(--gut) * .34);bottom:clamp(7rem,15vh,11rem);z-index:3;margin:0;
+  writing-mode:vertical-rl;transform:rotate(180deg);font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;
+  color:rgba(255,255,255,.38);white-space:nowrap;
+  opacity:0;transition:opacity 1s var(--ease) .7s}
+.hero__slide.active .hero__vert{opacity:1}
+/* floating product plate reacting to the cursor */
+.hero__float{position:absolute;right:var(--gut);top:50%;width:clamp(150px,15vw,238px);z-index:2;
+  transform:translateY(-50%);opacity:0;transition:opacity 1s var(--ease) .55s;pointer-events:none;will-change:transform}
+.hero__slide.active .hero__float{opacity:1}
+.hero__float img{width:100%;aspect-ratio:7/10;object-fit:cover;box-shadow:0 40px 70px rgba(0,0,0,.45)}
+.hero__float figcaption{margin-top:.9rem;font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+.hero__dots{position:absolute;left:var(--gut);bottom:calc(clamp(2.4rem,6vh,4rem) - 18px);z-index:4;display:flex;gap:.9rem;align-items:center}
+.hero__dots button{width:44px;height:44px;background:none;border:0;padding:0;cursor:pointer;position:relative;display:grid;align-items:center}
+.hero__dots button::after{content:"";display:block;width:100%;height:2px;background:rgba(255,255,255,.3)}
+.hero__dots button i{position:absolute;left:0;top:50%;margin-top:-1px;width:100%;height:2px;background:#fff;transform:scaleX(0);transform-origin:left}
+.hero__dots button[aria-selected="true"] i{animation:dotFill var(--slide,7s) linear forwards}
+@keyframes dotFill{to{transform:scaleX(1)}}
+.hero__scroll{position:absolute;right:var(--gut);bottom:clamp(2.2rem,6vh,3.6rem);z-index:4;display:flex;align-items:center;gap:.9rem;
+  font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.66);text-decoration:none}
+.hero__scroll .track{width:1px;height:54px;background:rgba(255,255,255,.24);position:relative;overflow:hidden}
+.hero__scroll .track i{position:absolute;top:-54px;left:0;width:1px;height:54px;background:#fff;animation:scrollDot 2.2s var(--ease-io) infinite}
+@keyframes scrollDot{0%{transform:translateY(0)}60%,100%{transform:translateY(108px)}}
+.hero__next{position:absolute;left:0;right:0;bottom:-1px;height:clamp(48px,7vw,110px);background:var(--paper);
+  clip-path:ellipse(78% 100% at 50% 100%);z-index:5;transform:translateY(100%);will-change:transform}
+
+/* ========================================================================
+   SECTION SHELL + MARQUEE
+   ======================================================================== */
+.sec{position:relative;padding-block:clamp(5rem,11vw,10rem)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:clamp(2.5rem,5vw,4.5rem)}
+.sec-head__l{max-width:56ch}
+.sec-title{font-family:var(--serif);font-weight:300;text-transform:uppercase;letter-spacing:-.01em;
+  font-size:clamp(2.1rem,5.4vw,4.6rem);line-height:.98;margin:.9rem 0 0}
+.sec-title em{font-style:italic;text-transform:none;color:var(--bronze);letter-spacing:0}
+.marq{overflow:hidden;border-block:1px solid var(--rule);padding-block:1.05rem;background:var(--paper)}
+.marq__t{display:flex;gap:3rem;width:max-content;animation:marq 42s linear infinite}
+.marq__t span{font-family:var(--serif);font-size:clamp(1rem,1.6vw,1.5rem);text-transform:uppercase;letter-spacing:.16em;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:3rem}
+.marq__t span::after{content:"";width:6px;height:6px;background:var(--bronze);border-radius:50%;display:block}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ========================================================================
+   A — BRAND INTRO
+   ======================================================================== */
+.intro{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.intro__t{font-family:var(--serif);font-weight:300;font-size:clamp(1.5rem,2.9vw,2.7rem);line-height:1.24;letter-spacing:-.01em;margin:1.6rem 0 0}
+.intro__t span{color:var(--muted-2)}
+.intro__p{margin:1.8rem 0 2.4rem;max-width:52ch}
+.intro__art{position:relative}
+.intro__art .m{width:100%;height:auto;display:block}
+.intro__art .big{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.intro__art .sml{position:absolute;right:-4%;bottom:-9%;width:46%;aspect-ratio:1/1;object-fit:cover;box-shadow:0 30px 60px rgba(31,30,28,.16)}
+.thread{width:100%;height:auto;display:block;margin-top:clamp(2.5rem,5vw,4rem)}
+.thread path,.thread circle{fill:none;stroke:var(--rule);stroke-width:1}
+.thread .draw{stroke:var(--bronze);stroke-dasharray:1400;stroke-dashoffset:1400;transition:stroke-dashoffset 2.6s var(--ease-io)}
+.thread.in .draw{stroke-dashoffset:0}
+
+/* ========================================================================
+   B — FEATURED COLLECTIONS
+   ======================================================================== */
+.coll{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,2vw,2rem)}
+.coll__c{position:relative;display:block;text-decoration:none;color:#fff;overflow:hidden;aspect-ratio:3/4;background:var(--ink)}
+.coll__c:nth-child(2){margin-top:clamp(1.5rem,4vw,4rem)}
+.coll__c:nth-child(3){margin-top:clamp(3rem,8vw,8rem)}
+.coll__c img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.4s var(--ease),filter .8s}
+.coll__c::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,17,16,.82) 4%,rgba(18,17,16,.12) 55%,rgba(18,17,16,.35));transition:opacity .7s}
+.coll__c:hover img{transform:scale(1.07)}
+.coll__c__t{position:absolute;left:clamp(1.2rem,2vw,2rem);right:clamp(1.2rem,2vw,2rem);bottom:clamp(1.2rem,2vw,2rem);z-index:2}
+.coll__c h3{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(1.6rem,2.6vw,2.6rem);line-height:1;margin:0}
+.coll__c h3 small{display:block;font-family:var(--sans);font-size:.6rem;letter-spacing:.34em;color:rgba(255,255,255,.65);margin-top:.6rem;font-weight:400}
+.coll__c .go{display:inline-flex;align-items:center;gap:.7rem;margin-top:1.3rem;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;
+  padding-bottom:.4rem;border-bottom:1px solid rgba(255,255,255,.4);opacity:0;transform:translateY(10px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
+.coll__c:hover .go,.coll__c:focus-visible .go{opacity:1;transform:none}
+.coll__c .go svg{width:15px;transition:transform .5s var(--ease)}
+.coll__c:hover .go svg{transform:translateX(6px)}
+.coll__c__n{position:absolute;top:clamp(1rem,1.6vw,1.6rem);left:clamp(1.2rem,2vw,2rem);z-index:2;font-size:.6rem;letter-spacing:.3em;color:rgba(255,255,255,.55)}
+/* ========================================================================
+   C — PRODUCT MODULES
+   ======================================================================== */
+.sec-head .link-u{color:var(--ink)}
+.pcard{position:relative;display:block;color:inherit}
+.pcard__m{position:relative;overflow:hidden;background:var(--paper-2);aspect-ratio:7/10}
+.pcard__m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),opacity .7s var(--ease)}
+.pcard__m .b{opacity:0;transform:scale(1.06)}
+.pcard:hover .pcard__m .a{opacity:0;transform:scale(1.05)}
+.pcard:hover .pcard__m .b{opacity:1;transform:scale(1)}
+/* A card only cross-fades to its second image once that image has actually
+   loaded. Until then - or when a product ships with no second image - the
+   primary image stays put, so hovering never reveals an empty frame. */
+.pcard:not(.ready):hover .pcard__m .a{opacity:1;transform:scale(1)}
+.pcard__m::after{content:"";position:absolute;inset:0;background:rgba(24,23,21,.28);opacity:0;transition:opacity .6s}
+.pcard:hover .pcard__m::after{opacity:1}
+.pcard__badge{position:absolute;top:0;left:0;z-index:2;pointer-events:none;background:var(--ink);color:#fff;font-size:.55rem;letter-spacing:.24em;text-transform:uppercase;padding:.45rem .7rem}
+.pcard__peek{position:absolute;left:0;right:0;bottom:0;z-index:3;pointer-events:none;padding:1.1rem;display:flex;justify-content:space-between;align-items:center;gap:.8rem;
+  color:#fff;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;opacity:0;transform:translateY(12px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.pcard:hover .pcard__peek,.pcard:focus-within .pcard__peek{opacity:1;transform:none}
+.pcard__peek svg{width:15px}
+.pcard__b{padding-top:.95rem}
+.pcard__b h3{margin:0;font-family:var(--sans);font-weight:400;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+/* The title link stretches over the image so the whole card opens the product,
+   while the price link below stays an independent route to the trade login. */
+.pcard__name{text-decoration:none;color:inherit}
+.pcard__name::after{content:"";position:absolute;inset:0;z-index:1}
+.pcard__name:focus-visible{outline:none}
+.pcard__name:focus-visible::after{outline:2px solid var(--bronze);outline-offset:-4px}
+.pcard__price{position:relative;z-index:2;display:inline-block;margin:.4rem 0 0;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);text-decoration:none;border-bottom:1px solid rgba(31,30,28,.24);transition:color .35s,border-color .35s}
+.pcard__price:hover,.pcard__price:focus-visible{color:var(--ink);border-bottom-color:currentColor}
+.pcard:hover .pcard__name{text-decoration:underline;text-underline-offset:.35em;text-decoration-thickness:1px}
+/* subtle 3D tilt on hover (desktop only) */
+.tilt{transform-style:preserve-3d;will-change:transform;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.tilt .pcard__m{box-shadow:0 1px 0 var(--rule)}
+.tilt:hover .pcard__m{box-shadow:0 26px 50px -22px rgba(31,30,28,.42)}
+
+/* --- arc carousel (Most Loved) --- */
+.arc{position:relative}
+.arc__stage{position:relative;height:clamp(400px,52vw,560px);perspective:1500px;cursor:grab;touch-action:pan-y;overflow:hidden}
+.arc__stage:focus-visible{outline:2px solid var(--bronze);outline-offset:-2px}
+.arc__stage.drag{cursor:grabbing}
+.arc__track{position:absolute;inset:0;transform-style:preserve-3d}
+.arc__track .pcard{position:absolute;left:50%;top:50%;width:clamp(158px,17vw,236px);will-change:transform;backface-visibility:hidden}
+.arc__svg{position:absolute;left:0;right:0;bottom:2%;height:38%;pointer-events:none;z-index:0;overflow:visible}
+.arc__svg path{fill:none;stroke:var(--rule);stroke-width:1;stroke-dasharray:1600;stroke-dashoffset:1600;transition:stroke-dashoffset 2.4s var(--ease-io) .2s}
+.arc.in .arc__svg path{stroke-dashoffset:0}
+.arc__nav{display:flex;align-items:center;justify-content:center;gap:1.4rem;margin-top:1.4rem}
+.rnd{width:52px;height:52px;border-radius:50%;border:1px solid var(--rule);background:transparent;display:grid;place-items:center;cursor:pointer;
+  transition:background .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease),transform .3s}
+.rnd svg{width:16px}
+.rnd:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rnd:active{transform:scale(.93)}
+.arc__idx{font-size:.62rem;letter-spacing:.3em;color:var(--muted-2);min-width:74px;text-align:center}
+
+/* --- hand knotted coverflow --- */
+.knot{background:var(--ink);color:#fff;overflow:hidden}
+.knot .sec-title,.knot .sec-head .link-u{color:#fff}
+.knot .eyebrow,.knot .lede{color:rgba(255,255,255,.6)}
+.knot .eyebrow::before{background:rgba(255,255,255,.35)}
+.knot .link-u{color:#fff}
+.knot__bg{position:absolute;inset:0;opacity:.16;background-size:cover;background-position:center;will-change:transform;pointer-events:none}
+.knot__stage{position:relative;height:clamp(390px,50vw,540px);perspective:1700px;margin-top:clamp(2rem,4vw,3.4rem);cursor:grab;touch-action:pan-y}
+.knot__stage:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+.knot__stage.drag{cursor:grabbing}
+.knot__track{position:absolute;inset:0;transform-style:preserve-3d}
+.knot__track .pcard{position:absolute;left:50%;top:50%;width:clamp(160px,17.5vw,240px);will-change:transform;backface-visibility:hidden}
+.knot__track .pcard__m{background:#2b2926;box-shadow:0 30px 60px -18px rgba(0,0,0,.65)}
+.knot__track .pcard__b h3{color:#fff}
+.knot__track .pcard__b .pcard__price{color:rgba(255,255,255,.55);border-bottom-color:rgba(255,255,255,.28)}
+.knot__track .pcard__b .pcard__price:hover,.knot__track .pcard__b .pcard__price:focus-visible{color:#fff;border-bottom-color:#fff}
+.knot__bar{position:relative;height:1px;background:rgba(255,255,255,.16);margin-top:clamp(1.6rem,3vw,2.4rem)}
+.knot__bar i{position:absolute;top:-1px;left:0;height:3px;background:#fff;transition:width .3s var(--ease),left .3s var(--ease)}
+.knot__hud{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;margin-top:1.6rem}
+.knot__hud .rnd{border-color:rgba(255,255,255,.32);color:#fff}
+.knot__hud .rnd:hover{background:#fff;color:var(--ink);border-color:#fff}
+
+/* --- hand tufted drag rail --- */
+.rail{position:relative}
+.rail__t{display:flex;gap:clamp(1rem,1.8vw,1.8rem);overflow-x:auto;scroll-snap-type:x mandatory;
+  padding-bottom:1.6rem;cursor:grab;scrollbar-width:none;-ms-overflow-style:none;overscroll-behavior-x:contain}
+.rail__t::-webkit-scrollbar{display:none}
+.rail__t.drag{cursor:grabbing;scroll-snap-type:none}
+.rail__t.drag *{pointer-events:none}
+.rail__t .pcard{flex:0 0 clamp(210px,22vw,290px);scroll-snap-align:center}
+.rail__prog{position:relative;height:1px;background:var(--rule);margin-top:.6rem}
+.rail__prog i{position:absolute;top:-1px;left:0;height:3px;background:var(--ink);width:22%;transition:width .2s linear,left .2s linear}
+.rail__foot{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;margin-top:1.5rem;flex-wrap:wrap}
+
+/* --- gallery grid (uniform detail cards) --- */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1rem,2vw,2.2rem);align-items:start}
+.gal .pcard{grid-column:span 3;margin-top:0;--ar:7/10}
+.gal .pcard__m{aspect-ratio:var(--ar,7/10)}
+
+/* ========================================================================
+   D — CRAFT / BRAND STORY (light - dark pinned sequence)
+   ======================================================================== */
+.story{background:var(--paper-2)}
+.story__row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center;
+  padding-block:clamp(3rem,7vw,6rem);border-top:1px solid var(--rule)}
+.story__row:nth-child(even) .story__img{order:2}
+.story__img{position:relative;overflow:hidden;aspect-ratio:5/4}
+.story__img img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
+.story__txt h3{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(1.6rem,3.2vw,2.9rem);line-height:1.04;margin:1rem 0 1.4rem}
+.story__txt h3 span{display:block;color:var(--muted-2)}
+.story__txt p{margin:0;max-width:46ch}
+.stand{background:var(--ink);color:#fff;overflow:hidden;position:relative;--muted-2:var(--muted-lt);--muted:var(--muted-lt)}
+.stand .wrap{position:relative;z-index:2}
+.stand h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(2rem,5vw,4.2rem);line-height:1;margin:0}
+.stand h2 em{font-style:italic;text-transform:none;color:var(--bronze)}
+.mission{display:grid;grid-template-columns:auto 1fr;gap:clamp(1.5rem,4vw,4rem);align-items:center;
+  padding-block:clamp(3rem,7vw,6rem);border-top:1px solid var(--rule-dark)}
+.mission__k{font-family:var(--serif);font-size:clamp(2.4rem,7vw,6rem);line-height:.9;text-transform:uppercase;color:rgba(255,255,255,.16);margin:0}
+.mission__b{font-family:var(--serif);font-weight:300;font-size:clamp(1.2rem,2.4vw,2.1rem);line-height:1.35;margin:0;max-width:24ch}
+.exp{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,4rem);padding-block:clamp(3rem,6vw,5rem);border-top:1px solid var(--rule-dark)}
+.exp__i{position:relative}
+.exp__i .n{font-size:.6rem;letter-spacing:.3em;color:var(--muted-2);margin:0 0 1.1rem}
+.exp__i h3{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(1.2rem,2vw,1.9rem);line-height:1.1;margin:0}
+.exp__i h3 span{display:block;color:var(--muted-2)}
+.exp__i svg{margin-top:1.5rem;width:100%;height:60px;overflow:visible}
+.exp__i svg path,.exp__i svg line,.exp__i svg circle{fill:none;stroke:rgba(255,255,255,.35);stroke-width:1}
+.exp__i svg .draw{stroke:var(--bronze);stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 2.2s var(--ease-io)}
+.exp__i.in svg .draw{stroke-dashoffset:0}
+.weave{width:100%;height:auto;display:block;opacity:.4}
+
+/* --- discover inside collection rail --- */
+.inside{display:flex;gap:clamp(.8rem,1.4vw,1.4rem);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1.2rem;cursor:grab;scrollbar-width:none}
+.inside::-webkit-scrollbar{display:none}
+.inside.drag{cursor:grabbing;scroll-snap-type:none}
+.inside.drag *{pointer-events:none}
+.inside__c{position:relative;flex:1 0 0;min-width:190px;max-width:330px;aspect-ratio:3/4;overflow:hidden;scroll-snap-align:center;text-decoration:none;color:#fff;background:var(--ink)}
+.inside__c img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.3s var(--ease)}
+.inside__c::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(18,17,16,.8),transparent 62%)}
+.inside__c:hover img{transform:scale(1.07)}
+.inside__c h3{position:absolute;left:1.2rem;right:1.2rem;bottom:1.2rem;z-index:2;margin:0;font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(1.2rem,1.9vw,1.7rem);line-height:1.02}
+
+/* ========================================================================
+   E — CUSTOM RUG EXPERIENCE
+   ======================================================================== */
+.custom{position:relative;overflow:hidden;background:var(--paper)}
+.custom__bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.16;will-change:transform;pointer-events:none}
+.custom .wrap{position:relative;z-index:2}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,3.5vw,3.5rem);margin-top:clamp(2.5rem,5vw,4rem);position:relative}
+.steps::before{content:"";position:absolute;top:34px;left:6%;right:6%;height:1px;background:var(--rule)}
+.steps__p{position:absolute;top:34px;left:6%;height:1px;background:var(--bronze);width:0;transition:width 1.6s var(--ease-io) .3s}
+.steps.in .steps__p{width:88%}
+.step{position:relative;padding-top:0}
+.step__n{width:68px;height:68px;border-radius:50%;border:1px solid var(--rule);background:var(--paper);display:grid;place-items:center;
+  font-family:var(--serif);font-size:1.35rem;position:relative;z-index:2;margin-bottom:1.6rem;transition:background .5s var(--ease),color .5s var(--ease),border-color .5s}
+.step:hover .step__n{background:var(--ink);color:#fff;border-color:var(--ink)}
+.step h3{font-family:var(--sans);font-weight:500;font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;margin:0 0 .9rem}
+.step p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.8;max-width:34ch}
+.custom__cta{margin-top:clamp(3rem,6vw,5rem);display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center}
+
+/* --- form (posts to the live contact page; no fake success) --- */
+.enq{margin-top:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--rule);padding-top:clamp(2rem,4vw,3rem);
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.8rem,4vw,4rem)}
+.enq h3{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(1.4rem,2.4vw,2.1rem);line-height:1.1;margin:.9rem 0 1rem}
+.enq p{color:var(--muted);font-size:.9rem;line-height:1.8;margin:0;max-width:38ch}
+.enq__f{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 1.4rem;
+  /* Solid sheet behind the form: the faded photograph in this section made
+     the thin rules and small labels hard to read. */
+  background:var(--paper);border:1px solid var(--rule);
+  padding:clamp(1.35rem,2.4vw,2.15rem)}
+.fld{position:relative;display:flex;flex-direction:column}
+.fld--full{grid-column:1/-1}
+.fld label{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:.55rem}
+.fld input,.fld textarea,.fld select{
+  font-family:var(--sans);font-size:1rem;line-height:1.45;color:var(--ink);
+  background:var(--white);border:1px solid #9a9184;border-radius:0;
+  padding:.82rem .95rem;transition:border-color .3s,box-shadow .3s}
+.fld input:hover,.fld textarea:hover,.fld select:hover{border-color:#6f675b}
+.fld input:focus,.fld textarea:focus,.fld select:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(31,30,28,.12)}
+.fld textarea{resize:vertical;min-height:104px}
+.enq__note{grid-column:1/-1;font-size:.78rem;color:var(--muted);letter-spacing:.02em;margin:0;max-width:44ch}
+
+/* ========================================================================
+   F — TRADE BAND + FINAL CONVERSION
+   ======================================================================== */
+.trade{position:relative;color:#fff;overflow:hidden;background:var(--ink)}
+.trade__bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.4;will-change:transform;pointer-events:none}
+.trade__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,17,16,.9),rgba(18,17,16,.55))}
+.trade .wrap{position:relative;z-index:2}
+.trade__in{max-width:58ch;padding-block:clamp(4rem,9vw,8rem)}
+.trade h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(1.9rem,4.4vw,3.6rem);line-height:1.02;margin:1rem 0 1.4rem}
+.trade p{color:rgba(255,255,255,.74);max-width:48ch;margin:0 0 2.2rem;line-height:1.85;font-weight:300}
+.final{text-align:center}
+.final__img{position:relative;overflow:hidden;aspect-ratio:21/9;margin-bottom:clamp(2.5rem,5vw,4rem)}
+.final__img img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
+.final h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;font-size:clamp(2rem,5.6vw,4.8rem);line-height:1;margin:0 auto;max-width:18ch}
+.final h2 em{font-style:italic;text-transform:none;color:var(--bronze)}
+.final p{color:var(--muted);max-width:52ch;margin:1.6rem auto 0;line-height:1.85}
+.final__cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:clamp(2.2rem,4vw,3.2rem)}
+.final__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);margin-top:clamp(3rem,6vw,5rem);border:1px solid var(--rule)}
+.final__grid a{background:var(--paper);padding:clamp(1.6rem,3vw,2.6rem) 1.2rem;text-decoration:none;display:flex;flex-direction:column;gap:.7rem;
+  align-items:center;text-align:center;transition:background .5s var(--ease),color .5s var(--ease)}
+.final__grid a:hover{background:var(--ink);color:#fff}
+.final__grid span{font-family:var(--serif);text-transform:uppercase;font-size:clamp(1rem,1.5vw,1.35rem);line-height:1.1}
+.final__grid small{font-size:.56rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted-2);transition:color .5s}
+.final__grid a:hover small{color:rgba(255,255,255,.6)}
+.final__grid svg{width:16px;margin-top:.2rem}
+
+/* ========================================================================
+   FOOTER
+   ======================================================================== */
+.ftr{background:var(--ink);color:rgba(255,255,255,.72);padding-top:clamp(3.5rem,7vw,6rem)}
+.ftr a{color:rgba(255,255,255,.72);text-decoration:none;transition:color .35s}
+.ftr a:hover{color:#fff}
+.ftr__top{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:clamp(1.5rem,3vw,3rem);padding-bottom:clamp(2.5rem,5vw,4rem)}
+.ftr__brand > svg{width:150px;height:auto;margin-bottom:1.4rem}
+.ftr__brand p{font-size:.84rem;line-height:1.9;color:rgba(255,255,255,.55);max-width:34ch;margin:0}
+.ftr h3{font-family:var(--sans);font-weight:500;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:#fff;margin:0 0 1.3rem}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.ftr li a{font-size:.8rem;letter-spacing:.1em}
+.ftr__bar{border-top:1px solid var(--rule-dark);padding-block:1.6rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;
+  font-size:.7rem;letter-spacing:.14em;color:rgba(255,255,255,.6)}
+.ftr__pay{width:150px;opacity:.75}
+.ftr__legal{display:flex;gap:1.6rem;flex-wrap:wrap}
+.ftr__social{display:flex;gap:.55rem;align-items:center}
+.ftr__social a{width:44px;height:44px;border:1px solid var(--rule-dark);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;line-height:0;transition:background .4s,color .4s,border-color .4s}
+.ftr__social a:hover,.ftr__social a:focus-visible{background:#fff;color:var(--ink);border-color:#fff}
+.ftr__social svg{width:18px;height:18px;display:block;margin:0;flex-shrink:0}
+
+/* ========================================================================
+   SEARCH OVERLAY + CUSTOM CURSOR
+   ======================================================================== */
+.search{position:fixed;inset:0;z-index:150;background:rgba(31,30,28,.97);display:grid;place-items:center;
+  opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility .5s;color:#fff}
+.search.open{opacity:1;visibility:visible}
+.search__f{width:min(760px,88vw)}
+.search__f label{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.search__row{display:flex;align-items:center;gap:1rem;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:1rem;margin-top:1.2rem}
+.search__row input{flex:1;background:transparent;border:0;color:#fff;font-family:var(--serif);font-size:clamp(1.4rem,3.4vw,2.6rem);font-weight:300;padding:0}
+.search__row input:focus{outline:none}
+.search__row button{background:none;border:0;cursor:pointer;color:#fff;padding:.4rem}
+.search__row svg{width:22px}
+.search__hint{margin-top:1.4rem;font-size:.72rem;color:rgba(255,255,255,.45);letter-spacing:.1em}
+.search__close{position:absolute;top:1.4rem;right:var(--gut)}
+.cursor{position:fixed;top:0;left:0;width:9px;height:9px;border-radius:50%;background:var(--ink);pointer-events:none;z-index:250;
+  transform:translate(-50%,-50%);transition:width .3s var(--ease),height .3s var(--ease),background .3s,opacity .3s;mix-blend-mode:difference;opacity:0}
+.cursor.on{opacity:1}
+.cursor.big{width:56px;height:56px;background:rgba(255,255,255,.9)}
+@media (hover:none),(pointer:coarse){.cursor{display:none}}
+
+/* to-top */
+.totop{position:fixed;right:var(--gut);bottom:1.6rem;z-index:110;width:46px;height:46px;border-radius:50%;background:var(--ink);color:#fff;
+  border:0;display:grid;place-items:center;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);
+  transition:opacity .45s var(--ease),transform .45s var(--ease),visibility .45s}
+.totop.on{opacity:1;visibility:visible;transform:none}
+.totop svg{width:15px}
+
+/* ========================================================================
+   RESPONSIVE
+   ======================================================================== */
+@media (max-width:1180px){
+  .nav{gap:1rem}
+  .nav a{font-size:.6rem;letter-spacing:.16em}
+  .nav .trade{padding:.5rem .8rem}
+}
+@media (max-width:1024px){
+  :root{--head-h:64px}
+  .nav--l,.nav--r{display:none}
+  .burger{display:block;justify-self:start}
+  .hdr__in{grid-template-columns:1fr auto 1fr}
+  .utils{justify-self:end;margin:0}
+  .intro,.story__row,.enq{grid-template-columns:1fr}
+  .story__row:nth-child(even) .story__img{order:0}
+  .coll{grid-template-columns:1fr 1fr}
+  .coll__c:nth-child(3){margin-top:0;grid-column:1/-1;aspect-ratio:16/10}
+  .steps,.exp{grid-template-columns:1fr}
+  .steps::before,.steps__p{display:none}
+  .step{border-top:1px solid var(--rule);padding-top:1.6rem}
+  .final__grid{grid-template-columns:1fr 1fr}
+  .ftr__top{grid-template-columns:1fr 1fr}
+  .hero__float{display:none}
+  .menu__in{grid-template-columns:1fr;align-items:start}
+  .menu__side{border-left:0;border-top:1px solid var(--rule-dark);padding-left:0;padding-top:2rem}
+  /* comfortable touch targets */
+  .ftr li a,.menu__side a{display:inline-flex;align-items:center;min-height:44px}
+  .ftr ul{gap:.1rem}
+  .menu__side ul{gap:.1rem}
+  .ftr__legal{gap:1rem}
+  .ftr__legal a{min-height:44px;display:inline-flex;align-items:center}
+  .link-u{min-height:44px;padding-top:.5rem}
+  /* hero masthead: single column */
+  .hero__copy{max-width:100%}
+  .hero__vert{display:none}
+}
+@media (max-width:720px){
+  .gal .pcard,.gal .pcard:nth-child(n){grid-column:span 6;margin-top:0;--ar:3/4}
+  .final__img{aspect-ratio:4/3}
+  .enq__f{grid-template-columns:1fr}
+  .hero__scroll>span:first-child{display:none}
+  .sec-head{align-items:flex-start}
+  .arc__stage{height:420px}
+  .knot__stage{height:400px}
+  .mission{grid-template-columns:1fr}
+  .final__grid{grid-template-columns:1fr}
+  /* masthead foot stacks: copy then CTA */
+  .hero__foot{flex-direction:column;align-items:flex-start;gap:1.75rem}
+  .hero__in{padding-bottom:clamp(6rem,14vh,9rem)}
+  .hero__count{display:none}
+}
+@media (max-width:520px){
+  .coll{grid-template-columns:1fr}
+  .coll__c:nth-child(n){margin-top:0;aspect-ratio:3/4}
+  .ftr__top{grid-template-columns:1fr}
+  .btn{padding:.95rem 1.6rem;letter-spacing:.2em}
+}
+
+/* ========================================================================
+   REDUCED MOTION
+   ======================================================================== */
+@media (prefers-reduced-motion:reduce){
+  html:focus-within{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  [data-rv]{opacity:1!important;transform:none!important;clip-path:none!important}
+  .marq__t{animation:none}
+  .hero__float{opacity:1}
+  .cursor{display:none}
+  .thread .draw,.arc__svg path,.exp__i svg .draw{stroke-dashoffset:0}
+}
+
+/* ========================================================================
+   MULTI-PAGE SHELL: page heads, listings, editorial page components
+   ======================================================================== */
+.phead{position:relative;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff;
+  min-height:clamp(440px,64vh,720px);display:flex;align-items:flex-end;
+  padding:calc(var(--head-h) + clamp(3.5rem,7vw,6rem)) 0 clamp(2.75rem,5vw,4.5rem)}
+.phead--plain{min-height:clamp(340px,46vh,500px)}
+.phead__bg{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center 45%;opacity:.55;pointer-events:none}
+.phead::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(16,15,13,.62) 0%,rgba(16,15,13,.18) 38%,rgba(16,15,13,.92) 100%)}
+.phead--plain::after{background:linear-gradient(180deg,rgba(16,15,13,.45),rgba(16,15,13,.95))}
+.phead__in{width:100%;position:relative;z-index:1}
+.crumb{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;font-size:.6rem;letter-spacing:.26em;
+  text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:1.4rem}
+.crumb a{text-decoration:none;color:rgba(255,255,255,.82)}
+.crumb a:hover{color:#fff}
+.phead h1{font-family:var(--serif);font-weight:300;text-transform:uppercase;line-height:.92;letter-spacing:-.015em;
+  font-size:clamp(2.9rem,8vw,7rem);margin:0 0 1.4rem;max-width:16ch;color:#fff}
+.phead h1 em{font-style:italic;text-transform:none;color:var(--bronze)}
+.phead .lede{color:rgba(255,255,255,.76);max-width:62ch;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2rem}
+.chips a{display:inline-flex;align-items:center;min-height:44px;padding:.5rem 1.05rem;border:1px solid rgba(255,255,255,.3);
+  text-decoration:none;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.86);
+  transition:background .4s,color .4s,border-color .4s}
+.chips a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
+.chips a[aria-current="page"]{background:#fff;color:var(--ink);border-color:#fff}
+
+/* sticky method nav used on the shop page */
+.catbar{position:sticky;top:66px;z-index:60;background:rgba(246,243,238,.96);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--rule);box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.catbar__in{display:flex;align-items:center;gap:clamp(1.2rem,3vw,2.6rem);overflow-x:auto;
+  scrollbar-width:none;padding-block:.1rem}
+.catbar__in::-webkit-scrollbar{display:none}
+.catbar a{display:inline-flex;align-items:center;min-height:56px;white-space:nowrap;text-decoration:none;
+  font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);position:relative}
+.catbar a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);
+  transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.catbar a:hover,.catbar a[aria-current="page"]{color:var(--ink)}
+.catbar a:hover::after,.catbar a[aria-current="page"]::after{transform:scaleX(1);transform-origin:left}
+
+/* uniform product grid for category pages */
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(1.4rem,2.6vw,2.6rem) clamp(.9rem,1.8vw,1.8rem)}
+.pgrid .pcard__b h3{font-size:.78rem}
+
+/* count / meta line above a grid */
+.meta-line{display:flex;flex-wrap:wrap;gap:1rem 1.6rem;justify-content:space-between;align-items:flex-end;
+  margin-bottom:clamp(2rem,4vw,3rem);padding-bottom:1rem;border-bottom:1px solid var(--rule)}
+.meta-line p{margin:0}
+.meta-line strong{font-family:var(--serif);font-size:1.5rem;font-weight:400;font-style:italic;color:var(--ink)}
+
+/* editorial feature rows */
+.feature{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,6vw,6rem);align-items:center;
+  padding-block:clamp(2.5rem,5vw,4.5rem);border-top:1px solid var(--rule)}
+.feature:last-child{border-bottom:1px solid var(--rule)}
+.feature--flip .feature__img{order:2}
+.feature__img{position:relative;overflow:hidden;aspect-ratio:5/4;background:var(--paper-2)}
+.feature__img img{width:100%;height:100%;object-fit:cover;display:block}
+.feature__txt .eyebrow{margin:0 0 .9rem}
+.feature__txt h3{font-family:var(--serif);font-weight:300;text-transform:uppercase;line-height:1.04;
+  font-size:clamp(1.7rem,3.4vw,3rem);margin:0 0 1.2rem}
+.feature__txt h3 em{font-style:italic;text-transform:none;color:var(--bronze)}
+.feature__txt p{margin:0 0 1rem;max-width:50ch;color:var(--muted);line-height:1.85}
+.feature__txt p:last-child{margin-bottom:0}
+
+/* pull quote */
+.pull{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding-block:clamp(3rem,6vw,5rem);margin-block:clamp(3rem,6vw,5rem)}
+.pull p{font-family:var(--serif);font-weight:300;font-size:clamp(1.7rem,4vw,3.4rem);
+  line-height:1.16;margin:0;max-width:26ch}
+.pull cite{display:block;margin-top:1.6rem;font-style:normal;font-size:.62rem;
+  letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+
+/* value list */
+.vlist{list-style:none;margin:1.6rem 0 0;padding:0;border-top:1px solid var(--rule)}
+.vlist li{display:grid;grid-template-columns:auto 1fr;gap:1rem 1.2rem;padding:1.15rem 0;border-bottom:1px solid var(--rule)}
+.vlist .n{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--bronze)}
+.vlist b{display:block;font-weight:500;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.25rem}
+.vlist span{display:block;color:var(--muted);font-size:.9rem;line-height:1.75}
+
+/* events */
+.events{display:grid;gap:0}
+.event{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:center;
+  padding-block:clamp(2.5rem,5vw,4rem);border-top:1px solid var(--rule)}
+.event:last-child{border-bottom:1px solid var(--rule)}
+.event__img{position:relative;overflow:hidden;aspect-ratio:16/10;background:var(--paper-2)}
+.event__img img{width:100%;height:100%;object-fit:contain;display:block}
+.event__date{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,4.4vw,3.4rem);line-height:1;margin:0 0 .8rem}
+.event__date em{font-style:italic;color:var(--bronze);font-size:.55em}
+.event h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;
+  font-size:clamp(1.6rem,3vw,2.6rem);margin:0 0 1.2rem;line-height:1.05}
+.event__meta{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;gap:.6rem}
+.event__meta li{display:flex;gap:1rem;font-size:.78rem;letter-spacing:.08em;color:var(--muted);
+  border-top:1px solid var(--rule);padding-top:.6rem}
+.event__meta b{min-width:5rem;font-weight:500;text-transform:uppercase;letter-spacing:.16em;
+  font-size:.6rem;color:var(--ink);padding-top:.15rem}
+
+/* journal */
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(2.2rem,4vw,4rem) clamp(1.2rem,2.5vw,2.4rem)}
+.post{display:flex;flex-direction:column;text-decoration:none;color:inherit;border-top:1px solid var(--rule);padding-top:1.2rem}
+.post__img{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--paper-2);margin-bottom:1.2rem}
+.post__img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.1s var(--ease)}
+.post:hover .post__img img{transform:scale(1.04)}
+.post__meta{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+  margin:0 0 .7rem;display:flex;gap:.8rem;flex-wrap:wrap}
+.post h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.25rem,1.9vw,1.65rem);
+  line-height:1.16;margin:0 0 .7rem}
+.post p{font-size:.85rem;line-height:1.75;color:var(--muted);margin:0 0 1.2rem}
+.post .link-u{margin-top:auto;align-self:flex-start}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.office{border:1px solid var(--rule);background:#fff;padding:clamp(1.4rem,2.6vw,2rem);margin-bottom:1.2rem}
+.office h3{font-family:var(--serif);font-weight:400;text-transform:uppercase;font-size:1.35rem;margin:0 0 .8rem}
+.office p{margin:0 0 .35rem;color:var(--muted);font-size:.9rem;line-height:1.75}
+.office a{text-decoration:none;border-bottom:1px solid var(--rule);transition:border-color .3s}
+.office a:hover{border-color:var(--ink)}
+.office .eyebrow{display:block;margin-bottom:.8rem}
+
+/* catalogue cards */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,2.4rem)}
+.catcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--rule);
+  text-decoration:none;color:inherit;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.catcard:hover{transform:translateY(-4px);box-shadow:0 24px 40px -30px rgba(0,0,0,.5)}
+.catcard__img{aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.catcard__img img{width:100%;height:100%;object-fit:cover;display:block}
+.catcard__b{padding:clamp(1.2rem,2vw,1.8rem);display:flex;flex-direction:column;flex:1}
+.catcard h2,.catcard h3{font-family:var(--serif);font-weight:400;text-transform:uppercase;font-size:1.4rem;margin:0 0 .7rem}
+.catcard p{font-size:.87rem;line-height:1.75;color:var(--muted);margin:0 0 1.4rem}
+.catcard .link-u{margin-top:auto;align-self:flex-start}
+
+/* closing call to action */
+.pcta{background:var(--paper-2);text-align:center}
+.pcta .wrap{max-width:940px}
+.pcta h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;
+  font-size:clamp(2rem,4.6vw,3.8rem);line-height:1.02;margin:.8rem 0 1rem}
+.pcta h2 em{font-style:italic;text-transform:none;color:var(--bronze)}
+.pcta p{color:var(--muted);max-width:54ch;margin:0 auto 2rem;line-height:1.85}
+.pcta .btn{margin:.3rem}
+
+/* prose */
+.prose{max-width:72ch}
+.prose p{color:var(--muted);line-height:1.9;margin:0 0 1.2rem}
+.prose h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;
+  font-size:clamp(1.6rem,3vw,2.4rem);margin:2.4rem 0 1rem;line-height:1.06}
+.prose h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;margin:2rem 0 .7rem}
+.prose strong{color:var(--ink);font-weight:500}
+
+/* small honest note */
+.note{font-size:.78rem;line-height:1.7;color:var(--muted);border-left:1px solid var(--bronze);
+  padding-left:1rem;margin:1.4rem 0 0;max-width:56ch}
+
+/* home shop teaser */
+.teaser{position:relative;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff}
+.teaser__bg{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center;opacity:.42;pointer-events:none}
+.teaser::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(16,15,13,.94),rgba(16,15,13,.32))}
+.teaser__in{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap;
+  padding-block:clamp(4rem,9vw,8rem)}
+.teaser h2{font-family:var(--serif);font-weight:300;text-transform:uppercase;
+  font-size:clamp(2rem,5vw,4.2rem);line-height:.98;margin:.8rem 0 0;max-width:15ch}
+.teaser p{color:rgba(255,255,255,.72);max-width:46ch;margin:1.2rem 0 0;line-height:1.8}
+
+/* responsive additions */
+@media (max-width:1100px){
+  .pgrid{grid-template-columns:repeat(3,1fr)}
+  .posts{grid-template-columns:1fr 1fr}
+  .cats{grid-template-columns:1fr 1fr}
+}
+@media (max-width:1024px){
+  .phead{min-height:clamp(380px,56vh,600px)}
+  .feature,.event,.contact{grid-template-columns:1fr}
+  .feature--flip .feature__img{order:0}
+  .feature__img,.event__img{aspect-ratio:16/10}
+}
+@media (max-width:720px){
+  .pgrid{grid-template-columns:1fr 1fr}
+  .posts,.cats{grid-template-columns:1fr}
+  .phead h1{max-width:100%}
+  .teaser__in{align-items:flex-start}
+}
+@media (max-width:520px){
+  .chips a{font-size:.55rem;padding:.45rem .8rem;min-height:44px}
+}
+/* journal index */
+.journal{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(2.5rem,6vw,6rem);border-bottom:1px solid var(--rule)}
+.jpost{display:grid;grid-template-columns:1fr 180px;gap:1.4rem;padding-block:clamp(1.5rem,3vw,2.2rem);
+  border-top:1px solid var(--rule);text-decoration:none;color:inherit;align-items:start}
+.jpost--noimg{grid-template-columns:1fr}
+.jpost__img{aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.jpost__img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s var(--ease)}
+.jpost:hover .jpost__img img{transform:scale(1.05)}
+.jpost__meta{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+  margin:0 0 .7rem;display:flex;gap:.8rem;flex-wrap:wrap}
+.jpost__meta span::before{content:"/";margin-right:.8rem;color:var(--rule)}
+.jpost h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.3rem,2.2vw,1.9rem);
+  line-height:1.14;margin:0 0 .6rem}
+.jpost p{font-size:.85rem;line-height:1.7;color:var(--muted);margin:0 0 1rem}
+.jpost .link-u{font-size:.58rem}
+
+/* form card */
+.formcard{border:1px solid var(--rule);background:#fff;padding:clamp(1.5rem,3vw,2.4rem)}
+.formcard .lede{margin-bottom:0}
+.formcard .enq__f{margin-top:1.6rem;gap:1.1rem 1.2rem}
+.formcard .btn{min-height:48px}
+.btn--wa{--bg:#128C7E;--fg:#fff;border-color:#128C7E}
+.btn--wa::before{background:#0B6B61}
+.btn--wa:hover{color:#fff;border-color:#0B6B61}
+.btn--wa:hover svg{transform:none}
+.btn--wa:focus-visible{outline:2px solid #128C7E;outline-offset:3px}
+.enq__actions{display:flex;gap:.9rem;align-items:center;flex-wrap:wrap}
+
+/* ---------------- product detail page ---------------- */
+.pdp{padding:calc(var(--head-h) + clamp(1.6rem,3vw,2.6rem)) 0 clamp(3rem,6vw,5rem)}
+.pdp__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.pdp__media{display:grid;gap:1rem;position:sticky;top:calc(var(--head-h) + 1rem)}
+.pdp__figure{position:relative;margin:0;background:var(--paper-2);aspect-ratio:7/10;overflow:hidden}
+.pdp__figure--alt{aspect-ratio:7/10}
+.pdp__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pdp__info .crumb{margin:0 0 1.4rem}
+.pdp__title{font-family:var(--serif);font-weight:300;text-transform:uppercase;letter-spacing:-.015em;line-height:.92;
+  font-size:clamp(2.4rem,5.2vw,4.4rem);margin:.35rem 0 1rem}
+.pdp__price{margin:0 0 1.4rem}
+.pdp__price a{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);text-decoration:none;
+  border-bottom:1px solid rgba(31,30,28,.28);padding-bottom:.2rem;transition:color .35s,border-color .35s}
+.pdp__price a:hover,.pdp__price a:focus-visible{color:var(--ink);border-bottom-color:currentColor}
+.pdp__lede{margin-bottom:1.8rem}
+.pdp__lede p{margin:0;color:var(--muted);line-height:1.9}
+.pdp__specs{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0 0 1.8rem;border-top:1px solid var(--rule)}
+.pdp__specs > div{display:grid;gap:.35rem;padding:1rem 0;border-bottom:1px solid var(--rule)}
+.pdp__specs dt{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.pdp__specs dd{margin:0;font-family:var(--serif);font-size:1.15rem;font-weight:400;letter-spacing:.02em}
+.pdp__sizes{margin:0 0 1.8rem}
+.pdp__sizes ul{list-style:none;margin:.7rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.55rem}
+.pdp__sizes li{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--rule);
+  padding:.65rem .9rem;background:#fff;color:var(--muted)}
+.pdp__cta{display:flex;flex-wrap:wrap;gap:.9rem;margin:0 0 1.4rem}
+.pdp__enquire{background:linear-gradient(180deg,var(--paper-2) 0%,var(--paper) 42%)}
+.pdp__more .sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:clamp(1.6rem,3vw,2.4rem)}
+.pdp__more .sec-title{margin:0}
+.pdp__related{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(1rem,2vw,1.6rem)}
+@media (max-width:1100px){
+  .pdp__related{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .pdp__grid{grid-template-columns:1fr}
+  .pdp__media{position:static}
+  .pdp__specs{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .pdp__related{grid-template-columns:1fr 1fr}
+  .pdp__cta .btn{width:100%;justify-content:center}
+}
+
+@media (max-width:900px){
+  .journal{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .jpost{grid-template-columns:1fr;gap:1rem}
+  .jpost__img{order:-1;aspect-ratio:16/9}
+}
+/* hero line masks: let long headings wrap on narrow screens without clipping */
+@media (max-width:1024px){
+  .hero h1 .ln{overflow:visible}
+  .hero h1 .ln>span{transform:translateY(14px);opacity:0}
+  .hero__slide.active h1 .ln>span{transform:none;opacity:1}
+}
+</style>
+</head>
+<body class="page-product" data-product="canyon">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ============================ HEADER ============================ -->
+<header class="hdr" id="hdr">
+  <div class="hdr__in">
+    <nav class="nav nav--l" aria-label="Primary left">
+      <a href="../../index.html#/shop">Shop</a>
+      <a href="../../index.html#/event">Event</a>
+      <a href="../../index.html#/custom-rugs">Custom</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+
+    <a class="brand" href="../../index.html" aria-label="Seraj Rugs &#x2014; home"><span class="brand-mark"></span></a>
+
+    <div class="nav nav--r">
+      <a class="trade" href="../../index.html#/trade-program"><span>B2B Trade</span></a>
+      <a href="../../index.html#/blog">Blog</a>
+      <a href="../../index.html#/contact">Reach us</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ FULL-SCREEN MENU ============================ -->
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Site menu" inert>
+  <button class="icon-btn menu__close" id="menuClose" type="button" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="menu__in">
+    <nav aria-label="Full menu">
+      <ul class="menu__list">
+        <li><a href="../../index.html#/shop"><em>01</em>Shop</a></li>
+        <li><a href="../../index.html#/hand-knotted"><em>02</em>Hand Knotted</a></li>
+        <li><a href="../../index.html#/hand-tufted"><em>03</em>Hand Tufted</a></li>
+        <li><a href="../../index.html#/custom-rugs"><em>04</em>Custom Rugs</a></li>
+        <li><a href="../../index.html#/trade-program"><em>05</em>Trade Program</a></li>
+        <li><a href="../../index.html#/event"><em>06</em>Event</a></li>
+        <li><a href="../../index.html#/blog"><em>07</em>Blog</a></li>
+      </ul>
+    </nav>
+    <div class="menu__side">
+      <p class="mtitle">Collections</p>
+      <ul>
+        <li><a href="../../index.html#/modern">Modern</a></li>
+        <li><a href="../../index.html#/minimal">Minimal</a></li>
+        <li><a href="../../index.html#/classic">Classic</a></li>
+        <li><a href="../../index.html#/best-sellers">Best Sellers</a></li>
+      </ul>
+      <p class="mtitle">Company</p>
+      <ul>
+        <li><a href="../../index.html#/portfolio">Portfolio</a></li>
+        <li><a href="../../index.html#/about">About us</a></li>
+        <li><a href="../../index.html#/contact">Contact us</a></li>
+      </ul>
+      <p class="menu__addr">Looking for advice?<br>
+        <a href="../../index.html#/contact">Contact Us</a><br>
+        <a href="mailto:contact@serajrugs.com">contact@serajrugs.com</a><br>
+        <a href="tel:+918384012977">+91 8384012977</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section class="pdp" aria-labelledby="pdpTitle">
+    <div class="wrap pdp__grid">
+      <div class="pdp__media" data-rv>
+        <figure class="pdp__figure">
+          <img
+            class="pdp__img"
+            src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/Untitled-1-56.webp"
+            srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/micro_Untitled-1-56.webp 70w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/small_Untitled-1-56.webp 140w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/medium_Untitled-1-56.webp 280w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/large_Untitled-1-56.webp 420w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/xlarge_Untitled-1-56.webp 700w"
+            sizes="(max-width: 900px) 92vw, 46vw"
+            alt="Canyon — handmade rug by Seraj Rugs"
+            width="700"
+            height="1000"
+            fetchpriority="high"
+            decoding="async">
+          <span class="pcard__badge">New</span>
+        </figure>
+        
+      </div>
+
+      <div class="pdp__info">
+        <nav class="crumb" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a><span aria-hidden="true">/</span>
+          <a href="../../index.html#/shop">Shop</a><span aria-hidden="true">/</span>
+          <a href="../../index.html#/hand-knotted">Hand Knotted</a><span aria-hidden="true">/</span>
+          <span>Canyon</span>
+        </nav>
+        <p class="eyebrow" data-rv>Hand Knotted</p>
+        <h1 id="pdpTitle" class="pdp__title" data-rv>Canyon</h1>
+        <p class="pdp__price"><a href="#enquire">Enquire for pricing</a></p>
+        <div class="prose pdp__lede" data-rv>
+          <p>Knotted by hand on traditional looms, each piece carries the density and clarity that define the Seraj hand-knotted atelier. <strong>Canyon</strong> is available to trade and private clients; pricing is shared after login or by enquiry so every quote can reflect size, fibre, and finish.</p>
+        </div>
+
+        <dl class="pdp__specs" data-rv>
+          <div><dt>Technique</dt><dd>Hand knotted</dd></div>
+          <div><dt>Material</dt><dd>New Zealand wool &amp; silk blend</dd></div>
+          <div><dt>Pile</dt><dd>Low to medium pile</dd></div>
+          <div><dt>Origin</dt><dd>Kathmandu atelier, Nepal</dd></div>
+          <div><dt>Collection</dt><dd>Hand Knotted</dd></div>
+          <div><dt>Sizing</dt><dd>Standard &amp; fully custom</dd></div>
+        </dl>
+
+        <div class="pdp__sizes" data-rv>
+          <p class="eyebrow">Available sizes</p>
+          <ul>
+            <li>6 × 9 ft</li><li>8 × 10 ft</li><li>9 × 12 ft</li><li>10 × 14 ft</li><li>Custom sizes on request</li>
+          </ul>
+        </div>
+
+        <div class="pdp__cta" data-rv>
+          <a class="btn" href="#enquire">Enquire about Canyon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          <a class="btn ghost" href="../../index.html#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <p class="note">Share your size and project brief below — we typically respond with a tailored quote within one business day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec pdp__enquire" id="enquire" aria-labelledby="enqTitle">
+    <div class="wrap contact">
+      <div>
+        <p class="eyebrow" data-rv>Private enquiry</p>
+        <h2 id="enqTitle" class="sec-title" style="font-size:clamp(1.8rem,3.4vw,2.8rem)" data-rv>Request Canyon</h2>
+        <div class="prose" style="margin-bottom:1.8rem" data-rv>
+          <p>Share your room size, preferred fibre, and timeline. Our New Delhi and Kathmandu teams will return a tailored quote for this rug — or a custom variation woven to your brief.</p>
+        </div>
+        <div class="office" data-rv>
+          <span class="eyebrow">HQ : Jagatpuri</span>
+          <h3>New Delhi, India</h3>
+          <p><a href="tel:+918384012977">+91 8384012977</a></p>
+          <p><a href="mailto:info@serajrugs.com">info@serajrugs.com</a></p>
+        </div>
+        <div class="office" data-rv>
+          <span class="eyebrow">Seraj Rugs Nepal</span>
+          <h3>Kathmandu, Nepal</h3>
+          <p>Maitidevi Rd, Kathmandu 44600, Nepal</p>
+          <p><a href="tel:+9779705427300">+977 970-5427300</a></p>
+        </div>
+      </div>
+      <div class="formcard" data-rv>
+        <p class="eyebrow">Write to us</p>
+        <h2 class="sec-title" style="font-size:clamp(1.8rem,3.4vw,2.8rem)">Enquire</h2>
+        <p class="lede">Tell us about the space — we will follow up with sizing guidance and pricing for Canyon.</p>
+        <form class="enq__f" action="https://serajrugs.com/contact-us/" method="get">
+          <input type="hidden" name="product" value="Canyon">
+          <div class="fld"><label for="coName">Name</label><input id="coName" name="name" type="text" autocomplete="name" required></div>
+          <div class="fld"><label for="coEmail">Email</label><input id="coEmail" name="email" type="email" autocomplete="email" required></div>
+          <div class="fld"><label for="coPhone">Phone number</label><input id="coPhone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="fld"><label for="coSize">Preferred size</label>
+            <select id="coSize" name="size">
+              <option value="">Select a size</option>
+              <option value="6 × 9 ft">6 × 9 ft</option>
+              <option value="8 × 10 ft">8 × 10 ft</option>
+              <option value="9 × 12 ft">9 × 12 ft</option>
+              <option value="10 × 14 ft">10 × 14 ft</option>
+              <option value="Custom sizes on request">Custom sizes on request</option>
+            </select>
+          </div>
+          <div class="fld fld--full"><label for="coMsg">Message</label><textarea id="coMsg" name="message" rows="4" placeholder="Room dimensions, colour preferences, project deadline…">I am interested in the Canyon rug.</textarea></div>
+          <div class="fld--full enq__actions">
+            <a class="btn btn--wa" id="waEnquire" href="https://wa.me/918384012977?text=Hi%20Seraj%20Rugs%20%E2%80%94%20I%20am%20interested%20in%20the%20Canyon%20rug." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg>
+              WhatsApp us
+            </a>
+            <button class="btn ghost" type="submit">Send enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+            <p class="enq__note">WhatsApp opens a direct chat with Seraj Rugs, pre-filled with this rug enquiry.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec pdp__more" aria-labelledby="moreTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-rv>Continue exploring</p>
+        <h2 id="moreTitle" class="sec-title" data-rv>More from the atelier</h2>
+        <a class="link-u" href="../../index.html#/hand-knotted">Back to Hand Knotted <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="pgrid pdp__related" data-rv>
+        <article class="pcard"><div class="pcard__m"><img class="a" src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/Untitled-1-67.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/micro_Untitled-1-67.webp 70w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/small_Untitled-1-67.webp 140w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/medium_Untitled-1-67.webp 280w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/large_Untitled-1-67.webp 420w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/xlarge_Untitled-1-67.webp 700w" sizes="(max-width:720px) 42vw, 200px" alt="Cave Art — handmade rug by Seraj Rugs" width="700" height="1000" loading="lazy" decoding="async"><span class="pcard__badge">New</span></div><div class="pcard__b"><h3><a class="pcard__name" href="../cave-art/">Cave Art</a></h3><a class="pcard__price" href="../cave-art/">View details</a></div></article>
+<article class="pcard"><div class="pcard__m"><img class="a" src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/Untitled-1-1.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/micro_Untitled-1-1.webp 70w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/small_Untitled-1-1.webp 140w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/medium_Untitled-1-1.webp 280w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/large_Untitled-1-1.webp 420w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/xlarge_Untitled-1-1.webp 700w" sizes="(max-width:720px) 42vw, 200px" alt="Cavier — handmade rug by Seraj Rugs" width="700" height="1000" loading="lazy" decoding="async"><span class="pcard__badge">New</span></div><div class="pcard__b"><h3><a class="pcard__name" href="../cavier/">Cavier</a></h3><a class="pcard__price" href="../cavier/">View details</a></div></article>
+<article class="pcard"><div class="pcard__m"><img class="a" src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/Untitled-2-62.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/micro_Untitled-2-62.webp 70w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/small_Untitled-2-62.webp 140w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/medium_Untitled-2-62.webp 280w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/large_Untitled-2-62.webp 420w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/xlarge_Untitled-2-62.webp 700w" sizes="(max-width:720px) 42vw, 200px" alt="Celeste Cloud — handmade rug by Seraj Rugs" width="700" height="1000" loading="lazy" decoding="async"><span class="pcard__badge">New</span></div><div class="pcard__b"><h3><a class="pcard__name" href="../celeste-cloud/">Celeste Cloud</a></h3><a class="pcard__price" href="../celeste-cloud/">View details</a></div></article>
+<article class="pcard"><div class="pcard__m"><img class="a" src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/Untitled-1-32.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/micro_Untitled-1-32.webp 70w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/small_Untitled-1-32.webp 140w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/medium_Untitled-1-32.webp 280w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/large_Untitled-1-32.webp 420w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/xlarge_Untitled-1-32.webp 700w" sizes="(max-width:720px) 42vw, 200px" alt="Cube — handmade rug by Seraj Rugs" width="700" height="1000" loading="lazy" decoding="async"><span class="pcard__badge">New</span></div><div class="pcard__b"><h3><a class="pcard__name" href="../cube/">Cube</a></h3><a class="pcard__price" href="../cube/">View details</a></div></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div class="ftr__brand">
+        <span class="brand-mark" style="display:block;width:150px"></span>
+        <p>Handmade and custom rug manufacturer. Nepal &amp; India craftsmanship since 1980.</p>
+        <div class="ftr__social" style="margin-top:1.4rem">
+          <a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="mailto:contact@serajrugs.com" aria-label="Email Seraj Rugs">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+          </a>
+          <a href="tel:+918384012977" aria-label="Call Seraj Rugs">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="../../index.html#/shop">All Rugs</a></li>
+          <li><a href="../../index.html#/hand-knotted">Hand Knotted</a></li>
+          <li><a href="../../index.html#/hand-tufted">Hand Tufted</a></li>
+          <li><a href="../../index.html#/best-sellers">Best Sellers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Collection</h3>
+        <ul>
+          <li><a href="../../index.html#/modern">Modern</a></li>
+          <li><a href="../../index.html#/minimal">Minimal</a></li>
+          <li><a href="../../index.html#/classic">Classic</a></li>
+          <li><a href="../../index.html#/event">Event</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="../../index.html#/trade-program">Trade Program</a></li>
+          <li><a href="../../index.html#/blog">Blog</a></li>
+          <li><a href="../../index.html#/portfolio">Portfolio</a></li>
+          <li><a href="../../index.html#/about">About us</a></li>
+          <li><a href="../../index.html#/contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:contact@serajrugs.com">contact@serajrugs.com</a></li>
+          <li><a href="tel:+918384012977">+91 8384012977</a></li>
+          <li><a href="../../index.html#/contact">Reach us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__bar">
+      <p style="margin:0">&copy; 2025 Seraj Rugs. All rights reserved.</p>
+      <div class="ftr__legal">
+        <a href="https://serajrugs.com/imprint">Imprint</a>
+        <a href="https://serajrugs.com/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="https://serajrugs.com/privacy-policy">Privacy Policy</a>
+      </div>
+      <img class="ftr__pay" src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3756152d-5e9e-49a3-8c5a-e32989b96258/payment-logo.svg" alt="Accepted payment methods" width="150" height="40" loading="lazy" decoding="async">
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 20V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+/* Seraj Rugs shared behaviour. Vanilla JS, no build step. */
+/* =====================================================================
+   SERAJ RUGS — interaction layer (vanilla)
+   ===================================================================== */
+(function(){
+'use strict';
+var RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var COARSE = window.matchMedia('(pointer: coarse)').matches;
+var $  = function(s,c){return (c||document).querySelector(s);};
+var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+var clamp = function(v,a,b){return v<a?a:(v>b?b:v);};
+var B = 'https://serajrugs.com/';
+var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>';
+
+/* ---------------- product data (real Seraj Rugs products) ------------- */
+var HK = [
+ ['Amber','amber','S145-img-1','S145-img-4'],['Arrow Head','arrow-head','Untitled-1-14','Untitled-4-11'],
+ ['Autumn','autumn','Untitled-1-29','Untitled-3-30'],['Azure','azure','Untitled-1-75','Untitled-1-75'],
+ ['Black Grid','black-grid','Untitled-1-49','Untitled-1-49'],['Blueprint','blueprint','Untitled-1-33','Untitled-1-34'],
+ ['Canyon','canyon','Untitled-1-56','Untitled-1-56'],['Cave Art','cave-art','Untitled-1-67','Untitled-1-67'],
+ ['Celeste Cloud','celeste-cloud','Untitled-2-62','Untitled-1-62'],['Cube','cube','Untitled-1-32','Untitled-2-34'],
+ ['Dark Hedge','dark-hedge','Untitled-1-45',''],['Desert Street','desert-street','Untitled-1-76','Untitled-1-76'],
+ ['Diamente','diamente','Untitled-1-5','Untitled-2-5'],['Dragon Gem','dragon-gem','S130-img-1','S130-img-3'],
+ ['Dragon Realm','dragon-realm','Untitled-1-10','Untitled-4-7'],['Drift Ice','drift-ice-2','Untitled-1-35','Untitled-1-35'],
+ ['Duchess','duchess','S103-img-1','S103-img-3'],['EarthSilk','earthsilk','Untitled-2-9','Untitled-4-6'],
+ ['Eden','eden','Untitled-1-31','Untitled-4-28'],['Fairylight','fairylight','Untitled-1-74','Untitled-1-74'],
+ ['Flow Ice','flow-ice','S37-B-img-1','S37-B-img-2'],['Fresco','fresco','Untitled-3-6','Untitled-1-6']
+];
+var HT = [
+ ['Cavier','cavier','Untitled-1-1','Untitled-3-1'],['Decova','decova','S158-img-3','S158-img-1'],
+ ['Drift Ice','drift-ice','S159-img-1','S159-img-3'],['Glittex','glittex','S163-img-1','S163-img-2'],
+ ['Green Edge','green-edge','Untitled-2-3','Untitled-3-3'],['Heatwave','heatwave','Untitled-1-23','Untitled-1-23'],
+ ['Lavish','lavish','Untitled-1-2','Untitled-3-2'],['Limen','limen','S29-img-1','S29-img-2'],
+ ['Marble','marble','S36-img-1','S36-img-2'],['Ripple','ripple','S156-img-1','S156-img-3'],
+ ['Royale','royale','S157-img-1','S157-img-3'],['Slate','slate','Untitled-1','Untitled-4'],
+ ['Stardust','stardust','S34-img-1','S34-img-2'],['Tidal Moon','tidal-moon','S30-img-2','S30-img-1'],
+ ['Tracery','tracery','S31-img-1','S31-img-2'],['Tremor','tremor','S160-img-1','S160-img-3']
+];
+var ARC = [
+ ['Amber','amber','S145-img-1','S145-img-4'],['Cave Art','cave-art','Untitled-1-67','Untitled-1-67'],
+ ['Hexa Night','hexa-night','Untitled-1-52','Untitled-1-52'],['Grayscale','grayscale','Untitled-1-Recovered-1','Untitled-1-Recovered-1'],
+ ['Night Blue','night-blue','Untitled-1-26','Untitled-4-23'],['Quartz','quartz','Untitled-1-60','Untitled-1-60'],
+ ['Vortex','vortex','S124-img-1','S124-img-3'],['Twilight','twilight','Untitled-1-47','Untitled-1-47'],
+ ['Imperia','imperia','Untitled-1-4','Untitled-3-4'],['Dragon Gem','dragon-gem','S130-img-1','S130-img-3']
+];
+var GAL = [
+ ['Black Grid','black-grid','Untitled-1-49','Untitled-1-49'],['Horizon Ink','horizon-ink','Untitled-1-43','Untitled-2-43'],
+ ['White Diamond','white-diamond','Untitled-1-41','Untitled-1-41'],['Granite Ink','granite-ink','Untitled-1-44','Untitled-2-44'],
+ ['Moonlight','moonlight','Untitled-1-48','Untitled-1-48'],['Silver Grid','silver-grid','Untitled-1-50','Untitled-1-50'],
+ ['Geoflux','geoflux','Untitled-1-42','Untitled-1-42'],['Inkline','inkline','Untitled-1-55','Untitled-1-55'],
+ ['Blueprint','blueprint','Untitled-1-33','Untitled-1-34'],['Azure','azure','Untitled-1-75','Untitled-1-75'],
+ ['Snow Maze','snow-maze','Untitled-1-73','Untitled-1-73'],['Stardust','stardust','S34-img-1','S34-img-2'],
+ ['Royale','royale','S157-img-1','S157-img-3'],['Tracery','tracery','S31-img-1','S31-img-2'],
+ ['Tremor','tremor','S160-img-1','S160-img-3'],['Mystique','mystique','Untitled-1-27','Untitled-4-24']
+];
+
+/* ---------------- collection ranges (parsed from the live pages) ----- */
+var CL = [
+ ['Duchess','duchess','S103-img-1','S103-img-3']
+];
+var MI = [
+ ['Azure','azure','Untitled-1-75','Untitled-1-75'],
+ ['Blueprint','blueprint','Untitled-1-33','Untitled-1-34'],
+ ['Cavier','cavier','Untitled-1-1','Untitled-3-1'],
+ ['Cube','cube','Untitled-1-32','Untitled-2-34'],
+ ['Desert street','desert-street','Untitled-1-76','Untitled-1-76'],
+ ['EarthSilk','earthsilk','Untitled-2-9','Untitled-4-6'],
+ ['Eden','eden','Untitled-1-31','Untitled-4-28'],
+ ['Fairylight','fairylight','Untitled-1-74','Untitled-1-74'],
+ ['Glittex','glittex','S163-img-1','S163-img-2'],
+ ['Green Edge','green-edge','Untitled-2-3','Untitled-3-3'],
+ ['Heatwave','heatwave','Untitled-1-23','Untitled-1-23'],
+ ['Lavish','lavish','Untitled-1-2','Untitled-3-2'],
+ ['Moonbeam','moonbeam','Untitled-1-28','Untitled-4-25'],
+ ['Origami','origami','Untitled-1-72','Untitled-1-72'],
+ ['Reflection','reflection','Untitled-1-12','Untitled-3-12'],
+ ['Ripple','ripple','S156-img-1','S156-img-3'],
+ ['Silver Edge','silver-edge','Untitled-1-21','Untitled-4-18'],
+ ['Silver Line','silver-line','Untitled-1-13','Untitled-4-10'],
+ ['Silver zen','silver-zen','Untitled-1-20','Untitled-4-17'],
+ ['Slate','slate','Untitled-1','Untitled-4'],
+ ['Snow Maze','snow-maze','Untitled-1-73','Untitled-1-73'],
+ ['TerraKnot','terraknot','Untitled-1-22','Untitled-3-22'],
+ ['Zephyr','zephyr','Untitled-1-24','Untitled-4-20']
+];
+var MO = [
+ ['Amber','amber','S145-img-1','S145-img-4'],
+ ['Arrow Head','arrow-head','Untitled-1-14','Untitled-4-11'],
+ ['Autumn','autumn','Untitled-1-29','Untitled-3-30'],
+ ['Cave Art','cave-art','Untitled-1-67','Untitled-1-67'],
+ ['Celeste Cloud','celeste-cloud','Untitled-2-62','Untitled-1-62'],
+ ['Decova','decova','S158-img-3','S158-img-1'],
+ ['Diamente','diamente','Untitled-1-5','Untitled-2-5'],
+ ['Dragon Gem','dragon-gem','S130-img-1','S130-img-3'],
+ ['Dragon realm','dragon-realm','Untitled-1-10','Untitled-4-7'],
+ ['Drift Ice','drift-ice','S159-img-1','S159-img-3'],
+ ['Flow Ice','flow-ice','S37-B-img-1','S37-B-img-2'],
+ ['Fresco','fresco','Untitled-3-6','Untitled-1-6'],
+ ['Grandeur','grandeur','Untitled-1-40','Untitled-2-40'],
+ ['Grayscale','grayscale','Untitled-1-Recovered-1','Untitled-1-Recovered-1'],
+ ['Greenprint','greenprint','Untitled-1-37','Untitled-2-38'],
+ ['Hand Knotted Rugs','hand-knotted-rugs','Rugs_1-1','Rugs_1'],
+ ['Imperia','imperia','Untitled-1-4','Untitled-3-4'],
+ ['Infusion','infusion','Untitled-1-66','Untitled-1-66'],
+ ['Jade','jade','Untitled-1-70','Untitled-1-70'],
+ ['Lake Ice','lake-ice','S37-img-1','S37-img-2'],
+ ['Limen','limen','S29-img-1','S29-img-2'],
+ ['Lumina','lumina','Untitled-1-17','Untitled-3-17'],
+ ['Marble','marble','S36-img-1','S36-img-2'],
+ ['Marble Mist','marble-mist','Untitled-1-71','Untitled-1-71'],
+ ['Mistbreak','mistbreak','Untitled-1-16','Untitled-2-16'],
+ ['MoshiMoshi','moshimoshi','Untitled-1-65','Untitled-1-65'],
+ ['Mystique','mystique','Untitled-1-27','Untitled-4-24'],
+ ['Night Blue','night-blue','Untitled-1-26','Untitled-4-23'],
+ ['Onyx Orbit','onyx-orbit','Untitled-2-63','Untitled-1-63'],
+ ['Ornate','ornate','Untitled-1-61','Untitled-1-61'],
+ ['Paint Breakout','paint-breakout','S115-img-1','S115-img-3'],
+ ['Polar Ice','polar-ice','S38-img-1','S38-img-2'],
+ ['Pranite','pranite','Untitled-2-Recovered','Untitled-1-Recovered'],
+ ['Pristine','pristine','Untitled-1-69','Untitled-1-69'],
+ ['Radiance','radiance','Untitled-1-11','Untitled-3-11'],
+ ['River Silk','river-silk','S110-img-1','S110-img-4'],
+ ['River Silk Blue','river-silk-blue','S111-img-1','S111-img-3'],
+ ['Rococo','rococo','S118-img-1','S118-img-4'],
+ ['Rovi Rovi','rovi-rovi','Untitled-1-18','Untitled-3-18'],
+ ['Royale','royale','S157-img-1','S157-img-3'],
+ ['Rust','rust','Untitled-1-15','Untitled-4-12'],
+ ['Sapphire','sapphire','Untitled-1-30','Untitled-4-27'],
+ ['Seascape','seascape','S136-img-1','S136-img-3'],
+ ['SeaShore','seashore','Untitled-1-36','Untitled-3-34'],
+ ['Secret Garden','secret-garden','Untitled-1-Recovered-2','Untitled-1-Recovered-2'],
+ ['Sienna','sienna','Untitled-1-19','Untitled-2-20'],
+ ['Smoke Cloud','smoke-cloud','Untitled-1-64','Untitled-1-64'],
+ ['SN01','sn01','Screenshot-2025-10-11-120307','Gemini_Generated_Image_hlbxrphlbxrphlbx'],
+ ['SN02','sn02','Screenshot-2025-10-11-120558','Screenshot-2025-10-11-120549'],
+ ['SN03','sn03','Screenshot-2025-10-11-120825','Screenshot-2025-10-11-120833'],
+ ['SN04','sn04','Screenshot-2025-10-11-121838','Screenshot-2025-10-11-121847'],
+ ['SN05','sn05','Screenshot-2025-10-11-121724','Screenshot-2025-10-11-121732'],
+ ['SN06','sn06','Screenshot-2025-10-11-223235','Screenshot-2025-10-11-223227'],
+ ['SN07','sn07','Screenshot-2025-10-11-223434','Screenshot-2025-10-11-223426'],
+ ['SN08','sn08','Screenshot-2025-10-11-224327','Screenshot-2025-10-11-224308'],
+ ['SN09','sn09','Screenshot-2025-10-11-224623','Rug_SN09'],
+ ['SN14','sn14','Screenshot-2025-10-11-225029','Screenshot-2025-10-11-225019'],
+ ['SN23','sn23','Screenshot-2025-10-11-231206','Rug_SN-2'],
+ ['Stardust','stardust','S34-img-1','S34-img-2'],
+ ['Terra','terra','Untitled-1-8','Untitled-4-5'],
+ ['Tidal Moon','tidal-moon','S30-img-2','S30-img-1'],
+ ['Tracery','tracery','S31-img-1','S31-img-2'],
+ ['Tree star','tree-star','Untitled-1-7','Untitled-2-7'],
+ ['Tremor','tremor','S160-img-1','S160-img-3'],
+ ['Veloura','veloura','Untitled-1-38','Untitled-1-39'],
+ ['Vortex','vortex','S124-img-1','S124-img-3'],
+ ['Zen blue','zen-blue','Untitled-1-25','Untitled-3-26']
+];
+/* A curated portfolio selection, drawn from the real product range. */
+var PORT = [
+ ['Duchess','duchess','S103-img-1','S103-img-3'],['Amber','amber','S145-img-1','S145-img-4'],
+ ['Vortex','vortex','S124-img-1','S124-img-3'],['Night Blue','night-blue','Untitled-1-26','Untitled-4-23'],
+ ['Imperia','imperia','Untitled-1-4','Untitled-3-4'],['Twilight','twilight','Untitled-1-47','Untitled-1-47'],
+ ['Cave Art','cave-art','Untitled-1-67','Untitled-1-67'],['Quartz','quartz','Untitled-1-60','Untitled-1-60'],
+ ['Dragon Gem','dragon-gem','S130-img-1','S130-img-3'],['Hexa Night','hexa-night','Untitled-1-52','Untitled-1-52'],
+ ['Grayscale','grayscale','Untitled-1-Recovered-1','Untitled-1-Recovered-1'],['Royale','royale','S157-img-1','S157-img-3']
+];
+
+/* Storebox media library (website 1ceb56e3) - [dir, file, base, width, height] */
+var MB='https://api.storebox.ai';
+var IMG={
+  'S103-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/','S103-img-1.webp','S103-img-1',700,1000],
+  'S103-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/df928e39-aed5-40ed-a080-4204c55cfc35/','S103-img-3.webp','S103-img-3',700,1000],
+  'S124-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d918df3e-2f45-4934-9f56-ae4c0dc8bcf2/','S124-img-1.webp','S124-img-1',700,1000],
+  'S124-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c2ab7e51-2f2e-405a-bada-2b550253fada/','S124-img-3.webp','S124-img-3',700,1000],
+  'S130-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0a41f3f0-80b7-41c3-b682-6f6c7b3fb4cd/','S130-img-1.webp','S130-img-1',700,1000],
+  'S130-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/62ecae1c-130d-450b-9e34-9a4099c31463/','S130-img-3.webp','S130-img-3',700,1000],
+  'S145-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/a5067578-86a1-48d6-9f31-b806544d6475/','S145-img-1.webp','S145-img-1',700,1000],
+  'S145-img-4':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f958d611-cbeb-40ad-8774-9d47ed8e2a23/','S145-img-4.webp','S145-img-4',700,1000],
+  'S156-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/43a189e2-2359-4250-8191-dc23d7795944/','S156-img-1.webp','S156-img-1',700,1000],
+  'S156-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e3f2eb81-f4bd-4150-a0f4-dc0ef0cf012a/','S156-img-3.webp','S156-img-3',700,1000],
+  'S157-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4da7587b-887c-48b7-9abe-5a727dc94db4/','S157-img-1.webp','S157-img-1',700,1000],
+  'S157-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/51340df0-2f80-4d88-9861-dac71286dd46/','S157-img-3.webp','S157-img-3',700,1000],
+  'S158-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c74c233-fec2-4eb9-8477-d397991eac88/','S158-img-1.webp','S158-img-1',700,1000],
+  'S158-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/42f1a134-9255-48f7-b493-b0d306e22709/','S158-img-3.webp','S158-img-3',700,1000],
+  'S159-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0b2a5ae5-d125-4cde-ad20-c4efd3ea9233/','S159-img-1.webp','S159-img-1',700,1000],
+  'S159-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/339d7ec8-0498-486b-97df-9503e1e4e77c/','S159-img-3.webp','S159-img-3',700,1000],
+  'S160-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/cade83fe-aa87-43ef-89d0-cff530767a9b/','S160-img-1.webp','S160-img-1',700,1000],
+  'S160-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f63e5b30-de31-4200-8c47-5414bcd73785/','S160-img-3.webp','S160-img-3',700,1000],
+  'S163-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/33fd19ad-3328-4015-b851-d756dad8f002/','S163-img-1.webp','S163-img-1',700,1000],
+  'S163-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5d3427b1-1495-4598-9a97-b6a53adc2b2c/','S163-img-2.webp','S163-img-2',700,1000],
+  'S29-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9879d068-4a19-4c84-a8d3-97cb4c3af2a4/','S29-img-1.webp','S29-img-1',700,1000],
+  'S29-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ee199cab-a871-4e36-9716-f5011dcfe150/','S29-img-2.webp','S29-img-2',700,1000],
+  'S30-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0fbcf2e4-f9d2-48f8-a6b9-48db4537fc52/','S30-img-1.webp','S30-img-1',700,1000],
+  'S30-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2cfb3f4b-0a91-40cd-9f9e-9b4959261c50/','S30-img-2.webp','S30-img-2',700,1000],
+  'S31-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ffddcaed-ca83-4da9-9a78-24f13b03c0b2/','S31-img-1.webp','S31-img-1',700,1000],
+  'S31-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9f9fb5d8-8513-43e6-ab49-81b8b4505339/','S31-img-2.webp','S31-img-2',700,1000],
+  'S34-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b8e5bfb6-06dd-417b-954f-a1d322538f76/','S34-img-1.webp','S34-img-1',700,1000],
+  'S34-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/db3f8855-3a0f-4630-9515-73a366fbf485/','S34-img-2.webp','S34-img-2',700,1000],
+  'S36-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/11a6a784-a33e-4db0-bc1d-93583146130c/','S36-img-1.webp','S36-img-1',700,1000],
+  'S36-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/496dccef-586d-4187-b94d-3d19a13923b2/','S36-img-2.webp','S36-img-2',700,1000],
+  'S37-B-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/60ed209c-9c32-4990-a0e4-db7f483c9a6b/','S37-B-img-1.webp','S37-B-img-1',700,1000],
+  'S37-B-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/841ff3e9-e425-4f3b-bfb2-1a85883eb7af/','S37-B-img-2.webp','S37-B-img-2',700,1000],
+  'Untitled-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d1fbc5bb-d158-4356-b5d7-761a79bebc10/','Untitled-1.webp','Untitled-1',700,1000],
+  'Untitled-1-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3c3b8cda-b683-429c-b442-028e245ad055/','Untitled-1-1.webp','Untitled-1-1',700,1000],
+  'Untitled-1-10':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5e1c2d20-0d2c-4b2c-9f1c-e57c792ea859/','Untitled-1-10.webp','Untitled-1-10',700,1000],
+  'Untitled-1-14':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f52e29b7-74e7-4934-9d1b-6b8a0ed5495a/','Untitled-1-14.webp','Untitled-1-14',700,1000],
+  'Untitled-1-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c0fd0456-f3c1-4c25-b5f0-9a8cbcf8ec87/','Untitled-1-2.webp','Untitled-1-2',700,1000],
+  'Untitled-1-23':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c82533e5-10ac-416e-b2ff-2b1eaf10c3bf/','Untitled-1-23.webp','Untitled-1-23',700,1000],
+  'Untitled-1-26':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d5044a20-c4ca-410e-811e-94e8e9168219/','Untitled-1-26.webp','Untitled-1-26',700,1000],
+  'Untitled-1-27':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4dbd94d0-f39a-4ba0-99a4-f8e809555652/','Untitled-1-27.webp','Untitled-1-27',700,1000],
+  'Untitled-1-29':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/07e4b1d8-a4e9-4068-9936-31b87b315371/','Untitled-1-29.webp','Untitled-1-29',700,1000],
+  'Untitled-1-31':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/01c19035-6f68-4a52-84db-d6470ef4adc2/','Untitled-1-31.webp','Untitled-1-31',700,1000],
+  'Untitled-1-32':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbcc0c07-ad20-4674-a565-ab0f4fc624e5/','Untitled-1-32.webp','Untitled-1-32',700,1000],
+  'Untitled-1-33':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/97b54e2d-8fe9-41c2-aff5-8488f900160e/','Untitled-1-33.webp','Untitled-1-33',700,1000],
+  'Untitled-1-34':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/eef202dc-8a41-4a64-b44d-3a431311a693/','Untitled-1-34.webp','Untitled-1-34',700,1000],
+  'Untitled-1-35':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b5c84f7f-3571-49d8-8728-6851b946f16e/','Untitled-1-35.webp','Untitled-1-35',700,1000],
+  'Untitled-1-4':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d694e04d-04b3-4749-a8c3-de7db0d839f9/','Untitled-1-4.webp','Untitled-1-4',700,1000],
+  'Untitled-1-41':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bbf8149e-42ee-45ac-8abf-cebc2e31a659/','Untitled-1-41.webp','Untitled-1-41',700,1000],
+  'Untitled-1-42':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1dd61890-f98b-4dc9-93f5-d4cadf4dc493/','Untitled-1-42.webp','Untitled-1-42',700,1000],
+  'Untitled-1-43':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/17b66be1-43fd-41b4-b6f3-3d8a7fa13c43/','Untitled-1-43.webp','Untitled-1-43',700,1000],
+  'Untitled-1-44':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/13bd2d3b-a026-428b-ae50-bc82d2bbb69d/','Untitled-1-44.webp','Untitled-1-44',700,1000],
+  'Untitled-1-45':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/67d2d4f3-7936-44ee-9fba-8ba9d0dceb78/','Untitled-1-45.webp','Untitled-1-45',700,1000],
+  'Untitled-1-47':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/75e3dffe-b8a7-4570-a48e-4d6f319ddd7b/','Untitled-1-47.webp','Untitled-1-47',700,1000],
+  'Untitled-1-48':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/33543ff6-e5d2-402b-8d95-1c0c9b957a48/','Untitled-1-48.webp','Untitled-1-48',700,1000],
+  'Untitled-1-49':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d64e406b-92fd-4619-9748-1a9a0db3457e/','Untitled-1-49.webp','Untitled-1-49',700,1000],
+  'Untitled-1-5':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/623f7c76-66e6-4872-a40b-2cc16665102e/','Untitled-1-5.webp','Untitled-1-5',700,1000],
+  'Untitled-1-50':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e73afa76-0916-4eb4-b1ef-8c11056d0a2d/','Untitled-1-50.webp','Untitled-1-50',700,1000],
+  'Untitled-1-52':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/eb5f2815-ac16-49fa-ae78-fdfb77e09890/','Untitled-1-52.webp','Untitled-1-52',700,1000],
+  'Untitled-1-55':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/dcaacd8b-c691-4014-8e66-11db20c3290b/','Untitled-1-55.webp','Untitled-1-55',700,1000],
+  'Untitled-1-56':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ba84dc2f-436a-4d9e-ab5e-feca05d6af6d/','Untitled-1-56.webp','Untitled-1-56',700,1000],
+  'Untitled-1-6':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6bfd979f-8e4e-4ecc-ad4d-69748fe6ef4a/','Untitled-1-6.webp','Untitled-1-6',700,1000],
+  'Untitled-1-60':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b012e146-668d-445b-a245-e53d635b4b63/','Untitled-1-60.webp','Untitled-1-60',700,1000],
+  'Untitled-1-62':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b26b37f8-0905-445d-a77c-3a20f2ce3dab/','Untitled-1-62.webp','Untitled-1-62',700,1000],
+  'Untitled-1-67':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6e420402-e4a1-4294-a360-a8a4108c016a/','Untitled-1-67.webp','Untitled-1-67',700,1000],
+  'Untitled-1-73':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/25c28d70-4f3a-4fd4-89e9-a6c7ba59035d/','Untitled-1-73.webp','Untitled-1-73',700,1000],
+  'Untitled-1-74':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/910fd28a-2856-4dd0-9fb5-b2e7430a3e66/','Untitled-1-74.webp','Untitled-1-74',700,1000],
+  'Untitled-1-75':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1e001dc7-15fd-4389-900d-1194adc013e5/','Untitled-1-75.webp','Untitled-1-75',700,1000],
+  'Untitled-1-76':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0ec9e7e6-c8cd-4173-ab36-079ab3bae3ec/','Untitled-1-76.webp','Untitled-1-76',700,1000],
+  'Untitled-1-Recovered-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5474574a-9d41-4ea2-877c-fcc9eef5ae6a/','Untitled-1-Recovered-1.webp','Untitled-1-Recovered-1',700,1000],
+  'Untitled-2-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/8e742629-2730-43a0-90f6-b19b522dd644/','Untitled-2-3.webp','Untitled-2-3',700,1000],
+  'Untitled-2-34':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/33de1f76-2b75-42af-9a60-c29f85fea0a8/','Untitled-2-34.webp','Untitled-2-34',700,1000],
+  'Untitled-2-43':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/326bd2e3-b87e-4006-8d86-2eaf1fd22a85/','Untitled-2-43.webp','Untitled-2-43',700,1000],
+  'Untitled-2-44':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2b9ab086-4ba8-4a5c-95bc-95835fdc70dd/','Untitled-2-44.webp','Untitled-2-44',700,1000],
+  'Untitled-2-5':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/49e860ab-0cee-4577-b73e-fa99a9484024/','Untitled-2-5.webp','Untitled-2-5',700,1000],
+  'Untitled-2-62':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/40c3a24f-8402-447f-8808-f09eb3765cdc/','Untitled-2-62.webp','Untitled-2-62',700,1000],
+  'Untitled-2-9':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5698b643-da50-48d3-9957-f1df93904dda/','Untitled-2-9.webp','Untitled-2-9',700,1000],
+  'Untitled-3-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/a7dc4f45-c28c-4586-8e82-2dcbfd7eb016/','Untitled-3-1.webp','Untitled-3-1',700,1000],
+  'Untitled-3-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1072f7e1-3500-413e-a488-9261f787592e/','Untitled-3-2.webp','Untitled-3-2',700,1000],
+  'Untitled-3-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9832a719-6476-4a79-bb24-840bee092f37/','Untitled-3-3.webp','Untitled-3-3',700,1000],
+  'Untitled-3-30':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f5df9cba-3257-4f8f-9f29-6b481bd2c08d/','Untitled-3-30.webp','Untitled-3-30',700,1000],
+  'Untitled-3-4':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f4f08c1d-dfd2-421b-a368-2a1b5acf2fb0/','Untitled-3-4.webp','Untitled-3-4',700,1000],
+  'Untitled-3-6':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/07a2523e-1388-40a3-bc1d-23618d59da79/','Untitled-3-6.webp','Untitled-3-6',700,1000],
+  'Untitled-4':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/43cbbfaa-9856-4ff5-95b6-f90570df343b/','Untitled-4.webp','Untitled-4',700,1000],
+  'Untitled-4-11':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5ef4ebde-4a16-403a-bc7c-cf28fa7cb8fe/','Untitled-4-11.webp','Untitled-4-11',700,1000],
+  'Untitled-4-23':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ebd408bb-ab05-4582-8264-76ff47fb5684/','Untitled-4-23.webp','Untitled-4-23',700,1000],
+  'Untitled-4-24':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6855e33e-f5d8-49aa-aeed-789abf7fad01/','Untitled-4-24.webp','Untitled-4-24',700,1000],
+  'Untitled-4-28':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c33e8abb-aeb5-4280-8221-ea9350ebe724/','Untitled-4-28.webp','Untitled-4-28',700,1000],
+  'Untitled-4-6':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d6efaf1c-e555-4e03-a253-e3379b3724d0/','Untitled-4-6.webp','Untitled-4-6',700,1000],
+  'Untitled-4-7':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/cd852543-075d-4c97-984e-94e6dec99dba/','Untitled-4-7.webp','Untitled-4-7',700,1000],
+  'Gemini_Generated_Image_hlbxrphlbxrphlbx':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/da4a2244-4801-4e5e-99c9-3857b2b6e961/','Gemini_Generated_Image_hlbxrphlbxrphlbx.webp','Gemini_Generated_Image_hlbxrphlbxrphlbx',896,1152],
+  'Rug_SN-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/32c77ab1-11ba-4d05-8e83-bf87fa676090/','Rug_SN-2.webp','Rug_SN-2',832,1248],
+  'Rug_SN09':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/67da77b8-db5b-4ba2-9d92-d4dc72ee4169/','Rug_SN09.webp','Rug_SN09',800,1280],
+  'Rugs_1-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f19363bd-0d0c-42dc-bc09-65f0ca1c84d7/','Rugs_1-1.webp','Rugs_1-1',1184,864],
+  'Rugs_1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5f0283e5-ea5d-452d-99f7-39094ec7fe3c/','Rugs_1.webp','Rugs_1',1184,864],
+  'S110-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/65a2dbd4-f2fc-4156-b354-67ee6807b5a9/','S110-img-1.webp','S110-img-1',700,1000],
+  'S110-img-4':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/af6767a6-6e28-40b3-8cda-a09136e06414/','S110-img-4.webp','S110-img-4',700,1000],
+  'S111-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f411f4b6-df07-454c-b35b-fb5a58eaeca1/','S111-img-1.webp','S111-img-1',700,1000],
+  'S111-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d551dd7b-9184-414a-86c3-9cfc2c16924a/','S111-img-3.webp','S111-img-3',700,1000],
+  'S115-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/181a88bd-9dd4-4136-b03a-140ea603c135/','S115-img-1.webp','S115-img-1',700,1000],
+  'S115-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f441fb47-7291-4cb8-9238-2a6af9b84809/','S115-img-3.webp','S115-img-3',700,1000],
+  'S118-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0028dca3-5dd2-44e6-830f-73ee203a6873/','S118-img-1.webp','S118-img-1',700,1000],
+  'S118-img-4':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bde7e238-a206-408c-9094-3ef506353642/','S118-img-4.webp','S118-img-4',700,1000],
+  'S136-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9d69e7f8-ccf5-4b93-af90-ab8d5cad82cd/','S136-img-1.webp','S136-img-1',700,1000],
+  'S136-img-3':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/118c4594-d95a-4878-a19b-d7f406660908/','S136-img-3.webp','S136-img-3',700,1000],
+  'S37-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6a7299e7-89a4-4040-84e8-fb7c6e408b88/','S37-img-1.webp','S37-img-1',700,1000],
+  'S37-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d04750fd-cd3c-49b0-9c33-8753f1031b91/','S37-img-2.webp','S37-img-2',700,1000],
+  'S38-img-1':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3457c438-2491-4889-8567-30f19563316a/','S38-img-1.webp','S38-img-1',700,1000],
+  'S38-img-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c3430488-73f8-4839-b040-0c81de40a372/','S38-img-2.webp','S38-img-2',700,1000],
+  'Screenshot-2025-10-11-120307':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2bd557c3-a673-4f9f-9898-1692f6332b49/','Screenshot-2025-10-11-120307.webp','Screenshot-2025-10-11-120307',426,569],
+  'Screenshot-2025-10-11-120549':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e55a29c5-e083-4b6b-b4ba-2878924baf2d/','Screenshot-2025-10-11-120549.webp','Screenshot-2025-10-11-120549',694,431],
+  'Screenshot-2025-10-11-120558':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/469a7316-03c7-4686-8002-57ff505da214/','Screenshot-2025-10-11-120558.webp','Screenshot-2025-10-11-120558',419,516],
+  'Screenshot-2025-10-11-120825':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/ee3f680e-3c2b-48f5-b9c8-c482e66a56ce/','Screenshot-2025-10-11-120825.webp','Screenshot-2025-10-11-120825',417,539],
+  'Screenshot-2025-10-11-120833':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/970cfbbc-8504-412a-93f9-69245d70ee25/','Screenshot-2025-10-11-120833.webp','Screenshot-2025-10-11-120833',696,420],
+  'Screenshot-2025-10-11-121724':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4ec08697-1db0-4cf6-8760-1fc728737f9f/','Screenshot-2025-10-11-121724.webp','Screenshot-2025-10-11-121724',410,520],
+  'Screenshot-2025-10-11-121732':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/02cd961d-be29-44f8-b872-29726c13f57d/','Screenshot-2025-10-11-121732.webp','Screenshot-2025-10-11-121732',707,449],
+  'Screenshot-2025-10-11-121838':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/eb4b5be3-6afe-4118-a06c-0c683644b821/','Screenshot-2025-10-11-121838.webp','Screenshot-2025-10-11-121838',438,555],
+  'Screenshot-2025-10-11-121847':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d3f1ca05-1864-43e2-82c9-a32facc56ec2/','Screenshot-2025-10-11-121847.webp','Screenshot-2025-10-11-121847',726,436],
+  'Screenshot-2025-10-11-223227':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f7d08c41-cef5-441f-b20d-b78ca5e6f1b5/','Screenshot-2025-10-11-223227.webp','Screenshot-2025-10-11-223227',696,441],
+  'Screenshot-2025-10-11-223235':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/665dd29e-09e2-40d9-b47d-8163f4b7e87c/','Screenshot-2025-10-11-223235.webp','Screenshot-2025-10-11-223235',428,525],
+  'Screenshot-2025-10-11-223426':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/cfbb5999-1057-4bc2-9827-b591d4390cd3/','Screenshot-2025-10-11-223426.webp','Screenshot-2025-10-11-223426',694,484],
+  'Screenshot-2025-10-11-223434':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9b556512-07c5-41f8-b014-32286bce5074/','Screenshot-2025-10-11-223434.webp','Screenshot-2025-10-11-223434',402,517],
+  'Screenshot-2025-10-11-224308':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/95fd7bd5-e096-4a56-9abc-24cfb05ff97b/','Screenshot-2025-10-11-224308.webp','Screenshot-2025-10-11-224308',712,458],
+  'Screenshot-2025-10-11-224327':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9b6f9668-4db3-46a8-97a7-15c081c186ae/','Screenshot-2025-10-11-224327.webp','Screenshot-2025-10-11-224327',389,552],
+  'Screenshot-2025-10-11-224623':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/24e6e475-c3e7-4423-829a-1404590283c8/','Screenshot-2025-10-11-224623.webp','Screenshot-2025-10-11-224623',329,490],
+  'Screenshot-2025-10-11-225019':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9be7c04e-7c87-465b-9221-690add2e128c/','Screenshot-2025-10-11-225019.webp','Screenshot-2025-10-11-225019',688,437],
+  'Screenshot-2025-10-11-225029':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/abdcc45b-946e-4ea0-915c-09c7ad0a008a/','Screenshot-2025-10-11-225029.webp','Screenshot-2025-10-11-225029',430,555],
+  'Screenshot-2025-10-11-231206':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c4c22c61-6249-41f2-83e8-cf0165116e77/','Screenshot-2025-10-11-231206.webp','Screenshot-2025-10-11-231206',388,531],
+  'Untitled-1-11':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b2ab37f6-4070-4a58-bfe6-98d30683ac49/','Untitled-1-11.webp','Untitled-1-11',700,1000],
+  'Untitled-1-12':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/22e6510a-3ec8-420e-a581-7f10baa7dcd3/','Untitled-1-12.webp','Untitled-1-12',700,1000],
+  'Untitled-1-13':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7f7843cc-21db-4d3f-881c-d1d2e339acf1/','Untitled-1-13.webp','Untitled-1-13',700,1000],
+  'Untitled-1-15':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4deba11c-abc8-4f2a-b05b-e4d3eae03d6a/','Untitled-1-15.webp','Untitled-1-15',700,1000],
+  'Untitled-1-16':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4354c360-ab94-4c3e-bfd5-035734254e20/','Untitled-1-16.webp','Untitled-1-16',700,1000],
+  'Untitled-1-17':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6b444140-7179-407b-a939-7eedab3774f1/','Untitled-1-17.webp','Untitled-1-17',700,1000],
+  'Untitled-1-18':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4207128b-0e1c-4979-853a-98b8c4bb82b5/','Untitled-1-18.webp','Untitled-1-18',700,1000],
+  'Untitled-1-19':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d00cd9ef-c471-4def-b000-53a279e47e85/','Untitled-1-19.webp','Untitled-1-19',700,1000],
+  'Untitled-1-20':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/39d16f5e-6820-46b3-a20a-1226dd812b33/','Untitled-1-20.webp','Untitled-1-20',700,1000],
+  'Untitled-1-21':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/306249d5-cdce-41ef-a4bc-f2154ce8c59c/','Untitled-1-21.webp','Untitled-1-21',700,1000],
+  'Untitled-1-22':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fbf8412f-8ccb-4599-9135-686162de2199/','Untitled-1-22.webp','Untitled-1-22',700,1000],
+  'Untitled-1-24':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/a44d027d-be22-48e3-90c2-53df276947ce/','Untitled-1-24.webp','Untitled-1-24',700,1000],
+  'Untitled-1-25':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0bbd8d16-ecdc-4adf-a4db-84dd77b356b6/','Untitled-1-25.webp','Untitled-1-25',700,1000],
+  'Untitled-1-28':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/55bb97c1-2632-4f61-84c7-cb3b685d7d12/','Untitled-1-28.webp','Untitled-1-28',700,1000],
+  'Untitled-1-30':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/5bd63177-214b-4de3-a4fe-39935da97e0d/','Untitled-1-30.webp','Untitled-1-30',700,1000],
+  'Untitled-1-36':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d4a54a7a-9503-458f-801a-edad0c1747be/','Untitled-1-36.webp','Untitled-1-36',700,1000],
+  'Untitled-1-37':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d84afbf9-8295-477b-8313-42213eab226c/','Untitled-1-37.webp','Untitled-1-37',700,1000],
+  'Untitled-1-38':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/4f518a4f-0a39-484c-bc72-475513015e87/','Untitled-1-38.webp','Untitled-1-38',700,1000],
+  'Untitled-1-39':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/82b0af71-8c80-4d32-bdf3-205a4e7b6051/','Untitled-1-39.webp','Untitled-1-39',700,1000],
+  'Untitled-1-40':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d4b03569-8501-4a65-aecd-6e384bf40ab8/','Untitled-1-40.webp','Untitled-1-40',700,1000],
+  'Untitled-1-61':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/a1d42ee5-ffb1-489c-8a2a-90b1291b1770/','Untitled-1-61.webp','Untitled-1-61',700,1000],
+  'Untitled-1-63':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f5903daa-8a3e-4954-a70a-f5f8ab964ebf/','Untitled-1-63.webp','Untitled-1-63',700,1000],
+  'Untitled-1-64':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/01c70848-20f3-485c-b60f-6a9c8418abd8/','Untitled-1-64.webp','Untitled-1-64',700,1000],
+  'Untitled-1-65':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fab6cdf4-e390-4efe-a136-02ede7797e60/','Untitled-1-65.webp','Untitled-1-65',700,1000],
+  'Untitled-1-66':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/c97cd120-f21b-4ceb-8b96-10dabce6cce6/','Untitled-1-66.webp','Untitled-1-66',700,1000],
+  'Untitled-1-69':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/a8f8fb4a-fde3-4514-8027-0134008680ab/','Untitled-1-69.webp','Untitled-1-69',700,1000],
+  'Untitled-1-7':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fa22ebe1-32fa-4165-94fe-a8ecfadc508c/','Untitled-1-7.webp','Untitled-1-7',700,1000],
+  'Untitled-1-70':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/906f515e-0f84-4641-aed7-5fc0ff42a619/','Untitled-1-70.webp','Untitled-1-70',700,1000],
+  'Untitled-1-71':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/66a5eb5f-a992-42cd-ad92-7c0c5303422c/','Untitled-1-71.webp','Untitled-1-71',700,1000],
+  'Untitled-1-72':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b8bba86e-953c-4088-9204-8e9fc8c37117/','Untitled-1-72.webp','Untitled-1-72',700,1000],
+  'Untitled-1-8':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/a08581b5-14bf-4664-a457-8808461934c2/','Untitled-1-8.webp','Untitled-1-8',700,1000],
+  'Untitled-1-Recovered-2':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/231d1dcf-2c8f-42d6-a301-9ffa5381893a/','Untitled-1-Recovered-2.webp','Untitled-1-Recovered-2',700,1000],
+  'Untitled-1-Recovered':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/12c242ce-9fe1-43dd-9e7b-da5a99cc7584/','Untitled-1-Recovered.webp','Untitled-1-Recovered',700,1000],
+  'Untitled-2-16':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/70488ccd-9743-479e-a521-6d210930bbf0/','Untitled-2-16.webp','Untitled-2-16',700,1000],
+  'Untitled-2-20':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f1003f5f-f032-4905-8292-fb76718003e3/','Untitled-2-20.webp','Untitled-2-20',700,1000],
+  'Untitled-2-38':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/09d67f17-6bda-4e65-b4c8-5de5aad8d17c/','Untitled-2-38.webp','Untitled-2-38',700,1000],
+  'Untitled-2-40':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7bc957f7-2913-4c04-839f-6a8f63fcce6e/','Untitled-2-40.webp','Untitled-2-40',700,1000],
+  'Untitled-2-63':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e258feb5-4361-4e22-b2e8-8c69dfff7fde/','Untitled-2-63.webp','Untitled-2-63',700,1000],
+  'Untitled-2-7':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/b043b2e3-a414-43c7-83be-223ed149b6e9/','Untitled-2-7.webp','Untitled-2-7',700,1000],
+  'Untitled-2-Recovered':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9229d4d0-7b5a-4298-82cc-b01502039eaf/','Untitled-2-Recovered.webp','Untitled-2-Recovered',700,1000],
+  'Untitled-3-11':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f1ff0837-6c3c-45fe-817e-85125af2517d/','Untitled-3-11.webp','Untitled-3-11',700,1000],
+  'Untitled-3-12':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2f91258c-f298-4d3c-9dee-46d8affc5795/','Untitled-3-12.webp','Untitled-3-12',700,1000],
+  'Untitled-3-17':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/984a8f2d-7ff1-4fc4-9a8a-51ba31ee4cdb/','Untitled-3-17.webp','Untitled-3-17',700,1000],
+  'Untitled-3-18':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e9501fb3-6ee7-4688-85a1-811880f57d15/','Untitled-3-18.webp','Untitled-3-18',700,1000],
+  'Untitled-3-22':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2ee14290-139d-41ad-ac8a-3d6c66970bf0/','Untitled-3-22.webp','Untitled-3-22',700,1000],
+  'Untitled-3-26':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/479b35af-a15e-481a-a264-508e0413f9c7/','Untitled-3-26.webp','Untitled-3-26',700,1000],
+  'Untitled-3-34':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/fac01544-298e-42fe-8960-e23f8281b2ba/','Untitled-3-34.webp','Untitled-3-34',700,1000],
+  'Untitled-4-10':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/cf463c9c-2e41-4e0f-b83a-5c5333df0257/','Untitled-4-10.webp','Untitled-4-10',700,1000],
+  'Untitled-4-12':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0e4fd69a-7150-468b-8727-34573e191c5d/','Untitled-4-12.webp','Untitled-4-12',700,1000],
+  'Untitled-4-17':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/0530be9a-c4ce-4430-aa9b-d24bd36b3d9e/','Untitled-4-17.webp','Untitled-4-17',700,1000],
+  'Untitled-4-18':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d5f49603-b4c6-4e11-a316-b23bf278e920/','Untitled-4-18.webp','Untitled-4-18',700,1000],
+  'Untitled-4-20':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/cba9c4b0-4cbd-4eac-8ac5-f377e4dde0fe/','Untitled-4-20.webp','Untitled-4-20',700,1000],
+  'Untitled-4-25':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/9e9e15af-092e-48bd-bbd5-347b536578b1/','Untitled-4-25.webp','Untitled-4-25',700,1000],
+  'Untitled-4-27':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74e80c0a-6cdf-4989-9018-3372fe960d07/','Untitled-4-27.webp','Untitled-4-27',700,1000],
+  'Untitled-4-5':['/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/8fee5362-5c17-4dc2-b903-55cd66f9c040/','Untitled-4-5.webp','Untitled-4-5',700,1000]
+};
+var CAP=[['micro',100],['small',200],['medium',400],['large',600],['xlarge',1200]];
+function msrc(e){ return MB+e[0]+e[1]; }
+function mss(e){
+  var mx=Math.max(e[3],e[4]), out=[], seen={}, i, k, s, w;
+  for(i=0;i<CAP.length;i++){
+    k=CAP[i][0]; s=Math.min(1,CAP[i][1]/mx); w=Math.max(1,Math.round(e[3]*s));
+    if(seen[w]) continue; seen[w]=1;
+    out.push(MB+e[0]+k+'_'+e[2]+'.webp '+w+'w');
+  }
+  if(!seen[e[3]]) out.push(MB+e[0]+'2xlarge_'+e[2]+'.webp '+e[3]+'w');
+  return out.join(', ');
+}
+function productHref(slug){
+  /* Pretty URLs: /product/<slug>/ (folder + index.html). */
+  var inProduct = /(?:^|\/)product(?:\/|$)/.test(location.pathname);
+  return (inProduct ? '../' : 'product/') + slug + '/';
+}
+function slugTo(o){
+  var e=IMG[o[2]], h=IMG[o[3]];
+  return {n:o[0], u:productHref(o[1]),
+    i: e? msrc(e) : 'assets/products/'+o[2]+'.webp', s: e? mss(e) : '',
+    h: o[3]? (h? msrc(h) : 'assets/products/'+o[3]+'.webp') : '', hs: h? mss(h) : ''};
+}
+function card(o, sz){
+  var alt = o.n + ' — handmade rug by Seraj Rugs';
+  var ss = o.s ? ' srcset="'+o.s+'" sizes="'+sz+'"' : '';
+  var hs = o.hs ? ' srcset="'+o.hs+'" sizes="'+sz+'"' : '';
+  return '<article class="pcard">'+
+    '<div class="pcard__m">'+
+      '<img class="a" src="'+o.i+'"'+ss+' alt="'+alt+'" width="700" height="1000" loading="lazy" decoding="async">'+
+      (o.h && o.h!==o.i ? '<img class="b" src="'+o.h+'"'+hs+' alt="" width="700" height="1000" loading="lazy" decoding="async">' : '')+
+      '<span class="pcard__badge">New</span>'+
+      '<span class="pcard__peek" aria-hidden="true">View piece '+ARROW+'</span>'+
+    '</div>'+
+    '<div class="pcard__b">'+
+      '<h3><a class="pcard__name" href="'+o.u+'">'+o.n+'</a></h3>'+
+      '<a class="pcard__price" href="'+o.u+'">View details</a>'+
+    '</div>'+
+  '</article>';
+}
+
+/* ---------------- hash router --------------------------------------- */
+var currentRoute = null;
+var ROUTE_PARENT = {
+  'hand-knotted': 'shop',
+  'hand-tufted': 'shop',
+  'best-sellers': 'shop',
+  'classic': 'shop',
+  'minimal': 'shop',
+  'modern': 'shop'
+};
+function routeNode(slug){
+  return $('.route[data-route="' + slug + '"]');
+}
+function routeFromHash(){
+  var h = location.hash || '';
+  if(h.indexOf('#/') === 0){
+    var rest = h.slice(2);
+    var cut = rest.indexOf('/');
+    var slug = cut < 0 ? rest : rest.slice(0, cut);
+    var anchor = cut < 0 ? '' : rest.slice(cut + 1);
+    try { anchor = decodeURIComponent(anchor); } catch(e) {}
+    if(!slug) slug = 'home';
+    if(!routeNode(slug)){ slug = 'home'; anchor = ''; }
+    return {slug:slug, anchor:anchor};
+  }
+  /* Legacy bare anchors such as #gallery still resolve to their route. */
+  var plain = h.replace(/^#/, '');
+  if(plain && plain !== 'main'){
+    var target = document.getElementById(plain);
+    var owner = target && target.closest ? target.closest('.route') : null;
+    if(owner) return {slug:owner.getAttribute('data-route'), anchor:plain};
+  }
+  return {slug:'home', anchor:''};
+}
+function setRouteMeta(node){
+  var title = node.getAttribute('data-title') || 'Seraj Rugs';
+  var desc = node.getAttribute('data-desc') || '';
+  document.title = title;
+  var md = $('#metaDesc'); if(md) md.setAttribute('content', desc);
+  var ot = $('#ogTitle'); if(ot) ot.setAttribute('content', title);
+  var od = $('#ogDesc'); if(od) od.setAttribute('content', desc);
+}
+function setRouteCurrent(slug){
+  var exact = slug === 'home' ? '#/' : '#/' + slug;
+  var parent = ROUTE_PARENT[slug] ? '#/' + ROUTE_PARENT[slug] : '';
+  $$('.nav a, .menu a').forEach(function(a){
+    a.removeAttribute('aria-current');
+    var href = a.getAttribute('href') || '';
+    if(href === exact || (parent && href === parent)) a.setAttribute('aria-current', 'page');
+  });
+}
+function routeScroll(top, smooth){
+  var de = document.documentElement, prev = de.style.scrollBehavior;
+  if(!smooth) de.style.scrollBehavior = 'auto';
+  window.scrollTo({top:top, behavior:smooth ? 'smooth' : 'auto'});
+  if(!smooth) de.style.scrollBehavior = prev;
+}
+function showRoute(slug, anchor, initial){
+  var node = routeNode(slug) || routeNode('home');
+  if(!node) return;
+  slug = node.getAttribute('data-route');
+  var changed = slug !== currentRoute;
+  $$('.route').forEach(function(el){
+    var on = el === node;
+    if(on){ el.removeAttribute('hidden'); } else { el.setAttribute('hidden', ''); }
+    el.classList.toggle('active', on);
+  });
+  currentRoute = slug;
+  document.documentElement.setAttribute('data-route', slug);
+  setRouteMeta(node);
+  setRouteCurrent(slug);
+  if(changed){
+    window.dispatchEvent(new CustomEvent('seraj:route', {detail:{route:slug}}));
+  }
+  window.requestAnimationFrame(function(){
+    window.dispatchEvent(new Event('resize'));
+    if(anchor){
+      var target = document.getElementById(anchor);
+      if(target){
+        var top = target.getBoundingClientRect().top +
+          (window.pageYOffset || document.documentElement.scrollTop) - 84;
+        routeScroll(Math.max(0, top), !initial && !RM);
+      } else { routeScroll(0, false); }
+    } else { routeScroll(0, false); }
+    window.dispatchEvent(new Event('scroll'));
+    window.dispatchEvent(new CustomEvent('seraj:shown', {detail:{route:slug}}));
+    if(changed && !initial){
+      var m = document.getElementById('main');
+      if(m){ try { m.focus({preventScroll:true}); } catch(e) { m.focus(); } }
+    }
+  });
+}
+function router(){
+  /* Standalone pages are single documents with no .route containers; the
+     hash router only belongs to the one-page build. Bail out so the rest of
+     init() (menu, search, reveals, sliders) still runs there. */
+  if(!$('.route')) return;
+  if('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  var start = routeFromHash();
+  showRoute(start.slug, start.anchor, true);
+  window.addEventListener('hashchange', function(){
+    var r = routeFromHash();
+    showRoute(r.slug, r.anchor, false);
+  });
+  var skip = $('.skip');
+  if(skip) skip.addEventListener('click', function(e){
+    e.preventDefault();
+    var m = document.getElementById('main');
+    if(!m) return;
+    try { m.focus({preventScroll:true}); } catch(err) { m.focus(); }
+    routeScroll(0, !RM);
+  });
+}
+
+/* ---------------- loader ------------------------------------------- */
+function boot(){
+  var l = $('#loader');
+  if(!l) return;
+  /* The intro flourish belongs to home. Any deep link starts without it. */
+  if(currentRoute !== 'home'){
+    if(l.parentNode) l.parentNode.removeChild(l);
+    document.body.classList.remove('locked');
+    return;
+  }
+  var done = function(){ l.classList.add('done'); document.body.classList.remove('locked'); setTimeout(function(){ if(l&&l.parentNode) l.parentNode.removeChild(l); },900); };
+  document.body.classList.add('locked');
+  if(RM){ done(); }
+  else { window.addEventListener('load', function(){ setTimeout(done, 700); }); setTimeout(done, 2600); }
+}
+
+/* ---------------- header + to-top + solid state --------------------- */
+function header(){
+  var h = $('#hdr'), t = $('#totop');
+  if(!h) return;
+  function on(){
+    var active = $('.route.active');
+    /* SPA routes keep hero/phead inside .route; multipage + PDP look document-wide. */
+    var hero = active
+      ? ($('#hero', active) || $('.phead', active))
+      : ($('#hero') || $('.phead'));
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    var lightPage = document.body.classList.contains('page-product') || !!$('.pdp');
+    var solid = lightPage || !hero || y > (hero.offsetHeight - 90);
+    h.classList.toggle('solid', solid);
+    if(t) t.classList.toggle('on', y > window.innerHeight * 0.9);
+  }
+  window.addEventListener('scroll', on, {passive:true});
+  window.addEventListener('resize', on);
+  window.addEventListener('seraj:route', on);
+  on();
+  if(t) t.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior: RM ? 'auto' : 'smooth'});
+  });
+}
+
+/* ---------------- full-screen menu --------------------------------- */
+function menu(){
+  var b = $('#burger'), m = $('#menu'), c = $('#menuClose'), open = false;
+  var links = $$('.menu__list a', m);
+  function set(v){
+    open = v;
+    m.classList.toggle('open', v);
+    b.setAttribute('aria-expanded', String(v));
+    b.setAttribute('aria-label', v ? 'Close menu' : 'Open menu');
+    document.body.classList.toggle('menu-open', v);
+    document.body.classList.toggle('locked', v);
+    if(v){ m.removeAttribute('inert'); } else { m.setAttribute('inert',''); }
+    links.forEach(function(a,i){
+      a.style.transitionDelay = v ? (0.12 + i*0.06) + 's' : '0s';
+    });
+    if(v){
+      setTimeout(function(){ links[0].focus(); }, 260);
+    } else if(m.contains(document.activeElement)){
+      /* focus was inside the closing menu: hand it back to the control
+         that opened it, so keyboard users are not dropped at the top */
+      if(b.offsetParent){ b.focus(); } else { document.activeElement.blur(); }
+    }
+  }
+  b.addEventListener('click', function(){ set(!open); });
+  c.addEventListener('click', function(){ set(false); });
+  m.addEventListener('click', function(e){ if(e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      if(open) set(false);
+      if(searchOpen) closeSearch();
+    }
+  });
+}
+
+/* ---------------- search overlay ----------------------------------- */
+var searchOpen = false, lastFocus = null;
+function closeSearch(){
+  var s = $('#search'); if(!s) return;
+  s.classList.remove('open'); searchOpen = false;
+  s.setAttribute('inert','');
+  document.body.classList.remove('locked');
+  if(lastFocus) lastFocus.focus();
+}
+function search(){
+  var s = $('#search'), o = $('#searchOpen'), c = $('#searchClose');
+  if(!s || !o || !c) return;
+  s.setAttribute('inert','');
+  o.addEventListener('click', function(){
+    lastFocus = o; searchOpen = true;
+    s.classList.add('open'); s.removeAttribute('inert');
+    document.body.classList.add('locked');
+    setTimeout(function(){ $('#searchInput').focus(); }, 120);
+  });
+  c.addEventListener('click', closeSearch);
+  s.addEventListener('click', function(e){ if(e.target === s) closeSearch(); });
+}
+
+/* ---------------- hero slider -------------------------------------- */
+function hero(){
+  var wrap = $('#heroSlides'); if(!wrap) return;
+  var slides = $$('.hero__slide', wrap);
+  var dots = $$('.hero__dots button');
+  var i = 0, timer = null, DUR = 7000;
+  dots.forEach(function(d){ d.style.setProperty('--slide', DUR+'ms'); });
+  function go(n, user){
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function(s,k){
+      s.classList.toggle('active', k === i);
+      s.setAttribute('aria-hidden', k === i ? 'false' : 'true');
+    });
+    dots.forEach(function(d,k){
+      d.setAttribute('aria-selected', k === i ? 'true' : 'false');
+      var bar = d.firstElementChild;
+      bar.style.animation = 'none';
+      void bar.offsetWidth;
+      bar.style.animation = (k === i && !RM) ? '' : 'none';
+      if(k === i && RM) bar.style.transform = 'scaleX(1)';
+    });
+    if(user) restart();
+  }
+  function restart(){ clearInterval(timer); if(!RM) timer = setInterval(function(){ go(i+1); }, DUR); }
+  dots.forEach(function(d,k){ d.addEventListener('click', function(){ go(k, true); }); });
+  document.addEventListener('visibilitychange', function(){
+    if(document.hidden){ clearInterval(timer); } else { restart(); }
+  });
+  go(0); restart();
+}
+
+/* ---------------- reveal on scroll (self-healing) ------------------- */
+function reveal(){
+  var els = $$('[data-rv]'); if(!els.length) return;
+  if(RM || !('IntersectionObserver' in window)){ els.forEach(function(e){ e.classList.add('in'); }); return; }
+
+  var fired = false;
+  var io = new IntersectionObserver(function(en){
+    en.forEach(function(e){ if(e.isIntersecting){ fired = true; e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.12});
+  els.forEach(function(e){ io.observe(e); });
+
+  /* A clip-path reveal paints nothing until it is revealed, so the observer
+     reports zero intersecting area and these elements would stay hidden for
+     good. Track their rectangles directly instead. */
+  var pending = els.filter(function(e){
+    var m = e.getAttribute('data-rv');
+    return (m === 'clip' || m === 'mask') && !e.classList.contains('in');
+  });
+  function scan(){
+    if(!pending.length) return;
+    var vh = window.innerHeight || 800;
+    pending = pending.filter(function(e){
+      if(e.classList.contains('in')) return false;
+      var r = e.getBoundingClientRect();
+      if(r.height && r.bottom > 0 && r.top < vh * 0.92){ e.classList.add('in'); return false; }
+      return true;
+    });
+  }
+  scan();
+  window.addEventListener('scroll', scan, {passive:true});
+  window.addEventListener('resize', scan);
+
+  var groups = $$('[data-thread], .exp__i, .arc, .steps');
+  var io2 = new IntersectionObserver(function(en){
+    en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io2.unobserve(e.target); } });
+  }, {threshold:0.25});
+  groups.forEach(function(e){ io2.observe(e); });
+
+  /* When a hash route becomes visible, reveal the elements that are already
+     on screen and let the observer handle the rest as the visitor scrolls. */
+  window.addEventListener('seraj:shown', function(){
+    var root = $('.route.active'); if(!root) return;
+    $$('[data-rv]', root).forEach(function(e){
+      var r = e.getBoundingClientRect();
+      if(r.height && r.bottom > 0 && r.top < window.innerHeight * 1.05) e.classList.add('in');
+    });
+    $$('[data-thread], .exp__i, .arc, .steps', root).forEach(function(e){
+      e.classList.add('in');
+    });
+    scan();
+  });
+
+  /* Failsafe: if IntersectionObserver never fires (occluded window,
+     blocked rendering, exotic UA), reveal visible content rather than leave
+     it permanently invisible. Hidden routes are handled when they open. */
+  function heal(){
+    if(fired) return;
+    els.forEach(function(e){ if(e.getClientRects().length) e.classList.add('in'); });
+    groups.forEach(function(e){ if(e.getClientRects().length) e.classList.add('in'); });
+  }
+  setTimeout(heal, 2500);
+  window.addEventListener('scroll', function once(){
+    window.removeEventListener('scroll', once);
+    setTimeout(heal, 400);
+  }, {passive:true});
+}
+
+/* ---------------- parallax + hero mask (single rAF loop) ------------ */
+function parallax(){
+  var items = $$('[data-par]').map(function(el){
+    return {el:el, f:parseFloat(el.getAttribute('data-par')) || 0.1, host:el.closest('section')||el.parentNode};
+  });
+  var next = $('#heroNext'), heroEl = $('#hero');
+  var ticking = false;
+  function frame(){
+    ticking = false;
+    var vh = window.innerHeight;
+    if(!RM){
+      items.forEach(function(o){
+        var r = o.host.getBoundingClientRect();
+        if(r.bottom < -200 || r.top > vh + 200) return;
+        var prog = (r.top + r.height/2 - vh/2) / vh;
+        o.el.style.transform = 'translate3d(0,' + (prog * o.f * -110).toFixed(2) + 'px,0)';
+      });
+      if(next && heroEl){
+        var hr = heroEl.getBoundingClientRect();
+        var p = clamp(-hr.top / hr.height, 0, 1);
+        next.style.transform = 'translateY(' + ((1 - p) * 100).toFixed(2) + '%)';
+      }
+    }
+  }
+  function req(){ if(!ticking){ ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener('scroll', req, {passive:true});
+  window.addEventListener('resize', req);
+  req();
+}
+
+/* ---------------- hero floating plate (cursor reactive) ------------- */
+function floatPlate(){
+  if(RM || COARSE) return;
+  var heroEl = $('#hero'); if(!heroEl) return;
+  var plates = $$('[data-float]', heroEl);
+  var tx = 0, ty = 0, cx = 0, cy = 0, run = false;
+  heroEl.addEventListener('pointermove', function(e){
+    var r = heroEl.getBoundingClientRect();
+    tx = ((e.clientX - r.left) / r.width - 0.5) * 34;
+    ty = ((e.clientY - r.top) / r.height - 0.5) * 26;
+    if(!run){ run = true; requestAnimationFrame(loop); }
+  });
+  heroEl.addEventListener('pointerleave', function(){ tx = 0; ty = 0; });
+  function loop(){
+    cx += (tx - cx) * 0.08; cy += (ty - cy) * 0.08;
+    plates.forEach(function(p){
+      p.style.transform = 'translate3d(' + cx.toFixed(2) + 'px, calc(-50% + ' + cy.toFixed(2) + 'px), 0) rotate(' + (cx*0.12).toFixed(2) + 'deg)';
+    });
+    if(Math.abs(tx-cx) > 0.1 || Math.abs(ty-cy) > 0.1){ requestAnimationFrame(loop); } else { run = false; }
+  }
+}
+
+/* ---------------- magnetic buttons + custom cursor ------------------ */
+function pointerFx(){
+  if(RM || COARSE) return;
+  $$('.magnetic').forEach(function(el){
+    el.addEventListener('pointermove', function(e){
+      var r = el.getBoundingClientRect();
+      var x = (e.clientX - r.left - r.width/2) * 0.22;
+      var y = (e.clientY - r.top - r.height/2) * 0.32;
+      el.style.transform = 'translate(' + x.toFixed(2) + 'px,' + y.toFixed(2) + 'px)';
+    });
+    el.addEventListener('pointerleave', function(){ el.style.transform = ''; });
+    el.addEventListener('blur', function(){ el.style.transform = ''; });
+  });
+
+  var c = $('#cursor'); if(!c) return;
+  var mx = 0, my = 0, lx = 0, ly = 0, on = false;
+  window.addEventListener('pointermove', function(e){
+    if(e.pointerType !== 'mouse') return;
+    mx = e.clientX; my = e.clientY;
+    if(!on){ on = true; c.classList.add('on'); lx = mx; ly = my; requestAnimationFrame(loop); }
+    var t = e.target;
+    c.classList.toggle('big', !!(t.closest && t.closest('a, button, .pcard, .coll__c, input, textarea')));
+  }, {passive:true});
+  function loop(){
+    lx += (mx - lx) * 0.22; ly += (my - ly) * 0.22;
+    c.style.transform = 'translate(' + lx + 'px,' + ly + 'px) translate(-50%,-50%)';
+    requestAnimationFrame(loop);
+  }
+}
+
+/* ---------------- 3D carousel engine (arc + coverflow) -------------- */
+function stage3D(stageSel, trackSel, data, cfg, hooks){
+  var stage = $(stageSel), track = $(trackSel); if(!stage || !track) return null;
+  track.innerHTML = data.map(function(o){ return card(o, cfg.sizes); }).join('');
+  var cards = $$('.pcard', track);
+  /* start on the middle item so the sequence reads as a continuum, not a list */
+  var mid = Math.floor((data.length - 1) / 2);
+  var start = cfg.start === 'mid' ? mid : (typeof cfg.start === 'number' ? cfg.start : 0);
+  start = clamp(start, 0, data.length - 1);
+  var cur = start, target = start, raf = null, dragging = false, startX = 0, startT = 0;
+  var total = data.length;
+
+  function step(){
+    var w = cards[0] ? cards[0].offsetWidth : 200;
+    return w + (cfg.gap || 20);
+  }
+  /* Circular offsets: past the last card the sequence continues with the
+     first, so arrow keys never dead-end and the fan never empties out. */
+  function off(i){
+    if(!cfg.loop || total < 2) return i - cur;
+    var o = ((i - cur) % total + total) % total;
+    return o > total / 2 ? o - total : o;
+  }
+  function wrap(i){
+    if(!cfg.loop || total < 2) return i;
+    return ((i % total) + total) % total;
+  }
+  /* Cards sit in a flex row and move by transform. Lazy loading follows layout
+     position, not transforms, so an image translated in from ~1900px away never
+     starts loading. Prime each card just before it can enter the visible band. */
+  var armed = false;
+  function prime(){
+    if(!armed) return;
+    cards.forEach(function(c, i){
+      if(c.dataset.pr || Math.abs(off(i)) > (cfg.max || 5) + 1) return;
+      c.dataset.pr = '1';
+      $$('img', c).forEach(function(im){
+        im.loading = 'eager';
+        if(!im.currentSrc) im.src = im.getAttribute('src');
+      });
+    });
+  }
+  function paint(){
+    prime();
+    var s = step();
+    var maxOff = cfg.max || 5;
+    cards.forEach(function(c, i){
+      var o = off(i), ab = Math.abs(o);
+      var x = o * s;
+      var y = cfg.arc ? -Math.pow(Math.abs(o), 1.35) * (cfg.arcAmt || 18) : 0;
+      var rz = cfg.arc ? o * (cfg.rot || 2) : 0;
+      var ry = cfg.coverflow ? -o * (cfg.rot || 10) : 0;
+      var sc = Math.max(1 - ab * 0.055, 0.6);
+      var z = cfg.coverflow ? -ab * (cfg.depth || 150) : 0;
+      c.style.transform = 'translate3d(calc(-50% + ' + x.toFixed(1) + 'px), calc(-50% + ' + y.toFixed(1) + 'px), ' + z.toFixed(0) + 'px) rotateY(' + ry.toFixed(2) + 'deg) rotate(' + rz.toFixed(2) + 'deg) scale(' + sc.toFixed(3) + ')';
+      c.style.zIndex = String(120 - Math.round(ab));
+      c.style.opacity = ab > maxOff ? '0' : '1';
+      c.classList.toggle('on', ab < 0.6);
+    });
+  }
+  function tick(){
+    cur += (target - cur) * (RM ? 1 : 0.14);
+    if(Math.abs(target - cur) < 0.0015) cur = target;
+    paint();
+    if(hooks && hooks.change) hooks.change(wrap(cur), total);
+    raf = (cur === target) ? null : requestAnimationFrame(tick);
+  }
+  function go(n){
+    target = (cfg.loop && total > 1) ? n : clamp(n, 0, total - 1);
+    if(!raf) raf = requestAnimationFrame(tick);
+  }
+  function nearest(){ return Math.round(target); }
+
+  $('#'+cfg.prev).addEventListener('click', function(){ go(nearest() - 1); });
+  $('#'+cfg.next).addEventListener('click', function(){ go(nearest() + 1); });
+  /* Bind at section level so the keys keep working after the HUD buttons or
+     the section background have focus, not only when the stage itself does. */
+  var sec = stage.closest('section') || stage;
+  sec.addEventListener('keydown', function(e){
+    if(e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    var t = e.target;
+    if(t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    if(e.key === 'ArrowRight'){ e.preventDefault(); go(nearest() + 1); }
+    else if(e.key === 'ArrowLeft'){ e.preventDefault(); go(nearest() - 1); }
+  });
+  function focusStage(e){
+    if(e.target.closest('a,button,input,select,textarea')) return;
+    try{ stage.focus({preventScroll:true}); }catch(err){ stage.focus(); }
+  }
+  /* Focus fires on click, after the browser's own focus handling: a plain
+     pointerdown focus would be cancelled when the click lands on a div. */
+  sec.addEventListener('click', focusStage);
+  /* Delay drag until the pointer moves — otherwise product card links never open. */
+  var press = false, dragged = false, moved = 0;
+  stage.addEventListener('pointerdown', function(e){
+    if(e.pointerType === 'touch' && e.target.closest('a')) return;
+    press = true; dragged = false; moved = 0;
+    startX = e.clientX; startT = target;
+  });
+  stage.addEventListener('pointermove', function(e){
+    if(!press) return;
+    var dx = e.clientX - startX;
+    moved = Math.abs(dx);
+    if(moved > 6){
+      dragged = true; dragging = true;
+      if(!stage.classList.contains('drag')){
+        stage.classList.add('drag');
+        try{ stage.setPointerCapture(e.pointerId); }catch(err){}
+      }
+      target = (cfg.loop && total > 1) ? startT - dx / step() : clamp(startT - dx / step(), 0, total - 1);
+      if(!raf) raf = requestAnimationFrame(tick);
+    }
+  });
+  ['pointerup','pointercancel','pointerleave'].forEach(function(ev){
+    stage.addEventListener(ev, function(){
+      if(!press) return;
+      press = false; dragging = false; stage.classList.remove('drag');
+      if(dragged) go(Math.round(target));
+    });
+  });
+  stage.addEventListener('click', function(e){
+    if(dragged){ e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  stage.addEventListener('dragstart', function(e){ e.preventDefault(); });
+  window.addEventListener('resize', paint);
+  paint();
+  if(hooks && hooks.change) hooks.change(start, data.length);
+  /* hold off fetching until the carousel nears the viewport */
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ armed = true; prime(); } });
+    }, {rootMargin:'900px 0px'}).observe(stage);
+  } else { armed = true; prime(); }
+  return {go:go};
+}
+
+/* ---------------- drag-scroll rails -------------------------------- */
+function dragScroll(sel, barSel, opts){
+  var el = $(sel); if(!el) return;
+  var startLeft = !!(opts && opts.start === 'left');
+  var down = false, sx = 0, sl = 0, moved = 0;
+  var bar = barSel ? $(barSel) : null;
+  function upd(){
+    if(!bar) return;
+    var max = el.scrollWidth - el.clientWidth;
+    var w = max > 0 ? Math.max(12, (el.clientWidth / el.scrollWidth) * 100) : 100;
+    var p = max > 0 ? el.scrollLeft / max : 0;
+    bar.style.width = w + '%';
+    bar.style.left = (p * (100 - w)) + '%';
+  }
+  /* start the rail on its middle item */
+  function centre(){
+    var kids = el.children;
+    if(!kids.length) return;
+    var k = kids[Math.floor((kids.length - 1) / 2)];
+    var max = el.scrollWidth - el.clientWidth;
+    if(!k || max <= 0) return;
+    /* measure against the rail itself, not the card's offsetParent */
+    var kr = k.getBoundingClientRect(), er = el.getBoundingClientRect();
+    var delta = (kr.left - er.left) + el.scrollLeft;
+    el.scrollLeft = clamp(delta - (el.clientWidth - kr.width) / 2, 0, max);
+  }
+  /* Delay .drag (pointer-events:none on children) until the pointer actually
+     moves — otherwise a plain click never reaches the product links. */
+  var dragged = false;
+  el.addEventListener('pointerdown', function(e){
+    if(e.pointerType !== 'mouse') return;
+    down = true; moved = 0; dragged = false; sx = e.clientX; sl = el.scrollLeft;
+  });
+  el.addEventListener('pointermove', function(e){
+    if(!down) return;
+    var dx = e.clientX - sx; moved = Math.abs(dx);
+    if(moved > 6){
+      dragged = true;
+      if(!el.classList.contains('drag')){
+        el.classList.add('drag');
+        try{ el.setPointerCapture(e.pointerId); }catch(err){}
+      }
+      el.scrollLeft = sl - dx;
+    }
+  });
+  ['pointerup','pointercancel','pointerleave'].forEach(function(ev){
+    el.addEventListener(ev, function(){ down = false; el.classList.remove('drag'); });
+  });
+  el.addEventListener('click', function(e){
+    if(dragged){ e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  el.addEventListener('dragstart', function(e){ e.preventDefault(); });
+  el.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight'){ e.preventDefault(); el.scrollBy({left: el.clientWidth*0.6, behavior: RM?'auto':'smooth'}); }
+    if(e.key === 'ArrowLeft'){ e.preventDefault(); el.scrollBy({left: -el.clientWidth*0.6, behavior: RM?'auto':'smooth'}); }
+  });
+  if(bar){
+    el.addEventListener('scroll', upd, {passive:true});
+    window.addEventListener('resize', upd);
+  }
+  /* centre immediately, then again once layout settles - the rail must not
+     depend on requestAnimationFrame, which can be starved. Rails that hold a
+     fixed set of cards (the collections rail) start at the first card instead,
+     so nothing is cropped on load. */
+  if(!startLeft){ centre(); }
+  upd();
+  requestAnimationFrame(function(){ if(!startLeft){ centre(); } upd(); });
+  window.addEventListener('load', function(){ if(!startLeft && !el.scrollLeft){ centre(); upd(); } });
+  window.addEventListener('seraj:route', function(){
+    if(startLeft){ el.scrollLeft = 0; upd(); return; }
+    requestAnimationFrame(function(){ centre(); upd(); });
+  });
+}
+
+/* ---------------- tilt on gallery cards ---------------------------- */
+function tilt(){
+  if(RM || COARSE) return;
+  $$('#galGrid .pcard').forEach(function(c){
+    var m = $('.pcard__m', c); if(!m) return;
+    m.classList.add('tilt');
+    m.addEventListener('pointermove', function(e){
+      var r = m.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      m.style.transform = 'perspective(900px) rotateY(' + (px*7).toFixed(2) + 'deg) rotateX(' + (-py*7).toFixed(2) + 'deg) translateZ(6px)';
+    });
+    m.addEventListener('pointerleave', function(){ m.style.transform = ''; });
+  });
+}
+
+/* ---------------- build product modules ---------------------------- */
+/* Generic static product grids used by the shop + category pages. */
+var GRIDS = {hk:HK, ht:HT, arc:ARC, gal:GAL, classic:CL, minimal:MI, modern:MO, port:PORT};
+function grids(){
+  $$('[data-grid]').forEach(function(g){
+    var list = GRIDS[g.getAttribute('data-grid')];
+    if(!list) return;
+    var sizes = g.getAttribute('data-sizes') || '(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw';
+    g.innerHTML = list.map(slugTo).map(function(o){ return card(o, sizes); }).join('');
+  });
+}
+
+function build(){
+  var hk = HK.map(slugTo), ht = HT.map(slugTo), arc = ARC.map(slugTo), gal = GAL.map(slugTo);
+
+  stage3D('#knotStage', '#knotTrack', hk, {gap:26, coverflow:true, rot:13, depth:170, max:6, loop:true, prev:'knotPrev', next:'knotNext', sizes:'(max-width: 720px) 62vw, 320px', start:'mid'}, {
+    change: function(i, n){
+      var bar = $('#knotBar'), now = $('#knotNow');
+      if(bar){ var w = 100/n; bar.style.width = w+'%'; bar.style.left = (i*w)+'%'; }
+      if(now){ var p = hk[Math.round(i) % hk.length]; now.textContent = p ? p.n : ''; }
+    }
+  });
+
+  stage3D('#arcStage', '#arcTrack', arc, {gap:18, arc:true, arcAmt:16, rot:1.6, max:4, loop:true, prev:'arcPrev', next:'arcNext', sizes:'(max-width: 720px) 52vw, 260px', start:'mid'}, {
+    change: function(i){
+      var t = $('#arcIdx');
+      if(t){ var idx = Math.round(i) % arc.length, n = idx+1; t.textContent = (n<10?'0':'')+n+' / '+(arc.length<10?'0':'')+arc.length; }
+    }
+  });
+
+  var rail = $('#tuftRail');
+  if(rail){ rail.innerHTML = ht.map(function(o){ return card(o, '(max-width: 720px) 70vw, 300px'); }).join(''); dragScroll('#tuftRail', '#tuftBar'); }
+  dragScroll('#insideRail', null, {start:'left'});
+
+  var g = $('#galGrid');
+  if(g) g.innerHTML = gal.map(function(o){ return card(o, '(max-width: 720px) 92vw, 500px'); }).join('');
+  grids();
+  hoverReady();
+  tilt();
+}
+
+/* A product card may ship with a single image. Mark a card "ready" only once
+   its second image is actually decoded, so the hover cross-fade never swaps
+   the main image out for a frame that is still empty. */
+function hoverReady(){
+  $$('.pcard').forEach(function(c){
+    var b = c.querySelector('.pcard__m img.b');
+    if(!b) return;
+    if(b.complete && b.naturalWidth > 0){ c.classList.add('ready'); return; }
+    b.addEventListener('load', function(){ c.classList.add('ready'); }, {once:true});
+  });
+}
+
+/* ---------------- product enquiry WhatsApp ------------------------- */
+function pdpWa(){
+  var a = $('#waEnquire'), f = a && a.closest('form');
+  if(!a || !f) return;
+  a.addEventListener('click', function(){
+    var product = (f.querySelector('[name="product"]') || {}).value || 'a rug';
+    var name = (($('#coName', f) || {}).value || '').trim();
+    var email = (($('#coEmail', f) || {}).value || '').trim();
+    var phone = (($('#coPhone', f) || {}).value || '').trim();
+    var size = (($('#coSize', f) || {}).value || '').trim();
+    var msg = (($('#coMsg', f) || {}).value || '').trim();
+    var lines = ['Hi Seraj Rugs — enquiry about ' + product + '.'];
+    if(name) lines.push('Name: ' + name);
+    if(email) lines.push('Email: ' + email);
+    if(phone) lines.push('Phone: ' + phone);
+    if(size) lines.push('Preferred size: ' + size);
+    if(msg) lines.push('', msg);
+    a.href = 'https://wa.me/918384012977?text=' + encodeURIComponent(lines.join('\n'));
+  });
+}
+
+/* ---------------- init --------------------------------------------- */
+function init(){
+  router(); boot(); header(); menu(); search(); hero(); reveal(); parallax();
+  floatPlate(); pointerFx(); build(); pdpWa();
+}
+if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); }
+else { init(); }
+})();
+
+</script>
+</body>
+</html>
