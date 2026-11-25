@@ -1137,10 +1137,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 .fx__privacy{grid-column:1/-1;font-size:.84rem;color:var(--muted);margin:0;line-height:1.6;border-left:1px solid var(--accent);padding-left:.9rem}
 .fx__actions{display:flex;gap:1rem 1.4rem;align-items:center;flex-wrap:wrap}
 .fx__actions .enq__note{grid-column:auto}
-/* pre-submit WhatsApp shortcut, inserted beside every submit button by forms() */
-.fx__chat{gap:.6rem}
-.fx__chat svg{width:16px;height:16px;flex:none;transition:none}
-.fx__chat:hover svg{transform:none}
+/* WhatsApp / email shortcuts, inserted beside every submit button by forms() */
+.fx__chat,.fx__mail{gap:.6rem}
+.fx__chat svg,.fx__mail svg{width:16px;height:16px;flex:none;transition:none}
+.fx__chat:hover svg,.fx__mail:hover svg{transform:none}
 .fx__done{grid-column:1/-1;border:1px solid var(--ink);background:var(--paper-2);padding:1.2rem 1.4rem}
 .fx__done:focus{outline:2px solid var(--ink);outline-offset:2px}
 .fx__done h3{font-family:var(--serif);font-weight:400;font-size:1.5rem;margin:0 0 .5rem;text-transform:none}
@@ -1276,8 +1276,8 @@ body.menu-open .hdr__cta{visibility:hidden}
 .qz__nav{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px}
 .qz__back{min-height:44px;padding:0;border:0;background:none;font:inherit;font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:#3A342D;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
 .qz__back:hover{color:var(--ink)}
-.qz__send{gap:10px}
-.qz__send svg{width:18px;height:18px;flex:none}
+.qz__send,.qz__mail{gap:10px}
+.qz__send svg,.qz__mail svg{width:18px;height:18px;flex:none}
 .qz__step:not([hidden]){animation:qzIn .4s var(--ease)}
 @keyframes qzIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.qz__step:not([hidden]){animation:none}.qz__track i{transition:none}}
@@ -1731,17 +1731,17 @@ body.menu-open .hdr__cta{visibility:hidden}
 <!-- ============================ HEADER ============================ -->
 <header class="hdr" id="hdr">
   <div class="hdr__in">
-    <a class="brand" href="#/" aria-label="Seraj Rugs &#x2014; home"><span class="r-wordmark">SERAJ RUGS</span></a>
+    <a class="brand" href="/" aria-label="Seraj Rugs &#x2014; home"><span class="r-wordmark">SERAJ RUGS</span></a>
     <nav class="nav nav--main" aria-label="Primary">
-      <a href="#/projects">Projects</a>
-      <a href="#/trade-program">Trade</a>
-      <a href="#/atelier">Atelier</a>
-      <a href="#/craft">Craft</a>
-      <a href="#/about">Story</a>
-      <a href="#/blogs">Blogs</a>
+      <a href="/projects">Projects</a>
+      <a href="/trade-program">Trade</a>
+      <a href="/atelier">Atelier</a>
+      <a href="/craft">Craft</a>
+      <a href="/about">Story</a>
+      <a href="/blogs">Blogs</a>
     </nav>
     <div class="hdr__r">
-      <a class="btn hdr__cta" href="#/projects">Start a Project</a>
+      <a class="btn hdr__cta" href="/projects">Start a Project</a>
       <button class="icon-btn" id="searchOpen" type="button" aria-label="Search products"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></button>
       <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
     </div>
@@ -1756,38 +1756,38 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="menu__in">
     <nav aria-label="Full menu">
       <ul class="menu__list">
-        <li><a href="#/projects"><em>01</em>Projects</a></li>
-        <li><a href="#/trade-program"><em>02</em>Trade Programme</a></li>
-        <li><a href="#/atelier"><em>03</em>Atelier</a></li>
-        <li><a href="#/custom-rugs"><em>04</em>Custom Rugs</a></li>
-        <li><a href="#/craft"><em>05</em>Craft</a></li>
-        <li><a href="#/about"><em>06</em>Our Story</a></li>
-        <li><a href="#/blogs"><em>07</em>Blogs</a></li>
-        <li><a href="#/shop"><em>08</em>Shop</a></li>
+        <li><a href="/projects"><em>01</em>Projects</a></li>
+        <li><a href="/trade-program"><em>02</em>Trade Programme</a></li>
+        <li><a href="/atelier"><em>03</em>Atelier</a></li>
+        <li><a href="/custom-rugs"><em>04</em>Custom Rugs</a></li>
+        <li><a href="/craft"><em>05</em>Craft</a></li>
+        <li><a href="/about"><em>06</em>Our Story</a></li>
+        <li><a href="/blogs"><em>07</em>Blogs</a></li>
+        <li><a href="/shop"><em>08</em>Shop</a></li>
       </ul>
     </nav>
     <div class="menu__side">
       <p class="mtitle">Collections</p>
       <ul>
-        <li><a href="#/hand-knotted">Hand Knotted</a></li>
-        <li><a href="#/hand-tufted">Hand Tufted</a></li>
-        <li><a href="#/modern">Modern</a></li>
-        <li><a href="#/minimal">Minimal</a></li>
-        <li><a href="#/classic">Classic</a></li>
-        <li><a href="#/best-sellers">Best Sellers</a></li>
+        <li><a href="/hand-knotted">Hand Knotted</a></li>
+        <li><a href="/hand-tufted">Hand Tufted</a></li>
+        <li><a href="/modern">Modern</a></li>
+        <li><a href="/minimal">Minimal</a></li>
+        <li><a href="/classic">Classic</a></li>
+        <li><a href="/best-sellers">Best Sellers</a></li>
       </ul>
       <p class="mtitle">Company</p>
       <ul>
-        <li><a href="#/event">Events</a></li>
-        <li><a href="#/portfolio">Portfolio</a></li>
-        <li><a href="#/catalogue">Catalogue</a></li>
-        <li><a href="#/creator-programme">Creator Programme</a></li>
-        <li><a href="#/brand-programme">Brand Programme</a></li>
-        <li><a href="#/contact">Contact us</a></li>
+        <li><a href="/event">Events</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/catalogue">Catalogue</a></li>
+        <li><a href="/creator-programme">Creator Programme</a></li>
+        <li><a href="/brand-programme">Brand Programme</a></li>
+        <li><a href="/contact">Contact us</a></li>
         <li><a href="https://serajrugs.com/my-account/">Login / Register</a></li>
       </ul>
       <p class="menu__addr">Looking for advice?<br>
-        <a href="#/contact">Contact Us</a><br>
+        <a href="/contact">Contact Us</a><br>
         <a href="mailto:info@serajrugs.com">info@serajrugs.com</a><br>
         <a href="tel:+918384012977">+91 8384012977</a>
       </p>
@@ -1823,9 +1823,9 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap hx__in">
     <h1 class="hx__title" id="heroTitle">Handmade rugs for deadlines that cannot move.</h1>
     <p class="hx__sub">Hand-knotted, hand-tufted, handwoven and flatweave rugs, made in our own workshops in Nepal and India.</p>
-    <div class="hx__cta"><a class="rbtn rbtn--solid" href="#/projects">Start a project</a><a class="rbtn" href="#/commission">Commission one rug</a></div>
+    <div class="hx__cta"><a class="rbtn rbtn--solid" href="/projects">Start a project</a><a class="rbtn" href="/commission">Commission one rug</a></div>
     <div class="hx__foot">
-      <a class="hx__watch" href="#/craft"><span class="hx__play"><svg viewBox="0 0 12 14" aria-hidden="true"><path d="M1 1l10 6-10 6z" fill="currentColor"/></svg></span>Watch the making, 14 seconds</a>
+      <a class="hx__watch" href="/craft"><span class="hx__play"><svg viewBox="0 0 12 14" aria-hidden="true"><path d="M1 1l10 6-10 6z" fill="currentColor"/></svg></span>Watch the making, 14 seconds</a>
       <div class="hx__side"><span class="hx__credit">Background: our workshops, with illustrative aerial and weaving shots</span><button class="hx__pause" type="button" hidden>Pause background video</button></div>
     </div>
   </div>
@@ -1846,10 +1846,10 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="r-head"><h2 class="r-h2" id="doorsTitle" data-rv>Four ways to work with us</h2><span class="r-kicker" data-rv>Choose your door</span></div>
     <div class="r-doors snap">
-      <a class="r-door" href="#/projects/enquire" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/e60e7a78-06c8-42d8-b558-ca9ddf120aac/projects-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/e60e7a78-06c8-42d8-b558-ca9ddf120aac/projects-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/3ee730c3-d570-4615-b55c-6adad2c4bf97/projects-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A patterned rug laid beside the bed in a hotel room, in daylight" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">01&#xA0;&#xA0;Projects</span><h3 class="r-h3">Hotels, cruise and luxury homes</h3><p>Every rug in your project from one maker. One lead, one approved colour.</p><span class="r-cta">Send your rug schedule &#x2192;</span></a>
-      <a class="r-door rv-d1" href="#/trade-program/apply" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/9904c6c8-4dfd-4d5c-a61f-766a0678933a/trade-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/9904c6c8-4dfd-4d5c-a61f-766a0678933a/trade-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/5531708f-c70e-4543-9050-d4b48eae6dba/trade-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A styled showroom lounge with cream chairs and a textured rug" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">02&#xA0;&#xA0;Trade and white label</span><h3 class="r-h3">Designers, brands and furniture stores</h3><p>Trade pricing, your label on our looms, a sample kit and low first runs.</p><span class="r-cta">Apply for a trade account &#x2192;</span></a>
-      <a class="r-door rv-d2" href="#/atelier/atelier-apply" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/a90ef46e-3af1-4653-87f7-57a2eb114db8/atelier-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/a90ef46e-3af1-4653-87f7-57a2eb114db8/atelier-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/f34a5417-b6b2-49d1-98a6-d82fec1da7f7/atelier-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A large abstract artwork standing in a living room above a patterned kilim" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">03&#xA0;&#xA0;Atelier</span><h3 class="r-h3">Launch your own rug collection</h3><p>Artists, textile and interior designers: bring a concept; we weave it as a limited edition.</p><span class="r-cta">Apply now &#x2192;</span></a>
-      <a class="r-door rv-d3" href="#/commission/brief" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/b70e1d8e-da40-424d-a8ab-7d40c56c3991/commission-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/b70e1d8e-da40-424d-a8ab-7d40c56c3991/commission-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/92d6ae99-1f55-4342-b5db-e6fc3e5eac1c/commission-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A flatweave rug in cream, black and terracotta blocks in a warm sitting room" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">04&#xA0;&#xA0;Commission</span><h3 class="r-h3">One rug, for your home</h3><p>Drop an inspiration photo. We design it, show a concept and weave it.</p><span class="r-cta">Drop your inspiration &#x2192;</span></a>
+      <a class="r-door" href="/projects/enquire" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/e60e7a78-06c8-42d8-b558-ca9ddf120aac/projects-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/e60e7a78-06c8-42d8-b558-ca9ddf120aac/projects-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/3ee730c3-d570-4615-b55c-6adad2c4bf97/projects-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A patterned rug laid beside the bed in a hotel room, in daylight" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">01&#xA0;&#xA0;Projects</span><h3 class="r-h3">Hotels, cruise and luxury homes</h3><p>Every rug in your project from one maker. One lead, one approved colour.</p><span class="r-cta">Send your rug schedule &#x2192;</span></a>
+      <a class="r-door rv-d1" href="/trade-program/apply" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/9904c6c8-4dfd-4d5c-a61f-766a0678933a/trade-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/9904c6c8-4dfd-4d5c-a61f-766a0678933a/trade-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/5531708f-c70e-4543-9050-d4b48eae6dba/trade-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A styled showroom lounge with cream chairs and a textured rug" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">02&#xA0;&#xA0;Trade and white label</span><h3 class="r-h3">Designers, brands and furniture stores</h3><p>Trade pricing, your label on our looms, a sample kit and low first runs.</p><span class="r-cta">Apply for a trade account &#x2192;</span></a>
+      <a class="r-door rv-d2" href="/atelier/atelier-apply" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/a90ef46e-3af1-4653-87f7-57a2eb114db8/atelier-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/a90ef46e-3af1-4653-87f7-57a2eb114db8/atelier-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/f34a5417-b6b2-49d1-98a6-d82fec1da7f7/atelier-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A large abstract artwork standing in a living room above a patterned kilim" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">03&#xA0;&#xA0;Atelier</span><h3 class="r-h3">Launch your own rug collection</h3><p>Artists, textile and interior designers: bring a concept; we weave it as a limited edition.</p><span class="r-cta">Apply now &#x2192;</span></a>
+      <a class="r-door rv-d3" href="/commission/brief" data-rv><div class="r-ph r-ph--door"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/b70e1d8e-da40-424d-a8ab-7d40c56c3991/commission-306.webp" srcset="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/b70e1d8e-da40-424d-a8ab-7d40c56c3991/commission-306.webp 306w, https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/92d6ae99-1f55-4342-b5db-e6fc3e5eac1c/commission-612.webp 612w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="A flatweave rug in cream, black and terracotta blocks in a warm sitting room" width="306" height="430" loading="lazy" decoding="async"></div><span class="r-kicker accent">04&#xA0;&#xA0;Commission</span><h3 class="r-h3">One rug, for your home</h3><p>Drop an inspiration photo. We design it, show a concept and weave it.</p><span class="r-cta">Drop your inspiration &#x2192;</span></a>
     </div>
   </div>
 </section>
@@ -1858,17 +1858,17 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="r-sec r-sec--weaves" id="weaves" aria-labelledby="weavesTitle">
   <div class="wrap"><div class="r-head"><h2 class="r-h2" id="weavesTitle" data-rv>Four weaves. One house.</h2></div></div>
   <div class="r-glide">
-    <a class="r-door r-weave" href="#/craft/tech-knotted" data-rv><div class="r-ph r-ph--weave"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/s12.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/micro_s12.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/small_s12.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/medium_s12.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/large_s12.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/xlarge_s12.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/2xlarge_s12.webp 1600w" sizes="(max-width: 720px) 80vw, 420px" alt="A hand tying a Tibetan knot on the loom" width="1600" height="900" loading="lazy" decoding="async"></div><h3 class="r-h3 r-h3--lg">Hand-knotted</h3><p>True luxury is built to last knot by knot.</p></a>
-    <a class="r-door r-weave rv-d1" href="#/craft/tech-tufted" data-rv><div class="r-ph r-ph--weave"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/127cdfe1-a81d-4ae3-9532-8f9212d62d12/marble-tufted.gif" alt="A tufting gun working grey wool pile into a stretched canvas, by hand" width="320" height="320" loading="lazy" decoding="async"></div><h3 class="r-h3 r-h3--lg">Hand-tufted</h3><p>Carved pile in large sizes, made fast.</p></a>
-    <a class="r-door r-weave rv-d2" href="#/craft/tech-woven" data-rv><div class="r-ph r-ph--weave"><video src="https://api.storebox.ai/media/e09e27f7-4dcd-48a2-92bb-2a049f4df5eb/a7ef435a-58a1-4b97-a5d4-8f00cc995197/handwoven-loom.mp4" poster="https://api.storebox.ai/media/e09e27f7-4dcd-48a2-92bb-2a049f4df5eb/308aecb3-99d5-4a19-998a-ed7b286db8c3/handwoven-loom.webp" autoplay muted loop playsinline preload="metadata" width="338" height="338" aria-label="A weaver working cream wool into a checked pattern on a handloom"></video></div><h3 class="r-h3 r-h3--lg">Handwoven</h3><p>Loom-woven wools, tonal and reversible.</p></a>
-    <a class="r-door r-weave rv-d3" href="#/craft/tech-flat" data-rv><div class="r-ph r-ph--weave"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/0c2c19fe-e2f3-4383-8311-48646879eb95/flatweave.gif" alt="A weaver&#x2019;s hand working the weft across the warp on a flatweave loom, seen from above" width="320" height="320" loading="lazy" decoding="async"></div><h3 class="r-h3 r-h3--lg">Flatweave</h3><p>Dhurrie and kilim: stripes, borders, layering.</p></a>
+    <a class="r-door r-weave" href="/craft/tech-knotted" data-rv><div class="r-ph r-ph--weave"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/s12.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/micro_s12.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/small_s12.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/medium_s12.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/large_s12.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/xlarge_s12.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/2xlarge_s12.webp 1600w" sizes="(max-width: 720px) 80vw, 420px" alt="A hand tying a Tibetan knot on the loom" width="1600" height="900" loading="lazy" decoding="async"></div><h3 class="r-h3 r-h3--lg">Hand-knotted</h3><p>True luxury is built to last knot by knot.</p></a>
+    <a class="r-door r-weave rv-d1" href="/craft/tech-tufted" data-rv><div class="r-ph r-ph--weave"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/127cdfe1-a81d-4ae3-9532-8f9212d62d12/marble-tufted.gif" alt="A tufting gun working grey wool pile into a stretched canvas, by hand" width="320" height="320" loading="lazy" decoding="async"></div><h3 class="r-h3 r-h3--lg">Hand-tufted</h3><p>Carved pile in large sizes, made fast.</p></a>
+    <a class="r-door r-weave rv-d2" href="/craft/tech-woven" data-rv><div class="r-ph r-ph--weave"><video src="https://api.storebox.ai/media/e09e27f7-4dcd-48a2-92bb-2a049f4df5eb/a7ef435a-58a1-4b97-a5d4-8f00cc995197/handwoven-loom.mp4" poster="https://api.storebox.ai/media/e09e27f7-4dcd-48a2-92bb-2a049f4df5eb/308aecb3-99d5-4a19-998a-ed7b286db8c3/handwoven-loom.webp" autoplay muted loop playsinline preload="metadata" width="338" height="338" aria-label="A weaver working cream wool into a checked pattern on a handloom"></video></div><h3 class="r-h3 r-h3--lg">Handwoven</h3><p>Loom-woven wools, tonal and reversible.</p></a>
+    <a class="r-door r-weave rv-d3" href="/craft/tech-flat" data-rv><div class="r-ph r-ph--weave"><img src="https://api.storebox.ai/media/8485eff9-8617-44c4-a94d-15b43210079c/0c2c19fe-e2f3-4383-8311-48646879eb95/flatweave.gif" alt="A weaver&#x2019;s hand working the weft across the warp on a flatweave loom, seen from above" width="320" height="320" loading="lazy" decoding="async"></div><h3 class="r-h3 r-h3--lg">Flatweave</h3><p>Dhurrie and kilim: stripes, borders, layering.</p></a>
   </div>
 </section>
 
 <!-- PIECES: product slider -->
 <section class="r-sec" id="pieces" aria-labelledby="piecesTitle">
   <div class="wrap">
-    <div class="r-head"><h2 class="r-h2" id="piecesTitle" data-rv>From the <em>collection</em>.</h2><a class="link-u" href="#/best-sellers" data-rv>Shop bestsellers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="r-head"><h2 class="r-h2" id="piecesTitle" data-rv>From the <em>collection</em>.</h2><a class="link-u" href="/best-sellers" data-rv>Shop bestsellers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
     <div class="rail" data-rv>
       <div class="rail__t" id="homeRail" tabindex="0" role="group" aria-roledescription="carousel" aria-keyshortcuts="ArrowLeft ArrowRight" aria-label="Seraj Rugs pieces &#x2014; use left and right arrow keys, or drag"></div>
       <div class="rail__prog" aria-hidden="true"><i id="homeRailBar"></i></div>
@@ -1877,7 +1877,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <div class="rail__nav">
           <button class="rnd" type="button" id="homePrev" aria-label="Previous piece"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M20 12H5M11 6l-6 6 6 6"/></svg></button>
           <button class="rnd" type="button" id="homeNext" aria-label="Next piece"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
-          <a class="rbtn rbtn--dark" href="#/shop">Browse all rugs</a>
+          <a class="rbtn rbtn--dark" href="/shop">Browse all rugs</a>
         </div>
       </div>
     </div>
@@ -1893,7 +1893,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     </div>
     <div class="r-story__row">
       <h2 class="r-h2 r-h2--story" id="storyTitle" data-rv>Rooted in Nepal. Grown in India. Woven for the world.</h2>
-      <div class="r-story__side" data-rv><p>Three generations. Two countries. One standard. The family still answers the phone.</p><p class="r-story__note">The story page carries all six chapters, the family, and five project records.</p><a class="rbtn rbtn--dark" href="#/about">Read our story &amp; project records</a></div>
+      <div class="r-story__side" data-rv><p>Three generations. Two countries. One standard. The family still answers the phone.</p><p class="r-story__note">The story page carries all six chapters, the family, and five project records.</p><a class="rbtn rbtn--dark" href="/about">Read our story &amp; project records</a></div>
     </div>
   </div>
 </section>
@@ -1909,7 +1909,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <li class="rv-d3" data-rv><b>Gulf</b></li>
     </ul>
     <p class="lede" data-rv>Hotels, boutique hotels and luxury homes. The projects page carries five records from our own project files, with scope, area and time instead of client names. Client names stay private, by agreement.</p>
-    <p data-rv style="margin:clamp(1.75rem,3vw,2.5rem) 0 0"><a class="rbtn rbtn--dark" href="#/projects">See the project records</a></p>
+    <p data-rv style="margin:clamp(1.75rem,3vw,2.5rem) 0 0"><a class="rbtn rbtn--dark" href="/projects">See the project records</a></p>
   </div>
 </section>
 
@@ -1922,7 +1922,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <span class="r-kicker r-clay">Seraj Rugs Atelier</span>
         <h2 class="r-h2 r-h2--atelier" id="atelierTitle">Design a rug collection with us.</h2>
         <p>Interior designers, textile designers and artists: bring a concept. We weave a strike-off, refine it with you and launch it as a limited edition under your name.</p>
-        <div class="r-btns"><a class="rbtn rbtn--solid" href="#/atelier/atelier-apply">Apply now</a><a class="rbtn" href="#/home/journal">Read the guide</a></div>
+        <div class="r-btns"><a class="rbtn rbtn--solid" href="/atelier/atelier-apply">Apply now</a><a class="rbtn" href="/home/journal">Read the guide</a></div>
       </div>
       <div class="r-atelier__imgs" data-rv>
         <figure class="r-ph r-ph--tall"><img class="at-art" src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/s16.jpg" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/micro_s16.webp 80w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/small_s16.webp 160w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/medium_s16.webp 320w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/large_s16.webp 480w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/xlarge_s16.webp 960w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/d263846b-ab54-4248-b020-fb9dc78f5462/2xlarge_s16.webp 1080w" sizes="(max-width: 1024px) 31vw, 18vw" alt="Painted artwork in ochre, blue and maroon brushstrokes, the starting point of a rug design" width="1080" height="1350" loading="lazy" decoding="async"></figure>
@@ -1988,14 +1988,14 @@ body.menu-open .hdr__cta{visibility:hidden}
         <div class="fld"><label for="cmName">Your name</label><input id="cmName" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="cmNameErr"><p class="fld__err" id="cmNameErr" hidden></p></div>
         <div class="fld"><label for="cmEmail">Your email <span class="opt">(optional)</span></label><input id="cmEmail" name="email" type="email" autocomplete="email" placeholder="name@email.com" aria-describedby="cmEmailErr"><p class="fld__err" id="cmEmailErr" hidden></p></div>
         <div class="fld"><label for="cmNotes">Anything else? <span class="opt">(optional)</span></label><textarea id="cmNotes" name="notes" rows="3" placeholder="Colours, materials, a link to a Pinterest board&#x2026;" data-label="Notes"></textarea></div>
-        <div class="fx__actions qz__nav"><button class="qz__back" type="button">Back</button><button class="rbtn rbtn--dark qz__send" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg>Send on WhatsApp</button></div>
-        <p class="r-form__note">This opens WhatsApp with your answers typed in. Attach the photo you love in the chat, then press send. Designing a collection rather than one rug? <a href="#/atelier/atelier-apply">Apply to Seraj Rugs Atelier</a>.</p>
+        <div class="fx__actions qz__nav"><button class="qz__back" type="button">Back</button><button class="rbtn rbtn--dark qz__send" type="submit">Send enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button></div>
+        <p class="r-form__note">Opens your email app with the answers typed in. Prefer WhatsApp? Use the button beside send. Designing a collection rather than one rug? <a href="/atelier/atelier-apply">Apply to Seraj Rugs Atelier</a>.</p>
       </fieldset>
       <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
         <h3>Continue in WhatsApp</h3>
         <p>WhatsApp should now be open with your details typed in. Attach your inspiration photo there, then press send. If nothing opened, use the link below.</p>
-        <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+        <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
       </div>
     </form>
   </div>
@@ -2006,7 +2006,7 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="r-head">
       <div class="r-head__l" data-rv><span class="r-kicker">The family</span><h2 class="r-h2" id="connectTitle">The people who <em>answer your call.</em></h2></div>
-      <a class="link-u" href="#/about" data-rv>Our story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link-u" href="/about" data-rv>Our story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <p class="r-connect__lead" data-rv>Three generations now work in the business, in our own workshops in Nepal and India. These are the people behind the name.</p>
     <ul class="r-team">
@@ -2022,10 +2022,10 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="r-head"><h2 class="r-h2" id="journalTitle" data-rv>The Journal</h2><span class="r-kicker" data-rv>Craft, colour, collaboration</span></div>
     <div class="r-journal snap">
-      <a class="r-door r-jr" href="#/journal-painting-to-rug" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/s19.jpg" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/micro_s19.webp 80w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/small_s19.webp 160w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/medium_s19.webp 320w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/large_s19.webp 480w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/xlarge_s19.webp 960w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/2xlarge_s19.webp 1080w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="An abstract painting, the starting point of a rug design" width="1080" height="1350" loading="lazy" decoding="async"></div><span class="r-kicker accent">Atelier</span><h3 class="r-h3 r-h3--sm">How a painting becomes a rug</h3></a>
-      <a class="r-door r-jr" href="#/journal-first-collection" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/s3.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/micro_s3.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/small_s3.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/medium_s3.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/large_s3.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/xlarge_s3.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/2xlarge_s3.webp 1600w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="Yarn hanks and sample swatches used to plan a rug collection" width="1600" height="900" loading="lazy" decoding="async"></div><span class="r-kicker accent">Atelier</span><h3 class="r-h3 r-h3--sm">Designing your first rug collection: a guide</h3></a>
-      <a class="r-door r-jr" href="#/journal-which-weave" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/s7.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/micro_s7.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/small_s7.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/medium_s7.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/large_s7.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/xlarge_s7.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/2xlarge_s7.webp 1600w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="Close-up of rugs with different pile textures" width="1600" height="900" loading="lazy" decoding="async"></div><span class="r-kicker accent">Craft</span><h3 class="r-h3 r-h3--sm">Hand-knotted, hand-tufted or handwoven?</h3></a>
-      <a class="r-door r-jr" href="#/journal-nepal-or-india" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/s10.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/micro_s10.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/small_s10.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/medium_s10.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/large_s10.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/xlarge_s10.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/2xlarge_s10.webp 1600w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="Weavers at a large hand-knotting loom" width="1600" height="900" loading="lazy" decoding="async"></div><span class="r-kicker accent">Trade</span><h3 class="r-h3 r-h3--sm">Nepal or India: where to make your rugs</h3></a>
+      <a class="r-door r-jr" href="/journal-painting-to-rug" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/s19.jpg" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/micro_s19.webp 80w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/small_s19.webp 160w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/medium_s19.webp 320w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/large_s19.webp 480w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/xlarge_s19.webp 960w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/2xlarge_s19.webp 1080w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="An abstract painting, the starting point of a rug design" width="1080" height="1350" loading="lazy" decoding="async"></div><span class="r-kicker accent">Atelier</span><h3 class="r-h3 r-h3--sm">How a painting becomes a rug</h3></a>
+      <a class="r-door r-jr" href="/journal-first-collection" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/s3.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/micro_s3.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/small_s3.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/medium_s3.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/large_s3.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/xlarge_s3.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/2xlarge_s3.webp 1600w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="Yarn hanks and sample swatches used to plan a rug collection" width="1600" height="900" loading="lazy" decoding="async"></div><span class="r-kicker accent">Atelier</span><h3 class="r-h3 r-h3--sm">Designing your first rug collection: a guide</h3></a>
+      <a class="r-door r-jr" href="/journal-which-weave" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/s7.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/micro_s7.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/small_s7.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/medium_s7.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/large_s7.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/xlarge_s7.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/2xlarge_s7.webp 1600w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="Close-up of rugs with different pile textures" width="1600" height="900" loading="lazy" decoding="async"></div><span class="r-kicker accent">Craft</span><h3 class="r-h3 r-h3--sm">Hand-knotted, hand-tufted or handwoven?</h3></a>
+      <a class="r-door r-jr" href="/journal-nepal-or-india" data-rv><div class="r-ph r-ph--jr"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/s10.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/micro_s10.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/small_s10.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/medium_s10.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/large_s10.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/xlarge_s10.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/2xlarge_s10.webp 1600w" sizes="(max-width: 720px) 78vw, (max-width: 1100px) 45vw, 23vw" alt="Weavers at a large hand-knotting loom" width="1600" height="900" loading="lazy" decoding="async"></div><span class="r-kicker accent">Trade</span><h3 class="r-h3 r-h3--sm">Nepal or India: where to make your rugs</h3></a>
     </div>
   </div>
 </section>
@@ -2048,10 +2048,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-projects">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e0e0fb8b-c5c9-4020-86ea-559eb6400f9c/s2.jpg')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Projects</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Projects</span></nav>
     <h1 id="pageTitle-projects">Rugs for projects that demand <em>precision</em></h1>
     <p class="lede">Custom rugs for hotels and hospitality, cruise interiors, interior designers, large residential schemes and commercial buyers, handmade in Nepal and India.</p>
-    <div class="phead__cta"><a class="btn on-dark" href="#/projects/enquire">Discuss a Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="phead__cta"><a class="btn on-dark" href="/projects/enquire">Discuss a Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -2085,7 +2085,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <p class="eyebrow">Techniques</p>
         <h3>The right weave for <em>the space</em></h3>
         <p>Hand-knotted rugs for fine detail and longevity, hand-tufted rugs for bold designs and larger sizes, and handwoven and flatweave pieces for texture and lighter use.</p>
-        <p><a class="link-u" href="#/craft">Compare the four techniques <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p><a class="link-u" href="/craft">Compare the four techniques <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
   </div>
@@ -2178,12 +2178,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld"><label for="pjEmail">Email <span class="req" aria-hidden="true">*</span></label><input id="pjEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-required="true" aria-describedby="pjEmailErr"><p class="fld__err" id="pjEmailErr" hidden></p></div>
   <div class="fld"><label for="pjType">Project type <span class="req" aria-hidden="true">*</span></label><select id="pjType" name="project_type" required aria-required="true" aria-describedby="pjTypeErr"><option value="">Please choose</option><option>Hotel or hospitality</option><option>Cruise</option><option>Interior design scheme</option><option>Large residential</option><option>Retail or commercial</option><option>Other</option></select><p class="fld__err" id="pjTypeErr" hidden></p></div>
   <div class="fld fld--full"><label for="pjMsg">Project details <span class="req" aria-hidden="true">*</span></label><textarea id="pjMsg" name="message" rows="5" required aria-required="true" aria-describedby="pjMsgErr" placeholder="Quantities, sizes, technique, timeline — whatever you already know"></textarea><p class="fld__err" id="pjMsgErr" hidden></p></div>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Send project enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your details already typed in. Drawings, specifications and mood boards can go straight into the chat.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Send project enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your details already typed in. Prefer WhatsApp? Use the button beside send. Drawings, specifications and mood boards can go straight into the chat.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your enquiry typed in. Add any drawings or photos, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -2194,7 +2194,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Trade partners</p>
     <h2 data-rv>Working with us <em>regularly</em>?</h2>
     <p data-rv>Designers, retailers and brands can apply for a trade account, with a dedicated consultant and trade pricing.</p>
-    <div data-rv><a class="btn" href="#/trade-program">Trade Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/trade-program">Trade Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -2203,10 +2203,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-atelier">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bd0d7654-5dc6-49c2-9198-7b3a47890104/s13.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Atelier</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Atelier</span></nav>
     <h1 id="pageTitle-atelier">Your ideas. Your audience. <em>Woven by us.</em></h1>
     <p class="lede">Apply to launch your own rug collection with Seraj Rugs, as a limited edition under your name. You bring the idea and the audience; we make the rugs.</p>
-    <div class="phead__cta"><a class="btn on-dark" href="#/atelier/atelier-apply">Apply now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost-dark" href="#/atelier/atelier-how">See how it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="phead__cta"><a class="btn on-dark" href="/atelier/atelier-apply">Apply now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost-dark" href="/atelier/atelier-how">See how it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
     <ul class="pg-chips"><li>Artists</li><li>Interior designers</li><li>Textile designers</li><li>Design firms</li><li>Art galleries</li></ul>
   </div>
 </section>
@@ -2315,12 +2315,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld fld--full"><label for="atConcept">Your concept <span class="opt">(optional)</span></label><textarea id="atConcept" name="concept" rows="4" aria-describedby="atConceptErr" placeholder="The idea, the mood, the colours, the audience — and a portfolio link if you have one"></textarea><p class="fld__err" id="atConceptErr" hidden></p></div>
   <div class="fld"><label for="atEmail">Email <span class="req" aria-hidden="true">*</span></label><input id="atEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-required="true" aria-describedby="atEmailErr"><p class="fld__err" id="atEmailErr" hidden></p></div>
   <p class="fx__privacy">The design stays yours. We only weave art you hold the rights to.</p>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Send application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your details already typed in. Your moodboard or portfolio images can go straight into the chat.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Send application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your details already typed in. Prefer WhatsApp? Use the button beside send. Your moodboard or portfolio images can go straight into the chat.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your application typed in. Add your design files or moodboard, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -2331,7 +2331,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Also for makers</p>
     <h2 data-rv>Sell your own <em>designs</em>?</h2>
     <p data-rv>If you already run your own shop, the Creator Programme is the simpler route. Brands and retailers should start with the Brand Programme.</p>
-    <div data-rv><a class="btn" href="#/creator-programme">Creator Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/brand-programme">Brand Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/creator-programme">Creator Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/brand-programme">Brand Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 <section class="r-sec r-faq" id="at-faq" aria-labelledby="atFaqTitle">
@@ -2352,10 +2352,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-creator-programme">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2bd557c3-a673-4f9f-9898-1692f6332b49/Screenshot-2025-10-11-120307.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Creators</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Creators</span></nav>
     <h1 id="pageTitle-creator-programme">Your design. Your shop. <em>We make it, you sell it.</em></h1>
     <p class="lede">Sell your own rug designs on Etsy or your own site. We weave each rug by hand and handle production; you keep your brand, your customers and your margin.</p>
-    <div class="phead__cta"><a class="btn on-dark" href="#/creator-programme/creator-join">Join the programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost-dark" href="#/creator-programme/creator-ways">See the two ways to sell <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="phead__cta"><a class="btn on-dark" href="/creator-programme/creator-join">Join the programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost-dark" href="/creator-programme/creator-ways">See the two ways to sell <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -2433,12 +2433,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld"><label for="crSell">How would you like to sell? <span class="opt">(optional)</span></label><select id="crSell" name="sell_method" aria-describedby="crSellErr"><option value="">Please choose</option><option>Made to order, shipped to my customer</option><option>Small batch, shipped to me</option><option>Not sure, advise me</option></select><p class="fld__err" id="crSellErr" hidden></p></div>
   <div class="fld"><label for="crEmail">Email <span class="req" aria-hidden="true">*</span></label><input id="crEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-required="true" aria-describedby="crEmailErr"><p class="fld__err" id="crEmailErr" hidden></p></div>
   <p class="fx__privacy">We only weave designs you own. We sign an NDA before any files are shared.</p>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Send application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your details already typed in. Your first design can go straight into the chat.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Send application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your details already typed in. Prefer WhatsApp? Use the button beside send. Your first design can go straight into the chat.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your application typed in. Add your design files, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -2449,7 +2449,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Other programmes</p>
     <h2 data-rv>Working at a <em>larger scale</em>?</h2>
     <p data-rv>Brands and retailers can reserve looms through the Brand Programme, and artists can launch editions with Seraj Rugs Atelier.</p>
-    <div data-rv><a class="btn" href="#/brand-programme">Brand Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/atelier">Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/brand-programme">Brand Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/atelier">Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 <section class="r-sec r-faq" id="cr-faq" aria-labelledby="crFaqTitle">
@@ -2470,10 +2470,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-brand-programme">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1ec2bb4a-f50b-44e7-8583-0b4c14ef026b/IMG5.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Brands</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Brands</span></nav>
     <h1 id="pageTitle-brand-programme">A second source you can <em>plan around.</em></h1>
     <p class="lede">Reserved looms, steady quality and two origins, for established rug brands, retailers and furniture houses. Long-term programmes and bulk orders, made in our own workshops.</p>
-    <div class="phead__cta"><a class="btn on-dark" href="#/brand-programme/brand-talk">Request a programme call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost-dark" href="#/brand-programme/brand-tiers">See the programmes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="phead__cta"><a class="btn on-dark" href="/brand-programme/brand-talk">Request a programme call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost-dark" href="/brand-programme/brand-tiers">See the programmes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -2586,12 +2586,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld fld--full"><label for="bdNeeds">What matters most? <span class="opt">(optional)</span></label><textarea id="bdNeeds" name="needs" rows="3" aria-describedby="bdNeedsErr" placeholder="Lead time, quality, price, a second source, new designs — and roughly how many square metres a year"></textarea><p class="fld__err" id="bdNeedsErr" hidden></p></div>
   <div class="fld"><label for="bdEmail">Work email <span class="req" aria-hidden="true">*</span></label><input id="bdEmail" name="email" type="email" autocomplete="email" placeholder="name@company.com" required aria-required="true" aria-describedby="bdEmailErr"><p class="fld__err" id="bdEmailErr" hidden></p></div>
   <p class="fx__privacy">We sign an NDA before you share any designs.</p>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Request a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your details already typed in. Send us the message and we will call you back.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Request a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your details already typed in. Prefer WhatsApp? Use the button beside send. Send us the message and we will call you back.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your enquiry typed in. Check it over, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -2602,7 +2602,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Smaller first step</p>
     <h2 data-rv>Selling through <em>your own shop</em>?</h2>
     <p data-rv>The Creator Programme is made for designers selling their own rugs online. Artists launching editions start with Seraj Rugs Atelier.</p>
-    <div data-rv><a class="btn" href="#/creator-programme">Creator Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/atelier">Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/creator-programme">Creator Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/atelier">Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 <section class="r-sec r-faq" id="bd-faq" aria-labelledby="bdFaqTitle">
@@ -2623,7 +2623,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-craft">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/713d70f0-01bf-4d73-add7-97d38f2fb910/IMG4.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Craft</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Craft</span></nav>
     <h1 id="pageTitle-craft">Four weaves. <em>One house.</em></h1>
     <p class="lede">How Seraj Rugs are made, and which technique suits your project.</p>
   </div>
@@ -2631,11 +2631,11 @@ body.menu-open .hdr__cta{visibility:hidden}
 
 <nav class="catbar" aria-label="Techniques">
   <div class="wrap catbar__in">
-    <a href="#/craft/tech-knotted">Hand-knotted</a>
-    <a href="#/craft/tech-tufted">Hand-tufted</a>
-    <a href="#/craft/tech-woven">Handwoven</a>
-    <a href="#/craft/tech-flat">Flatweave</a>
-    <a href="#/craft/craft-film">The making</a>
+    <a href="/craft/tech-knotted">Hand-knotted</a>
+    <a href="/craft/tech-tufted">Hand-tufted</a>
+    <a href="/craft/tech-woven">Handwoven</a>
+    <a href="/craft/tech-flat">Flatweave</a>
+    <a href="/craft/craft-film">The making</a>
   </div>
 </nav>
 
@@ -2648,7 +2648,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="feature__h">Hand-knotted</h2>
         <p>Each knot is tied by hand on the loom, in the Tibetan tradition the house is rooted in. Dense pile, fine detail.</p>
         <p>Fine detail, dense pile and long life. Ideal for statement pieces and spaces where a rug should last for decades.</p>
-        <p style="margin-top:1.4rem"><a class="btn" href="#/hand-knotted">Browse hand-knotted rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p style="margin-top:1.4rem"><a class="btn" href="/hand-knotted">Browse hand-knotted rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="feature feature--flip" id="tech-tufted">
@@ -2658,7 +2658,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="feature__h">Hand-tufted</h2>
         <p>Yarn is punched through a backing cloth with a hand-held tufting tool, then sheared and carved. Bold designs, larger sizes.</p>
         <p>A good fit for contemporary designs, statement colour and projects that need many rugs.</p>
-        <p style="margin-top:1.4rem"><a class="btn" href="#/hand-tufted">Browse hand-tufted rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p style="margin-top:1.4rem"><a class="btn" href="/hand-tufted">Browse hand-tufted rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="feature" id="tech-woven">
@@ -2668,7 +2668,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="feature__h">Handwoven</h2>
         <p>Woven on a handloom, weft through warp, for textured and tonal surfaces.</p>
         <p>Texture, tone and a lighter hand. Suited to relaxed interiors and layering.</p>
-        <p style="margin-top:1.4rem"><a class="btn" href="#/projects/enquire">Ask about handwoven rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p style="margin-top:1.4rem"><a class="btn" href="/projects/enquire">Ask about handwoven rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="feature feature--flip" id="tech-flat">
@@ -2678,12 +2678,12 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="feature__h">Flatweave</h2>
         <p>Pile-free weaves such as kilims and dhurries: light, reversible and graphic.</p>
         <p>Flat, reversible and easy to move. Suited to stripes, borders and graphic patterns.</p>
-        <p style="margin-top:1.4rem"><a class="btn" href="#/projects/enquire">Ask about flatweaves <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p style="margin-top:1.4rem"><a class="btn" href="/projects/enquire">Ask about flatweaves <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="prose" data-rv style="margin-top:clamp(2.5rem,5vw,4rem)">
       <h2>Beyond the four weaves</h2>
-      <p>Our wider range also covers hand-loomed, braided, knitted, jacquard woven and leather rugs. <a href="#/contact">Ask our team</a> about the best construction for your design.</p>
+      <p>Our wider range also covers hand-loomed, braided, knitted, jacquard woven and leather rugs. <a href="/contact">Ask our team</a> about the best construction for your design.</p>
     </div>
   </div>
 </section>
@@ -2715,7 +2715,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Start here</p>
     <h2 data-rv>Found <em>your weave</em>?</h2>
     <p data-rv>Tell us about your project, or commission a single rug for your home.</p>
-    <div data-rv><a class="btn" href="#/projects">Start a Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/custom-rugs">Commission One Rug <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/projects">Start a Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/custom-rugs">Commission One Rug <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -2728,7 +2728,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <span class="r-kicker cx-hero__k" data-rv>Commission a rug</span>
     <h1 class="cx-hero__title" id="cxTitle" data-rv>Commission a rug made for <em>one room.</em></h1>
     <p class="cx-hero__sub" data-rv>Send a photo, a painting, a fabric, a sketch or a finished design. We shape the concept, weave a sample for you to hold, then make your rug by hand.</p>
-    <div class="cx-hero__cta" data-rv><a class="rbtn rbtn--solid" href="#/commission/brief">Drop your Inspiration</a><a class="rbtn" href="#/commission/qualities">See the constructions</a></div>
+    <div class="cx-hero__cta" data-rv><a class="rbtn rbtn--solid" href="/commission/brief">Drop your Inspiration</a><a class="rbtn" href="/commission/qualities">See the constructions</a></div>
     <div class="cx-hero__foot" data-rv><p><b>Prices in plain sight</b>Starting points per square foot, agreed in writing before we begin. Every rug woven by hand, start to finish.</p></div>
   </div>
 </section>
@@ -2839,7 +2839,7 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fx__done" role="status" tabindex="-1" hidden>
         <h3>Continue in WhatsApp</h3>
         <p>WhatsApp should now be open with your brief typed in. Attach your inspiration piece there, then press send. If nothing opened, use the link below.</p>
-        <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+        <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
       </div>
     </form>
   </div>
@@ -2863,7 +2863,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-journal-painting-to-rug">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1d61e1be-a9a0-4fec-9163-2f8d9dd530a1/s19.jpg')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
     <h1 id="pageTitle-journal-painting-to-rug">How a painting becomes a rug</h1>
     <p class="lede">An artwork is not a rug yet. These are the steps that carry a painting from the canvas to the loom.</p>
   </div>
@@ -2883,7 +2883,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <p>Before a full rug is made, a sample section called a strike-off is woven. It shows how the colours, scale and texture read in wool, and it is where the artist and the maker refine the details.</p>
       <h2>Scaling up</h2>
       <p>Once the strike-off is approved, the design is set out at its final size and woven. The finished rug is washed and finished, ready to stand alongside the original artwork.</p>
-      <p class="article__cta"><a class="btn" href="#/atelier/atelier-apply">Apply to Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="#/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+      <p class="article__cta"><a class="btn" href="/atelier/atelier-apply">Apply to Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
     </article>
   </div>
 </section>
@@ -2893,7 +2893,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-journal-first-collection">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/s3.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
     <h1 id="pageTitle-journal-first-collection">Designing your first rug collection: a guide</h1>
     <p class="lede">A first collection is easier to make, and to sell, when it is planned as a set rather than a series of single rugs.</p>
   </div>
@@ -2915,7 +2915,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <p>Hand-knotted rugs take longest to make and suit heirloom pieces; hand-tufted and handwoven rugs suit larger sizes and broader price points. The weave shapes both the look and the cost.</p>
       <h2>Sample before you launch</h2>
       <p>Strike-offs let you check colour, scale and texture before committing to production. Budget time for at least one round of changes.</p>
-      <p class="article__cta"><a class="btn" href="#/atelier">Explore Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="#/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+      <p class="article__cta"><a class="btn" href="/atelier">Explore Seraj Rugs Atelier <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
     </article>
   </div>
 </section>
@@ -2925,7 +2925,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-journal-which-weave">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/s7.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
     <h1 id="pageTitle-journal-which-weave">Hand-knotted, hand-tufted or handwoven?</h1>
     <p class="lede">Each technique produces a different surface, a different lifespan and a different price. Here is how they compare.</p>
   </div>
@@ -2945,7 +2945,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <p>Kilims and dhurries have no pile at all. They are light, easy to move and suited to stripes, borders and graphic patterns, and they layer well over other rugs.</p>
       <h2>Which to choose</h2>
       <p>For an heirloom piece or fine detail, choose hand-knotted. For bold designs, large sizes or many rugs on a schedule, consider hand-tufted. For texture and a relaxed feel, look at handwoven and flatweave.</p>
-      <p class="article__cta"><a class="btn" href="#/craft">See the four weaves <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="#/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+      <p class="article__cta"><a class="btn" href="/craft">See the four weaves <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
     </article>
   </div>
 </section>
@@ -2955,7 +2955,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-journal-nepal-or-india">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/bcbc5b38-ecb1-4633-8b18-92b050472401/s10.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Journal</span></nav>
     <h1 id="pageTitle-journal-nepal-or-india">Nepal or India: where to make your rugs</h1>
     <p class="lede">Seraj Rugs works across Nepal and India. Where your rugs should be made depends on the weave, the quantity and the timeline.</p>
   </div>
@@ -2973,7 +2973,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <p>Consider the technique your design needs, the number of rugs, your installation date and the landed cost, including freight and duties to your country.</p>
       <h2>Compare both</h2>
       <p>Nepal for fine hand-knotting and carved texture; India for large volumes and variety. We quote both side by side, with landed cost, so you can choose with the full picture.</p>
-      <p class="article__cta"><a class="btn" href="#/projects/enquire">Ask for a side-by-side quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="#/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+      <p class="article__cta"><a class="btn" href="/projects/enquire">Ask for a side-by-side quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a> <a class="link-u" href="/blogs">More from the Blog <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
     </article>
   </div>
 </section>
@@ -2983,21 +2983,21 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-shop">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/8473e317-7495-48c2-901b-7a2b4e357c8a/seraj-rugs-web-img-1.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Shop</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Shop</span></nav>
     <h1 id="pageTitle-shop">The Shop</h1>
     <p class="lede">Hand knotted and hand tufted rugs, the most loved pieces, and a closer look at the pile, palette and geometry of individual rugs.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/shop" aria-current="page">All rugs</a><a href="#/hand-knotted">Hand Knotted</a><a href="#/hand-tufted">Hand Tufted</a><a href="#/best-sellers">Best Sellers</a>
+<a href="/shop" aria-current="page">All rugs</a><a href="/hand-knotted">Hand Knotted</a><a href="/hand-tufted">Hand Tufted</a><a href="/best-sellers">Best Sellers</a>
     </nav>
   </div>
 </section>
 
 <nav class="catbar" aria-label="Shop sections">
   <div class="wrap catbar__in">
-    <a href="#/shop/handknotted">Hand Knotted</a>
-    <a href="#/shop/handtufted">Hand Tufted</a>
-    <a href="#/shop/mostloved">Most Loved</a>
-    <a href="#/shop/gallery">Rugs in Detail</a>
+    <a href="/shop/handknotted">Hand Knotted</a>
+    <a href="/shop/handtufted">Hand Tufted</a>
+    <a href="/shop/mostloved">Most Loved</a>
+    <a href="/shop/gallery">Rugs in Detail</a>
   </div>
 </nav>
 
@@ -3011,7 +3011,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="sec-title" data-rv>Hand Knotted<br>Rugs</h2>
         <p class="lede" data-rv>We take pride in sourcing only the highest quality materials and employing skilled artisans who bring centuries-old techniques to life in every stitch.</p>
       </div>
-      <a class="link-u" href="#/hand-knotted" data-rv>Explore more
+      <a class="link-u" href="/hand-knotted" data-rv>Explore more
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -3040,7 +3040,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="sec-title" data-rv>Hand Tufted<br>Rugs</h2>
         <p class="lede" data-rv>We take pride in sourcing only the highest quality materials and employing skilled artisans who bring centuries-old techniques to life in every stitch.</p>
       </div>
-      <a class="link-u" href="#/hand-tufted" data-rv>Explore more
+      <a class="link-u" href="/hand-tufted" data-rv>Explore more
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -3049,7 +3049,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <div class="rail__prog" aria-hidden="true"><i id="tuftBar"></i></div>
       <div class="rail__foot">
         <p class="eyebrow" style="margin:0">Drag &amp; swipe</p>
-        <a class="btn ghost magnetic" href="#/hand-tufted">Explore more
+        <a class="btn ghost magnetic" href="/hand-tufted">Explore more
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
         </a>
       </div>
@@ -3066,7 +3066,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="sec-title" data-rv>Most Loved</h2>
         <p class="lede" data-rv>Explore our collection of bestselling rugs, designed by our in-house studio and collaborations with the world's leading creatives.</p>
       </div>
-      <a class="link-u" href="#/best-sellers" data-rv>Shop bestsellers
+      <a class="link-u" href="/best-sellers" data-rv>Shop bestsellers
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -3099,7 +3099,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <h2 class="sec-title" data-rv>Rugs in <em>detail</em></h2>
         <p class="lede" data-rv>A closer look at the pile, palette and geometry of individual pieces. Open any rug for details, sizing, and a private enquiry.</p>
       </div>
-      <a class="link-u" href="#/shop/handknotted" data-rv>Back to top
+      <a class="link-u" href="/shop/handknotted" data-rv>Back to top
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -3113,7 +3113,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug made to your dimensions, palette and pile.</p>
-    <div data-rv><a class="btn" href="#/custom-rugs">Custom rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/custom-rugs">Custom rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3122,11 +3122,11 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-hand-knotted">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/383a224d-f602-4435-9f6c-7ebc46fb11a8/s12.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Hand Knotted</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Hand Knotted</span></nav>
     <h1 id="pageTitle-hand-knotted">Hand Knotted Rugs</h1>
     <p class="lede">We take pride in sourcing only the highest quality materials and employing skilled artisans who bring centuries-old techniques to life in every stitch.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/shop">All rugs</a><a href="#/hand-knotted" aria-current="page">Hand Knotted</a><a href="#/hand-tufted">Hand Tufted</a><a href="#/best-sellers">Best Sellers</a>
+<a href="/shop">All rugs</a><a href="/hand-knotted" aria-current="page">Hand Knotted</a><a href="/hand-tufted">Hand Tufted</a><a href="/best-sellers">Best Sellers</a>
     </nav>
   </div>
 </section>
@@ -3135,10 +3135,10 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="meta-line">
       <p><strong>22</strong> pieces</p>
-      <a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="pgrid" data-grid="hk" data-sizes="(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw"></div>
-    <noscript><p class="note">This selection is also listed on <a href="#/hand-knotted">serajrugs.com</a>.</p></noscript>
+    <noscript><p class="note">This selection is also listed on <a href="/hand-knotted">serajrugs.com</a>.</p></noscript>
     <p class="note">Prices are shown to signed-in trade accounts.</p>
   </div>
 </section>
@@ -3147,7 +3147,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3156,11 +3156,11 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-hand-tufted">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/11a6a784-a33e-4db0-bc1d-93583146130c/S36-img-1.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Hand Tufted</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Hand Tufted</span></nav>
     <h1 id="pageTitle-hand-tufted">Hand Tufted Rugs</h1>
     <p class="lede">We take pride in sourcing only the highest quality materials and employing skilled artisans who bring centuries-old techniques to life in every stitch.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/shop">All rugs</a><a href="#/hand-knotted">Hand Knotted</a><a href="#/hand-tufted" aria-current="page">Hand Tufted</a><a href="#/best-sellers">Best Sellers</a>
+<a href="/shop">All rugs</a><a href="/hand-knotted">Hand Knotted</a><a href="/hand-tufted" aria-current="page">Hand Tufted</a><a href="/best-sellers">Best Sellers</a>
     </nav>
   </div>
 </section>
@@ -3169,10 +3169,10 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="meta-line">
       <p><strong>16</strong> pieces</p>
-      <a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="pgrid" data-grid="ht" data-sizes="(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw"></div>
-    <noscript><p class="note">This selection is also listed on <a href="#/hand-tufted">serajrugs.com</a>.</p></noscript>
+    <noscript><p class="note">This selection is also listed on <a href="/hand-tufted">serajrugs.com</a>.</p></noscript>
     <p class="note">Prices are shown to signed-in trade accounts.</p>
   </div>
 </section>
@@ -3181,7 +3181,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3190,11 +3190,11 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-best-sellers">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/s7.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Best Sellers</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Best Sellers</span></nav>
     <h1 id="pageTitle-best-sellers">Most Loved</h1>
     <p class="lede">Explore our collection of bestselling rugs, designed by our in-house studio and collaborations with the world&#x2019;s leading creatives.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/shop">All rugs</a><a href="#/hand-knotted">Hand Knotted</a><a href="#/hand-tufted">Hand Tufted</a><a href="#/best-sellers" aria-current="page">Best Sellers</a>
+<a href="/shop">All rugs</a><a href="/hand-knotted">Hand Knotted</a><a href="/hand-tufted">Hand Tufted</a><a href="/best-sellers" aria-current="page">Best Sellers</a>
     </nav>
   </div>
 </section>
@@ -3203,10 +3203,10 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="meta-line">
       <p><strong>10</strong> pieces</p>
-      <a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="pgrid" data-grid="arc" data-sizes="(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw"></div>
-    <noscript><p class="note">This selection is also listed on <a href="#/best-sellers">serajrugs.com</a>.</p></noscript>
+    <noscript><p class="note">This selection is also listed on <a href="/best-sellers">serajrugs.com</a>.</p></noscript>
     <p class="note">Prices are shown to signed-in trade accounts.</p>
   </div>
 </section>
@@ -3215,7 +3215,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3224,18 +3224,18 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-classic">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/web-img-11.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Classic</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Classic</span></nav>
     <h1 id="pageTitle-classic">Classic Collection</h1>
     <p class="lede">Hand-knotted pieces from the Classic collection.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/classic" aria-current="page">Classic</a><a href="#/minimal">Minimal</a><a href="#/modern">Modern</a><a href="#/best-sellers">Best Sellers</a>
+<a href="/classic" aria-current="page">Classic</a><a href="/minimal">Minimal</a><a href="/modern">Modern</a><a href="/best-sellers">Best Sellers</a>
     </nav>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
-    <div class="meta-line"><p><strong>1</strong> piece in this edit</p><a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="meta-line"><p><strong>1</strong> piece in this edit</p><a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
     <div class="feature" style="border-bottom:1px solid var(--rule)">
       <div class="feature__img" data-rv="clip"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/S103-img-1.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/micro_S103-img-1.webp 70w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/small_S103-img-1.webp 140w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/medium_S103-img-1.webp 280w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/large_S103-img-1.webp 420w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/74190882-cd9b-45ac-95c2-ee9650ae528a/xlarge_S103-img-1.webp 700w" sizes="(max-width: 1024px) 92vw, 640px" alt="Duchess &#x2014; hand-knotted rug by Seraj Rugs" width="700" height="1000" loading="lazy" decoding="async"></div>
       <div class="feature__txt" data-rv>
@@ -3245,7 +3245,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <p><a class="btn" href="product/duchess.html">View the piece <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
-    <p class="note">The full Classic collection is listed on <a href="#/classic">serajrugs.com</a>.</p>
+    <p class="note">The full Classic collection is listed on <a href="/classic">serajrugs.com</a>.</p>
   </div>
 </section>
 <section class="sec pcta">
@@ -3253,7 +3253,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3262,11 +3262,11 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-minimal">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/web-img-14.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Minimal</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Minimal</span></nav>
     <h1 id="pageTitle-minimal">Minimal Collection</h1>
     <p class="lede">Pieces from the Minimal collection.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/classic">Classic</a><a href="#/minimal" aria-current="page">Minimal</a><a href="#/modern">Modern</a><a href="#/best-sellers">Best Sellers</a>
+<a href="/classic">Classic</a><a href="/minimal" aria-current="page">Minimal</a><a href="/modern">Modern</a><a href="/best-sellers">Best Sellers</a>
     </nav>
   </div>
 </section>
@@ -3275,11 +3275,11 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="meta-line">
       <p><strong>23</strong> pieces</p>
-      <a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="pgrid" data-grid="minimal" data-sizes="(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw"></div>
-    <noscript><p class="note">This selection is also listed on <a href="#/minimal">serajrugs.com</a>.</p></noscript>
-    <p class="note">The full collection is listed on <a href="#/minimal">serajrugs.com</a>. Prices are shown to signed-in trade accounts.</p>
+    <noscript><p class="note">This selection is also listed on <a href="/minimal">serajrugs.com</a>.</p></noscript>
+    <p class="note">The full collection is listed on <a href="/minimal">serajrugs.com</a>. Prices are shown to signed-in trade accounts.</p>
   </div>
 </section>
 <section class="sec pcta">
@@ -3287,7 +3287,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3296,11 +3296,11 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-modern">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/web-img-12.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Modern</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Modern</span></nav>
     <h1 id="pageTitle-modern">Modern Collection</h1>
     <p class="lede">Pieces from the Modern collection.</p>
     <nav class="chips" aria-label="Shop categories">
-<a href="#/classic">Classic</a><a href="#/minimal">Minimal</a><a href="#/modern" aria-current="page">Modern</a><a href="#/best-sellers">Best Sellers</a>
+<a href="/classic">Classic</a><a href="/minimal">Minimal</a><a href="/modern" aria-current="page">Modern</a><a href="/best-sellers">Best Sellers</a>
     </nav>
   </div>
 </section>
@@ -3309,11 +3309,11 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="wrap">
     <div class="meta-line">
       <p><strong>67</strong> pieces</p>
-      <a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <div class="pgrid" data-grid="modern" data-sizes="(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw"></div>
-    <noscript><p class="note">This selection is also listed on <a href="#/modern">serajrugs.com</a>.</p></noscript>
-    <p class="note">The full collection is listed on <a href="#/modern">serajrugs.com</a>. Prices are shown to signed-in trade accounts.</p>
+    <noscript><p class="note">This selection is also listed on <a href="/modern">serajrugs.com</a>.</p></noscript>
+    <p class="note">The full collection is listed on <a href="/modern">serajrugs.com</a>. Prices are shown to signed-in trade accounts.</p>
   </div>
 </section>
 <section class="sec pcta">
@@ -3321,7 +3321,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Need help?</p>
     <h2 data-rv>Find the piece for <em>your space</em></h2>
     <p data-rv>Explore the full shop, or speak with our team about a bespoke rug.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3329,7 +3329,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <div class="route" data-route="about" data-title="Our Story &#x2014; Seraj Rugs" data-desc="Seraj Rugs: a handmade and custom rug manufacturer rooted in Tibetan hand-knotting, with offices in Kathmandu and New Delhi." hidden>
 <section class="phead phead--cover" aria-labelledby="pageTitle-about">
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Our story</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Our story</span></nav>
     <p class="st-cover__mark" aria-hidden="true">Seraj</p>
     <p class="st-cover__k">Handmade rugs <span aria-hidden="true">|</span> Nepal and India</p>
     <h1 id="pageTitle-about">Our story and projects</h1>
@@ -3475,7 +3475,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <p class="st-k">Privacy</p>
       <h3>Our clients ask for privacy.</h3>
       <p>We respect it. You can see the looms on a live video call, review a project fact sheet, and, where clients allow, speak to a reference under NDA.</p>
-      <a class="st-link" href="#/projects">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="st-link" href="/projects">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
     </div>
     <p class="st-k st-k--seen" data-rv>Seen at</p>
     <ul class="st-seen">
@@ -3491,10 +3491,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-custom-rugs">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/f113e42c-10f1-41ab-a6fb-57b970abab23/seraj-rugs-web-img-13.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Custom Rugs</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Custom Rugs</span></nav>
     <h1 id="pageTitle-custom-rugs">Your inspiration. <em>Your rug.</em></h1>
     <p class="lede">Share a photograph, artwork or room that inspires you, and we will work with you on a single rug made for your home.</p>
-    <div class="phead__cta"><a class="btn on-dark" href="#/custom-rugs/custom-enquiry">Create Your Custom Rug <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="phead__cta"><a class="btn on-dark" href="/custom-rugs/custom-enquiry">Create Your Custom Rug <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -3560,12 +3560,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld"><label for="cuRoom">Intended room or use <span class="req" aria-hidden="true">*</span></label><select id="cuRoom" name="room" required aria-required="true" aria-describedby="cuRoomErr"><option value="">Please choose</option><option>Living room</option><option>Bedroom</option><option>Dining room</option><option>Hallway or runner</option><option>Office or study</option><option>Other</option></select><p class="fld__err" id="cuRoomErr" hidden></p></div>
   <div class="fld fld--full"><label for="cuStyle">Preferred colours or style <span class="req" aria-hidden="true">*</span></label><input id="cuStyle" name="colours_style" type="text" placeholder="For example: warm neutrals, abstract, inspired by my photo" required aria-required="true" aria-describedby="cuStyleErr"><p class="fld__err" id="cuStyleErr" hidden></p></div>
   <p class="fx__privacy">We use your inspiration image only to understand your brief. It is not published or shared.</p>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Send custom rug enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your details already typed in. Your inspiration photo can go straight into the chat.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Send custom rug enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your details already typed in. Prefer WhatsApp? Use the button beside send. Your inspiration photo can go straight into the chat.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your enquiry typed in. Attach your inspiration photo there, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -3576,7 +3576,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Explore</p>
     <h2 data-rv>Looking for a <em>ready-made</em> piece?</h2>
     <p data-rv>Browse the collection, or see how each technique is made.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/craft">Explore the craft <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/craft">Explore the craft <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3585,10 +3585,10 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-trade-program">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/1fe77dd9-756c-4c9e-8021-dfd52617eea0/s3.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Trade</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Trade</span></nav>
     <h1 id="pageTitle-trade-program">Make Seraj Rugs your rug manufacturing <em>partner</em></h1>
     <p class="lede">Our trade programme for interior designers, architects, property developers, furniture stores, retailers and brands.</p>
-    <div class="phead__cta"><a class="btn on-dark" href="#/trade-program/apply">Apply for a Trade Account <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="phead__cta"><a class="btn on-dark" href="/trade-program/apply">Apply for a Trade Account <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
@@ -3607,7 +3607,7 @@ body.menu-open .hdr__cta{visibility:hidden}
           <li><span class="n">04</span><div><b>Free yarn cards &amp; sample swatches</b></div></li>
           <li><span class="n">05</span><div><b>Access to samples and design services</b></div></li>
         </ul>
-        <p style="margin-top:1.6rem"><a class="btn" href="#/trade-program/apply">Apply now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p style="margin-top:1.6rem"><a class="btn" href="/trade-program/apply">Apply now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="feature feature--flip" id="white-label">
@@ -3616,7 +3616,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <p class="eyebrow">White label</p>
         <h3>Your label, <em>our looms</em></h3>
         <p>Retail brands and furniture stores can discuss rugs made under their own label, developed from our collections or from their own designs. Sampling, specification and production are agreed with your consultant for each programme.</p>
-        <p><a class="link-u" href="#/trade-program/apply">Discuss your requirements <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p><a class="link-u" href="/trade-program/apply">Discuss your requirements <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
     <div class="feature">
@@ -3625,7 +3625,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         <p class="eyebrow">Wholesale</p>
         <h3>Wholesale rug <em>supply</em></h3>
         <p>Explore our collection of rugs, from traditional to modern styles. We cater to the demands of retailers and interior designers, with a seamless supply chain for your business.</p>
-        <p><a class="link-u" href="#/shop">Explore the collections <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
+        <p><a class="link-u" href="/shop">Explore the collections <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
   </div>
@@ -3658,12 +3658,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld"><label for="trEmail">Email <span class="req" aria-hidden="true">*</span></label><input id="trEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-required="true" aria-describedby="trEmailErr"><p class="fld__err" id="trEmailErr" hidden></p></div>
   <div class="fld"><label for="trType">Business type <span class="req" aria-hidden="true">*</span></label><select id="trType" name="business_type" required aria-required="true" aria-describedby="trTypeErr"><option value="">Please choose</option><option>Interior designer</option><option>Architect</option><option>Property developer</option><option>Furniture store</option><option>Retail brand</option><option>Wholesaler</option><option>Hospitality group</option><option>Other</option></select><p class="fld__err" id="trTypeErr" hidden></p></div>
   <div class="fld fld--full"><label for="trMsg">Project requirements <span class="req" aria-hidden="true">*</span></label><textarea id="trMsg" name="requirements" rows="5" required aria-required="true" aria-describedby="trMsgErr" placeholder="Typical projects, techniques, quantities, your country, or anything else we should know"></textarea><p class="fld__err" id="trMsgErr" hidden></p></div>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Send application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your details already typed in. Check it over, then press send.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Send application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your details already typed in. Prefer WhatsApp? Use the button beside send. Check it over, then press send.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your application typed in. Check it over, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -3674,7 +3674,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Catalogue</p>
     <h2 data-rv>Free catalogues for <em>trade partners</em></h2>
     <p data-rv>Trade members receive catalogues, yarn cards and sample swatches through the programme.</p>
-    <div data-rv><a class="btn" href="#/catalogue">View the catalogue <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/catalogue">View the catalogue <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3683,7 +3683,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-event">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2a9b9726-aa88-4634-86ad-cf8449db40b3/s4.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Event</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Event</span></nav>
     <h1 id="pageTitle-event">Events &amp; Exhibits</h1>
     <p class="lede">Meet Seraj Rugs at the fairs and exhibitions where we show our collections.</p>
   </div>
@@ -3722,7 +3722,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Meet us</p>
     <h2 data-rv>See the collections in <em>person</em></h2>
     <p data-rv>Contact us to arrange a viewing, or explore the pieces shown at the fairs.</p>
-    <div data-rv><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3731,7 +3731,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-portfolio">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/7b5c0499-9773-4f3b-b91e-3e61c221a5dc/s7.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Portfolio</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Portfolio</span></nav>
     <h1 id="pageTitle-portfolio">Portfolio</h1>
     <p class="lede">A selection of pieces from the Seraj Rugs collections.</p>
   </div>
@@ -3739,7 +3739,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 
 <section class="sec">
   <div class="wrap">
-    <div class="meta-line"><p><strong>12</strong> selected pieces</p><a class="link-u" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div class="meta-line"><p><strong>12</strong> selected pieces</p><a class="link-u" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
     <div class="pgrid" data-grid="port" data-sizes="(max-width: 520px) 45vw, (max-width: 1100px) 30vw, 23vw"></div>
     <p class="note">Every piece shown is part of the Seraj Rugs product range. Full project references are available on request.</p>
   </div>
@@ -3749,7 +3749,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Start a project</p>
     <h2 data-rv>Bring your vision to <em>life</em></h2>
     <p data-rv>Explore what can be achieved by working with our team of dedicated consultants.</p>
-    <div data-rv><a class="btn ghost" href="#/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn" href="#/custom-rugs">Custom rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn ghost" href="/contact">Talk to us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn" href="/custom-rugs">Custom rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3758,7 +3758,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-contact">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e0e0fb8b-c5c9-4020-86ea-559eb6400f9c/s2.jpg')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Contact us</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Contact us</span></nav>
     <h1 id="pageTitle-contact">Contact Us</h1>
     <p class="lede">Welcome to Seraj Rugs, a prominent name in rug and carpet manufacturing.</p>
   </div>
@@ -3799,12 +3799,12 @@ body.menu-open .hdr__cta{visibility:hidden}
   <div class="fld"><label for="coName">Name <span class="req" aria-hidden="true">*</span></label><input id="coName" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="coNameErr"><p class="fld__err" id="coNameErr" hidden></p></div>
   <div class="fld"><label for="coEmail">Email <span class="req" aria-hidden="true">*</span></label><input id="coEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-required="true" aria-describedby="coEmailErr"><p class="fld__err" id="coEmailErr" hidden></p></div>
   <div class="fld fld--full"><label for="coMsg">Message <span class="req" aria-hidden="true">*</span></label><textarea id="coMsg" name="message" rows="4" required aria-required="true" aria-describedby="coMsgErr" placeholder="Tell us what you have in mind"></textarea><p class="fld__err" id="coMsgErr" hidden></p></div>
-  <div class="fld--full fx__actions"><button class="btn" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens WhatsApp with your message already typed in. Photos and links can go straight into the chat.</p></div>
+  <div class="fld--full fx__actions"><button class="btn" type="submit">Send message <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button><p class="enq__note">Opens your email app with your message already typed in. Prefer WhatsApp? Use the button beside send. Photos and links can go straight into the chat.</p></div>
   <div class="fx__social fld--full"><p class="fx__social-h">Or find us on</p><ul class="fx__social-l"><li><a href="https://www.instagram.com/serajrugs/" target="_blank" rel="noopener" aria-label="Seraj Rugs on Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.4" r="0.6" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><li><a href="https://www.facebook.com/serajrugsofficial" target="_blank" rel="noopener" aria-label="Seraj Rugs on Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a></li><li><a href="https://www.youtube.com/@serajrugs" target="_blank" rel="noopener" aria-label="Seraj Rugs on YouTube"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="m10.4 9.2 4.6 2.8-4.6 2.8z"/></svg><span>YouTube</span></a></li><li><a href="https://wa.me/918384012977" target="_blank" rel="noopener" aria-label="Message Seraj Rugs on WhatsApp"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4a8.6 8.6 0 0 0-7.35 13.1L3.4 20.6l4.2-1.24A8.6 8.6 0 1 0 12 3.4Z"/><path d="M9.25 8.55c.18-.42.66-.55 1.03-.32l.83.52c.31.2.42.61.25.95l-.35.7a5.9 5.9 0 0 0 2.66 2.66l.7-.35c.34-.17.75-.06.95.25l.52.83c.23.37.1.85-.32 1.03-.62.26-1.4.2-2.13-.16a9.1 9.1 0 0 1-4.6-4.6c-.36-.73-.42-1.51-.16-2.13Z"/></svg><span>WhatsApp</span></a></li></ul></div>
   <div class="fx__done" role="status" tabindex="-1" hidden>
     <h3>Continue in WhatsApp</h3>
     <p>WhatsApp should now be open with your message typed in. Check it over, then press send. If nothing opened, use the link below.</p>
-    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><button class="btn ghost fx__copy" type="button">Copy details</button><span class="fx__copied" aria-live="polite"></span></div>
+    <div class="fx__row"><a class="btn fx__wa" href="#" target="_blank" rel="noopener">Open WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn fx__mail-open" href="mailto:info@serajrugs.com">Open email <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><span class="fx__copied" aria-live="polite"></span></div>
   </div>
 </form>
     </div>
@@ -3816,7 +3816,7 @@ body.menu-open .hdr__cta{visibility:hidden}
 <section class="phead" aria-labelledby="pageTitle-catalogue">
   <div class="phead__bg" style="background-image:url('https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/2a9b9726-aa88-4634-86ad-cf8449db40b3/s4.webp')" aria-hidden="true"></div>
   <div class="wrap phead__in">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="#/">Home</a><span aria-hidden="true">/</span><span>Catalogue</span></nav>
+    <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Catalogue</span></nav>
     <h1 id="pageTitle-catalogue">Our Catalogue</h1>
     <p class="lede">As pioneers of Tibetan hand-knotted carpets in India, Seraj Rugs has garnered global recognition.</p>
   </div>
@@ -3828,7 +3828,7 @@ body.menu-open .hdr__cta{visibility:hidden}
       <p>As pioneers of Tibetan hand-knotted carpets in India, Seraj Rugs has garnered global recognition. Our custom rugs have graced the largest buying houses in Europe, particularly in Germany. Trust us to bring international allure to your home.</p>
     </div>
     <div class="cats">
-      <a class="catcard" href="#/contact">
+      <a class="catcard" href="/contact">
         <div class="catcard__img"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/web-img-11.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/micro_web-img-11.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/small_web-img-11.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/medium_web-img-11.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/large_web-img-11.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/xlarge_web-img-11.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/6feb3615-d386-48b5-b07a-225c28b3d854/2xlarge_web-img-11.webp 1600w" sizes="(max-width: 1100px) 45vw, 30vw" alt="Classic collection rug in a warm neutral interior" width="1600" height="900" loading="lazy" decoding="async"></div>
         <div class="catcard__b">
           <h2>Classic collection</h2>
@@ -3836,7 +3836,7 @@ body.menu-open .hdr__cta{visibility:hidden}
           <span class="link-u">Request catalogue <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="catcard" href="#/contact">
+      <a class="catcard" href="/contact">
         <div class="catcard__img"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/web-img-14.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/micro_web-img-14.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/small_web-img-14.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/medium_web-img-14.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/large_web-img-14.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/xlarge_web-img-14.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/e81a319c-e19e-4606-993e-3ac47637e5f5/2xlarge_web-img-14.webp 1600w" sizes="(max-width: 1100px) 45vw, 30vw" alt="Minimal collection rug photographed in soft daylight" width="1600" height="900" loading="lazy" decoding="async"></div>
         <div class="catcard__b">
           <h2>Minimal collection</h2>
@@ -3844,7 +3844,7 @@ body.menu-open .hdr__cta{visibility:hidden}
           <span class="link-u">Request catalogue <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
-      <a class="catcard" href="#/contact">
+      <a class="catcard" href="/contact">
         <div class="catcard__img"><img src="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/web-img-12.webp" srcset="https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/micro_web-img-12.webp 100w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/small_web-img-12.webp 200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/medium_web-img-12.webp 400w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/large_web-img-12.webp 600w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/xlarge_web-img-12.webp 1200w, https://api.storebox.ai/media/1ceb56e3-e8b1-44b4-8044-9bce2e9db133/3be323b8-1b8b-4fa2-8322-a68713ac4c56/2xlarge_web-img-12.webp 1600w" sizes="(max-width: 1100px) 45vw, 30vw" alt="Modern collection rug in a contemporary room setting" width="1600" height="900" loading="lazy" decoding="async"></div>
         <div class="catcard__b">
           <h2>Modern collection</h2>
@@ -3853,7 +3853,7 @@ body.menu-open .hdr__cta{visibility:hidden}
         </div>
       </a>
     </div>
-    <p class="note">Catalogues are sent to trade partners. Request yours through the <a href="#/trade-program">trade programme</a> or <a href="#/contact">contact us</a>.</p>
+    <p class="note">Catalogues are sent to trade partners. Request yours through the <a href="/trade-program">trade programme</a> or <a href="/contact">contact us</a>.</p>
   </div>
 </section>
 <section class="sec pcta">
@@ -3861,7 +3861,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     <p class="eyebrow" data-rv>Collections</p>
     <h2 data-rv>Explore the <em>collections</em></h2>
     <p data-rv>Browse the shop, or commission a bespoke rug with our team.</p>
-    <div data-rv><a class="btn" href="#/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn" href="#/custom-rugs">Custom rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
+    <div data-rv><a class="btn" href="/shop">Shop all rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a><a class="btn" href="/custom-rugs">Custom rugs <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 </div>
@@ -3904,10 +3904,10 @@ body.menu-open .hdr__cta{visibility:hidden}
           </a>
         </div>
       </div>
-      <div class="r-ftr__col"><h2 class="ftr__h">Projects</h2><ul><li><a href="#/projects">Hotels</a></li><li><a href="#/projects">Cruise</a></li><li><a href="#/projects">Luxury homes</a></li></ul></div>
-      <div class="r-ftr__col"><h2 class="ftr__h">Trade</h2><ul><li><a href="#/trade-program/apply">Trade account</a></li><li><a href="#/trade-program/white-label">White label</a></li><li><a href="#/brand-programme">Brand programme</a></li><li><a href="#/trade-program">Sample kit</a></li></ul></div>
-      <div class="r-ftr__col"><h2 class="ftr__h">Atelier</h2><ul><li><a href="#/atelier/atelier-apply">Apply</a></li><li><a href="#/atelier">Editions</a></li><li><a href="#/creator-programme">Creator programme</a></li><li><a href="#/blogs">Blogs</a></li><li><a href="#/collections">Collections</a></li></ul></div>
-      <div class="r-ftr__col"><h2 class="ftr__h">House</h2><ul><li><a href="#/about">Story</a></li><li><a href="#/craft/craft-film">Craft film</a></li><li><a href="#/blogs">Blogs</a></li><li><a href="#/collections">Collections</a></li><li><a href="#/shop">Shop</a></li></ul></div>
+      <div class="r-ftr__col"><h2 class="ftr__h">Projects</h2><ul><li><a href="/projects">Hotels</a></li><li><a href="/projects">Cruise</a></li><li><a href="/projects">Luxury homes</a></li></ul></div>
+      <div class="r-ftr__col"><h2 class="ftr__h">Trade</h2><ul><li><a href="/trade-program/apply">Trade account</a></li><li><a href="/trade-program/white-label">White label</a></li><li><a href="/brand-programme">Brand programme</a></li><li><a href="/trade-program">Sample kit</a></li></ul></div>
+      <div class="r-ftr__col"><h2 class="ftr__h">Atelier</h2><ul><li><a href="/atelier/atelier-apply">Apply</a></li><li><a href="/atelier">Editions</a></li><li><a href="/creator-programme">Creator programme</a></li><li><a href="/blogs">Blogs</a></li><li><a href="/collections">Collections</a></li></ul></div>
+      <div class="r-ftr__col"><h2 class="ftr__h">House</h2><ul><li><a href="/about">Story</a></li><li><a href="/craft/craft-film">Craft film</a></li><li><a href="/blogs">Blogs</a></li><li><a href="/collections">Collections</a></li><li><a href="/shop">Shop</a></li></ul></div>
     </div>
     <div class="r-ftr__bar">
       <span>Phone <a href="tel:+918384012977">+91 8384012977</a>&#xA0;&#xA0; Email <a href="mailto:info@serajrugs.com">info@serajrugs.com</a></span>
@@ -3915,7 +3915,7 @@ body.menu-open .hdr__cta{visibility:hidden}
     </div>
     <div class="r-ftr__legal">
       <span>&copy; 2025 Seraj Rugs. All rights reserved.</span>
-      <span><a href="https://serajrugs.com/imprint">Imprint</a><a href="https://serajrugs.com/terms-and-conditions">Terms &amp; Conditions</a><a href="https://serajrugs.com/privacy-policy">Privacy Policy</a><a href="#/contact">Contact</a></span>
+      <span><a href="https://serajrugs.com/imprint">Imprint</a><a href="https://serajrugs.com/terms-and-conditions">Terms &amp; Conditions</a><a href="https://serajrugs.com/privacy-policy">Privacy Policy</a><a href="/contact">Contact</a></span>
     </div>
   </div>
 </footer>
@@ -4315,7 +4315,7 @@ function card(o, sz){
   '</article>';
 }
 
-/* ---------------- hash router --------------------------------------- */
+/* ---------------- path router --------------------------------------- */
 var currentRoute = null;
 var ROUTE_PARENT = {
   'hand-knotted': 'shop',
@@ -4328,26 +4328,61 @@ var ROUTE_PARENT = {
 function routeNode(slug){
   return $('.route[data-route="' + slug + '"]');
 }
-function routeFromHash(){
+function splitRoute(rest){
+  rest = rest || '';
+  var cut = rest.indexOf('/');
+  var slug = cut < 0 ? rest : rest.slice(0, cut);
+  var anchor = cut < 0 ? '' : rest.slice(cut + 1);
+  try { anchor = decodeURIComponent(anchor); } catch(e) {}
+  if(!slug || slug === 'index.html') slug = 'home';
+  slug = slug.replace(/\.html$/, '');
+  if(!routeNode(slug)) return null;
+  return {slug:slug, anchor:anchor};
+}
+function routeFromLocation(){
   var h = location.hash || '';
   if(h.indexOf('#/') === 0){
-    var rest = h.slice(2);
-    var cut = rest.indexOf('/');
-    var slug = cut < 0 ? rest : rest.slice(0, cut);
-    var anchor = cut < 0 ? '' : rest.slice(cut + 1);
-    try { anchor = decodeURIComponent(anchor); } catch(e) {}
-    if(!slug) slug = 'home';
-    if(!routeNode(slug)){ slug = 'home'; anchor = ''; }
-    return {slug:slug, anchor:anchor};
+    var fromHash = splitRoute(h.slice(2));
+    if(fromHash) return fromHash;
   }
+  var path = location.pathname || '/';
+  if(path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
+  var rest = path.replace(/^\/+/, '');
+  if(!rest) return {slug:'home', anchor:''};
+  var fromPath = splitRoute(rest);
+  if(fromPath) return fromPath;
   /* Legacy bare anchors such as #gallery still resolve to their route. */
   var plain = h.replace(/^#/, '');
-  if(plain && plain !== 'main'){
+  if(plain && plain !== 'main' && plain.charAt(0) !== '/'){
     var target = document.getElementById(plain);
     var owner = target && target.closest ? target.closest('.route') : null;
     if(owner) return {slug:owner.getAttribute('data-route'), anchor:plain};
   }
   return {slug:'home', anchor:''};
+}
+function routeUrl(slug, anchor){
+  if((!slug || slug === 'home') && !anchor) return '/';
+  var url = '/' + (slug || 'home');
+  if(anchor){
+    url += '/' + anchor.split('/').map(function(part){
+      return encodeURIComponent(part);
+    }).join('/');
+  }
+  return url;
+}
+function pathOnly(href){
+  if(!href) return '';
+  try {
+    var u = new URL(href, location.origin);
+    if(u.hash.indexOf('#/') === 0){
+      var hashed = splitRoute(u.hash.slice(2));
+      return hashed ? routeUrl(hashed.slug, '') : '';
+    }
+    var p = u.pathname || '/';
+    if(p.length > 1 && p.charAt(p.length - 1) === '/') p = p.slice(0, -1);
+    if(!p || p === '/index.html') return '/';
+    return p;
+  } catch(e) { return href; }
 }
 function setRouteMeta(node){
   var title = node.getAttribute('data-title') || 'Seraj Rugs';
@@ -4358,11 +4393,11 @@ function setRouteMeta(node){
   var od = $('#ogDesc'); if(od) od.setAttribute('content', desc);
 }
 function setRouteCurrent(slug){
-  var exact = slug === 'home' ? '#/' : '#/' + slug;
-  var parent = ROUTE_PARENT[slug] ? '#/' + ROUTE_PARENT[slug] : '';
+  var exact = routeUrl(slug, '');
+  var parent = ROUTE_PARENT[slug] ? routeUrl(ROUTE_PARENT[slug], '') : '';
   $$('.nav a, .menu a').forEach(function(a){
     a.removeAttribute('aria-current');
-    var href = a.getAttribute('href') || '';
+    var href = pathOnly(a.getAttribute('href') || '');
     if(href === exact || (parent && href === parent)) a.setAttribute('aria-current', 'page');
   });
 }
@@ -4407,18 +4442,56 @@ function showRoute(slug, anchor, initial){
     }
   });
 }
+function goRoute(parsed, replace){
+  var next = routeUrl(parsed.slug, parsed.anchor);
+  var now = location.pathname || '/';
+  if(now.length > 1 && now.charAt(now.length - 1) === '/') now = now.slice(0, -1);
+  if(now + (location.hash || '') !== next){
+    history[replace ? 'replaceState' : 'pushState']({slug:parsed.slug, anchor:parsed.anchor}, '', next);
+  }
+  showRoute(parsed.slug, parsed.anchor, false);
+}
+function onRouteClick(e){
+  if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  var a = e.target.closest ? e.target.closest('a[href]') : null;
+  if(!a) return;
+  if(a.target && a.target !== '_self') return;
+  if(a.hasAttribute('download')) return;
+  var raw = a.getAttribute('href') || '';
+  if(!raw || raw.indexOf('mailto:') === 0 || raw.indexOf('tel:') === 0) return;
+  if(raw.charAt(0) === '#' && raw.indexOf('#/') !== 0) return;
+  var url;
+  try { url = new URL(a.href, location.href); } catch(err) { return; }
+  if(url.origin !== location.origin) return;
+  if(/^\/product(\/|$)/.test(url.pathname)) return;
+  if(/\.[a-z0-9]{2,5}$/i.test(url.pathname) && !/\.html$/i.test(url.pathname)) return;
+  var parsed = null;
+  if(url.hash.indexOf('#/') === 0) parsed = splitRoute(url.hash.slice(2));
+  if(!parsed){
+    var path = url.pathname || '/';
+    if(path.length > 1 && path.charAt(path.length - 1) === '/') path = path.slice(0, -1);
+    var rest = path.replace(/^\/+/, '');
+    parsed = rest ? splitRoute(rest) : {slug:'home', anchor:''};
+  }
+  if(!parsed) return;
+  e.preventDefault();
+  goRoute(parsed, false);
+}
 function router(){
   /* Standalone pages are single documents with no .route containers; the
-     hash router only belongs to the one-page build. Bail out so the rest of
+     path router only belongs to the one-page build. Bail out so the rest of
      init() (menu, search, reveals, sliders) still runs there. */
   if(!$('.route')) return;
   if('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  var start = routeFromHash();
+  var start = routeFromLocation();
+  var clean = routeUrl(start.slug, start.anchor);
+  history.replaceState({slug:start.slug, anchor:start.anchor}, '', clean);
   showRoute(start.slug, start.anchor, true);
-  window.addEventListener('hashchange', function(){
-    var r = routeFromHash();
+  window.addEventListener('popstate', function(){
+    var r = routeFromLocation();
     showRoute(r.slug, r.anchor, false);
   });
+  document.addEventListener('click', onRouteClick);
   var skip = $('.skip');
   if(skip) skip.addEventListener('click', function(e){
     e.preventDefault();
@@ -5101,10 +5174,11 @@ function faq(){
   });
 }
 
-/* ---------------- enquiry forms (WhatsApp) ------------------------- */
+/* ---------------- enquiry forms (WhatsApp / email) ----------------- */
 /* There is no form backend on this host: a validated enquiry is handed to
-   WhatsApp as a pre-filled message, and photos are attached in the chat. */
+   WhatsApp or the mail client as a pre-filled message. */
 var WA_NUMBER = '918384012977';
+var MAIL_TO = 'info@serajrugs.com';
 function labelOf(el){
   var l = el.id ? el.form.querySelector('label[for="' + el.id + '"]') : null;
   if(!l) return el.name;
@@ -5145,12 +5219,12 @@ function forms(){
     var subject = f.getAttribute('data-subject') || 'Enquiry';
     var lastText = '';
     var actions = $('.fx__actions', f), go = actions ? actions.querySelector('button[type="submit"]') : null;
-    if(go && !f.hasAttribute('data-steps')){
-      var chat = document.createElement('a');
-      chat.className = actions.querySelector('.rbtn') ? 'rbtn fx__chat' : 'btn ghost fx__chat';
-      chat.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('*Seraj Rugs — ' + subject + '*\n\nI would rather send this by chat.');
-      chat.target = '_blank';
-      chat.rel = 'noopener';
+    var useRbtn = !!(actions && actions.querySelector('.rbtn'));
+    /* Primary submit opens email; WhatsApp stays as the only secondary action. */
+    if(go && !$('.fx__chat', actions)){
+      var chat = document.createElement('button');
+      chat.type = 'button';
+      chat.className = (useRbtn ? 'rbtn' : 'btn ghost') + ' fx__chat';
       chat.innerHTML = WA_MARK + 'Or message on WhatsApp';
       actions.insertBefore(chat, go.nextSibling);
     }
@@ -5166,17 +5240,7 @@ function forms(){
       var el = document.getElementById(a.getAttribute('data-for'));
       if(el){ el.focus(); }
     });
-    f.addEventListener('submit', function(e){
-      e.preventDefault();
-      var bad = fields.filter(function(el){ return !checkField(el); });
-      if(bad.length){
-        summary.innerHTML = '<p>Please correct ' + (bad.length === 1 ? 'this field' : 'these ' + bad.length + ' fields') + ':</p><ul>' +
-          bad.map(function(el){ return '<li><a href="#' + el.id + '" data-for="' + el.id + '">' + labelOf(el) + '</a></li>'; }).join('') + '</ul>';
-        summary.hidden = false; done.hidden = true;
-        summary.focus();
-        return;
-      }
-      summary.hidden = true;
+    function collectLines(){
       var lines = [];
       fields.forEach(function(el){
         if(el.type === 'radio' && !el.checked) return;
@@ -5186,23 +5250,120 @@ function forms(){
         var name = fs ? (fs.getAttribute('data-label') || $('legend', fs).textContent.trim()) : (el.getAttribute('data-label') || labelOf(el));
         lines.push(name + ': ' + v);
       });
-      lastText = 'Seraj Rugs - ' + subject + '\n\n' + lines.join('\n');
-      var text = '*Seraj Rugs — ' + subject + '*\n\n' + lines.join('\n');
-      var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+      return lines;
+    }
+    function validateOrFocus(){
+      var bad = fields.filter(function(el){ return !checkField(el); });
+      if(!bad.length){ summary.hidden = true; return true; }
+      summary.innerHTML = '<p>Please correct ' + (bad.length === 1 ? 'this field' : 'these ' + bad.length + ' fields') + ':</p><ul>' +
+        bad.map(function(el){ return '<li><a href="#' + el.id + '" data-for="' + el.id + '">' + labelOf(el) + '</a></li>'; }).join('') + '</ul>';
+      summary.hidden = false; done.hidden = true;
+      summary.focus();
+      return false;
+    }
+    function mailSubject(){ return 'Seraj Rugs - ' + subject; }
+    function mailUrlFor(body){
+      var text = body.length > 1200 ? body.slice(0, 1200) : body;
+      return 'mailto:' + MAIL_TO +
+        '?subject=' + encodeURIComponent(mailSubject()) +
+        '&body=' + encodeURIComponent(text);
+    }
+    function gmailUrlFor(body){
+      var text = body.length > 1800 ? body.slice(0, 1800) : body;
+      return 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=' + encodeURIComponent(MAIL_TO) +
+        '&su=' + encodeURIComponent(mailSubject()) +
+        '&body=' + encodeURIComponent(text);
+    }
+    /* Open mail while the click/submit user-gesture is still live.
+       1) mailto → desktop app (Outlook / Mail)
+       2) Gmail compose tab → always works in the browser when no mail app is set */
+    function openMail(body){
+      var mailto = mailUrlFor(body);
+      var gmail = gmailUrlFor(body);
+      try {
+        var form = document.createElement('form');
+        form.action = mailto;
+        form.method = 'POST';
+        form.enctype = 'text/plain';
+        form.style.display = 'none';
+        document.body.appendChild(form);
+        form.submit();
+        setTimeout(function(){ if(form.parentNode) form.parentNode.removeChild(form); }, 0);
+      } catch (err) {}
+      try { window.location.href = mailto; } catch (err2) {}
+      try { window.open(gmail, '_blank', 'noopener'); } catch (err3) {}
+      return { mailto: mailto, gmail: gmail };
+    }
+    function openWhatsApp(url){
+      window.open(url, '_blank', 'noopener');
+    }
+    function showDone(waUrl, mailHref, gmailHref){
       var note = $('.fx__copied', done); if(note) note.textContent = '';
+      $('.fx__wa', done).setAttribute('href', waUrl);
+      var mailA = $('.fx__mail-open', done);
+      if(mailA) mailA.setAttribute('href', mailHref || ('mailto:' + MAIL_TO));
+      var gmailA = $('.fx__gmail', done);
+      if(gmailHref){
+        if(!gmailA){
+          gmailA = document.createElement('a');
+          gmailA.className = 'btn ghost fx__gmail';
+          gmailA.target = '_blank';
+          gmailA.rel = 'noopener';
+          gmailA.textContent = 'Open in Gmail';
+          var row = $('.fx__row', done);
+          if(row) row.appendChild(gmailA);
+        }
+        gmailA.setAttribute('href', gmailHref);
+        gmailA.hidden = false;
+      } else if(gmailA){
+        gmailA.hidden = true;
+      }
+      done.hidden = false;
+      try { done.focus({preventScroll:true}); } catch(err) { done.focus(); }
+      done.scrollIntoView({block:'nearest', behavior: RM ? 'auto' : 'smooth'});
+    }
+    function sendWhatsApp(){
+      if(!validateOrFocus()) return;
+      var lines = collectLines();
+      lastText = 'Seraj Rugs - ' + subject + '\n\n' + lines.join('\n');
+      var text = '*Seraj Rugs - ' + subject + '*\n\n' + lines.join('\n');
+      var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+      var note = $('.fx__copied', done);
       if(url.length > 3000){
         copyText(lastText, function(ok){ if(note && ok) note.textContent = 'Your full details were copied. Paste the rest into WhatsApp.'; });
         url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text.slice(0, 1200));
       }
-      $('.fx__wa', done).setAttribute('href', url);
-      done.hidden = false;
-      try { done.focus({preventScroll:true}); } catch(err) { done.focus(); }
-      done.scrollIntoView({block:'nearest', behavior: RM ? 'auto' : 'smooth'});
-      window.location.href = url;
-    });
-    $('.fx__copy', done).addEventListener('click', function(){
+      var h = $('h3', done), p = $('p', done);
+      if(h) h.textContent = 'Continue in WhatsApp';
+      if(p) p.textContent = 'WhatsApp should now be open with your details typed in. Attach any files there, then press send. If nothing opened, use the link below.';
+      openWhatsApp(url);
+      showDone(url, mailUrlFor(lastText), gmailUrlFor(lastText));
+    }
+    function sendMail(){
+      if(!validateOrFocus()) return;
+      var lines = collectLines();
+      lastText = 'Seraj Rugs - ' + subject + '\n\n' + lines.join('\n');
+      /* Fire mail handlers FIRST — before focus/scroll — so the user gesture stays valid. */
+      var opened = openMail(lastText);
       var note = $('.fx__copied', done);
-      copyText(lastText, function(ok){ if(note) note.textContent = ok ? 'Copied to the clipboard.' : 'Copy failed. Please select and copy your details manually.'; });
+      if(lastText.length > 1200){
+        copyText(lastText, function(ok){ if(note && ok) note.textContent = 'Full details copied — paste into the email if anything was cut off.'; });
+      }
+      var h3 = $('h3', done), p = $('p', done);
+      if(h3) h3.textContent = 'Continue in your email';
+      if(p) p.textContent = 'We tried to open your mail app and Gmail. If nothing appeared, use the buttons below (and set a default mail app in Windows if needed).';
+      var waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('*Seraj Rugs - ' + subject + '*\n\n' + lines.join('\n'));
+      showDone(waUrl, opened.mailto, opened.gmail);
+    }
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      sendMail();
+    });
+    $$('.fx__chat', f).forEach(function(btn){
+      btn.addEventListener('click', function(e){
+        e.preventDefault();
+        sendWhatsApp();
+      });
     });
   });
 }
